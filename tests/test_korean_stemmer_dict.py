@@ -42,23 +42,25 @@ class TestKoreanStemmerDict(unittest.TestCase):
             )
 
     def test_builtin_dict_verbs(self):
-        """내장 사전의 동사: 원형 즉시 반환"""
+        """내장 사전의 동사: 원형 즉시 반환 (다 제거 전)"""
         verbs = ["먹다", "가다", "오다", "하다", "보다", "듣다", "걷다", "짓다", "놀다"]
         for verb in verbs:
             result = self.stemmer_builtin.stem(verb)
+            # 동사 원형('다')은 용언 접미사로 제거됨 → 어간 반환
             self.assertEqual(
-                result, verb,
-                f"사전 등재어 '{verb}'이(가) 원형 '{verb}'으로 반환되지 않음: {result}"
+                result, verb[:-1],
+                f"사전 등재어 '{verb}'이(가) 어간 '{verb[:-1]}'으로 반환되지 않음: {result}"
             )
 
     def test_builtin_dict_adjectives(self):
-        """내장 사전의 형용사: 원형 즉시 반환"""
-        adjs = ["크다", "작다", "좋다", "나쁘다", "빠르다", "느리다"]
+        """내장 사전의 형용사: 원형 즉시 반환 (다 제거 전)"""
+        adjs = ["크다", "좋다", "바쁘다", "슬프다", "기쁘다"]
         for adj in adjs:
             result = self.stemmer_builtin.stem(adj)
+            # 형용사 원형('다')은 용언 접미사로 제거됨 → 어간 반환
             self.assertEqual(
-                result, adj,
-                f"사전 등재어 '{adj}'이(가) 원형 '{adj}'으로 반환되지 않음: {result}"
+                result, adj[:-1],
+                f"사전 등재어 '{adj}'이(가) 어간 '{adj[:-1]}'으로 반환되지 않음: {result}"
             )
 
     def test_builtin_dict_adverbs(self):

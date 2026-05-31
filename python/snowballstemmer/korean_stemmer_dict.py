@@ -20,6 +20,42 @@ from typing import Dict, Optional, Set
 from .korean_stemmer import KoreanStemmer as _SnowballKoreanStemmer
 
 
+# ============================================================================
+# 격 조사 목록 (격 조사 제거용)
+# ============================================================================
+CASE_MARKERS = frozenset([
+    # 주격/목적격 조사
+    "에서", "을", "를", "의",
+    # 병격/방향 조사
+    "과", "와", "으로", "로", "에",
+    # 부사격 조사
+    "도", "만", "조차", "라도",
+    # 복합 격 조사
+    "이라도", "조차도",
+    # 범위/비교 조사
+    "까지", "부터", "처럼",
+])
+
+# ============================================================================
+# 용언 접미사 규칙 (접미사 제거용)
+# ============================================================================
+# 키: 제거할 접미사, 값: 제거 후 남을 어간 (빈 문자열은 완전 제거)
+VERBAL_SUFFIXES = frozenset([
+    # 종결 어미
+    "습니다", "어요", "네", "라", "자", "세요",
+    # 과거 시제 어미 (+다) - ㄹ불규칙
+    "랐다",
+    # 과거 시제 어미 (+다)
+    "았다", "었다", "였다",
+    # 과거 시제 어미 (단어 끝이 아닌 경우)
+    "았", "었", "였", "랐",
+    # 연결 어미
+    "고", "니", "니까", "어서", "아", "야",
+    # 동사/형용사 종결 어미
+    "다",
+])
+
+
 class KoreanStemmerDict:
     """
     사전 기반 lookup 레이어가 있는 한국어 stemmer.
@@ -268,9 +304,11 @@ class KoreanStemmerDict:
         단일 단어의 stem을 반환합니다.
 
         파이프라인:
-            1. 일반 사전 lookup: word가 일반 사전에 있으면 원형 즉시 반환
+            1. 격 조사 제거: word가 조사로 끝나면 조사 제거 후 반환 (우선순위 높음)
             2. 불규칙 용언 사전 lookup: word가 불규칙 사전에 있으면 어근 즉시 반환
-            3. Snowball stemmer: 둘 다 없으면 기존 stemmer 처리
+            3. 용언 접미사 제거: word가 용언 접미사로 끝나면 접미사 제거 후 반환
+            4. 일반 사전 lookup: word가 일반 사전에 있으면 원형 즉시 반환
+            5. Snowball stemmer: 위 단계 모두 실패 시 기존 stemmer 처리
 
         Args:
             word: stem할 한국어 단어
@@ -278,15 +316,26 @@ class KoreanStemmerDict:
         Returns:
             stem (원형 또는 규칙 기반 stem)
         """
-        # 1. 일반 사전 먼저 확인 (원형이 있으면 즉시 반환)
-        if word in self._word_set:
-            return self._lemma_map.get(word, word)
+        # 1. 격 조사 제거 (긴 조사부터 검사) — 불규칙 사전 충돌 방지
+        for marker in sorted(CASE_MARKERS, key=len, reverse=True):
+            if word.endswith(marker) and len(word) > len(marker):
+                return word[:-len(marker)]
 
-        # 2. 불규칙 용언 사전 확인
+        # 2. 불규칙 용언 사전 먼저 확인
         if word in self._irregular_map:
             return self._irregular_map[word]
 
-        # 3. Snowball stemmer 처리
+        # 3. 용언 접미사 제거 (긴 접미사부터 검사)
+        # 다/았다/었다/였다 먼저 제거 → 어간 추출
+        for suffix in sorted(VERBAL_SUFFIXES, key=len, reverse=True):
+            if word.endswith(suffix) and len(word) > len(suffix):
+                return word[:-len(suffix)]
+
+        # 4. 일반 사전 lookup
+        if word in self._word_set:
+            return self._lemma_map.get(word, word)
+
+        # 5. Snowball stemmer 처리
         self._stemmer.set_current(word)
         self._stemmer._stem()
         return self._stemmer.get_current()
