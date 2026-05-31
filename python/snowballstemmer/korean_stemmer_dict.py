@@ -268,8 +268,8 @@ class KoreanStemmerDict:
         단일 단어의 stem을 반환합니다.
 
         파이프라인:
-            1. 불규칙 용언 사전 lookup: word가 불규칙 사전에 있으면 어근 즉시 반환
-            2. 일반 사전 lookup: word가 일반 사전에 있으면 원형 즉시 반환
+            1. 일반 사전 lookup: word가 일반 사전에 있으면 원형 즉시 반환
+            2. 불규칙 용언 사전 lookup: word가 불규칙 사전에 있으면 어근 즉시 반환
             3. Snowball stemmer: 둘 다 없으면 기존 stemmer 처리
 
         Args:
@@ -278,13 +278,13 @@ class KoreanStemmerDict:
         Returns:
             stem (원형 또는 규칙 기반 stem)
         """
-        # 1. 불규칙 용언 사전 먼저 확인 (가장 우선)
-        if word in self._irregular_map:
-            return self._irregular_map[word]
-
-        # 2. 일반 사전 lookup
+        # 1. 일반 사전 먼저 확인 (원형이 있으면 즉시 반환)
         if word in self._word_set:
             return self._lemma_map.get(word, word)
+
+        # 2. 불규칙 용언 사전 확인
+        if word in self._irregular_map:
+            return self._irregular_map[word]
 
         # 3. Snowball stemmer 처리
         self._stemmer.set_current(word)

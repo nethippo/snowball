@@ -883,12 +883,19 @@ def generate_irregular_dict():
             for word in pattern:
                 if not word or word == root:
                     continue
+                # 원형(예: "크다", "작다")은 불규칙 사전에 추가하지 않음
+                if word.endswith("다") and len(word) > 1:
+                    continue
                 if word in lemma_map and lemma_map[word] == root:
                     continue
                 lemma_map[word] = root
 
     # 일반 동사/형용사 매핑 (불규칙 매핑을 덮어씀)
+    # 단, 원형(예: "먹다" -> "먹", "좋다" -> "좋")은 불규칙 사전에 포함하지 않음
     for word, root in REGULAR_VERBS.items():
+        # 원형(동사/형용사 기본형)은 불규칙 사전에 추가하지 않음
+        if word.endswith("다") and len(word) > 1:
+            continue
         lemma_map[word] = root
 
     return lemma_map
