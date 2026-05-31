@@ -50,3 +50,6 @@
 /zig/*_stemmer.zig
 /zig/algorithms.zig
 /zig/stemwords
+
+# Large dictionary files
+data/korean_dict.json

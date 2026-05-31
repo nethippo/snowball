@@ -52,9 +52,13 @@ class KoreanStemmerDict:
         self._stemmer = _SnowballKoreanStemmer()
         self._lemma_map: Dict[str, str] = {}
         self._word_set: Set[str] = set()
+        self._irregular_map: Dict[str, str] = {}  # 불규칙 용언 매핑
         self._dict_source = dict_source
         self._dict_path = dict_path
         self._load_time = 0.0
+
+        # 불규칙 용언 사전 항상 로드
+        self._load_irregular_dict()
 
         # 사전 로드
         self._load_dict(dict_source, dict_path, dict_format, use_builtin_fallback)
@@ -237,25 +241,52 @@ class KoreanStemmerDict:
         }
         self._word_set = set(self._lemma_map.keys())
 
+    def _load_irregular_dict(self):
+        """불규칙 용언 매핑 사전을 로드합니다.
+        
+        data/irregular_verb_dict.json 파일을 로드하여
+        활용형 -> 어근 매핑을 _irregular_map에 저장합니다.
+        """
+        try:
+            # 프로젝트 루트의 data/ 디렉토리에서 로드
+            base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+            dict_path = os.path.join(base_dir, "data", "irregular_verb_dict.json")
+            
+            if os.path.exists(dict_path):
+                with open(dict_path, "r", encoding="utf-8") as f:
+                    self._irregular_map = json.load(f)
+            else:
+                # 파일이 없으면 빈 사전으로 시작
+                self._irregular_map = {}
+                print(f"[경고] 불규칙 용언 사전 파일을 찾을 수 없습니다: {dict_path}")
+        except Exception as e:
+            print(f"[경고] 불규칙 용언 사전 로드 실패: {e}")
+            self._irregular_map = {}
+
     def stem(self, word: str) -> str:
         """
         단일 단어의 stem을 반환합니다.
 
         파이프라인:
-            1. 사전 lookup: word가 사전에 있으면 원형 즉시 반환
-            2. Snowball stemmer: 사전에 없으면 기존 stemmer 처리
+            1. 불규칙 용언 사전 lookup: word가 불규칙 사전에 있으면 어근 즉시 반환
+            2. 일반 사전 lookup: word가 일반 사전에 있으면 원형 즉시 반환
+            3. Snowball stemmer: 둘 다 없으면 기존 stemmer 처리
 
         Args:
-            word:.stem할 한국어 단어
+            word: stem할 한국어 단어
 
         Returns:
             stem (원형 또는 규칙 기반 stem)
         """
-        # 사전 lookup
+        # 1. 불규칙 용언 사전 먼저 확인 (가장 우선)
+        if word in self._irregular_map:
+            return self._irregular_map[word]
+
+        # 2. 일반 사전 lookup
         if word in self._word_set:
             return self._lemma_map.get(word, word)
 
-        # Snowball stemmer 처리
+        # 3. Snowball stemmer 처리
         self._stemmer.set_current(word)
         self._stemmer._stem()
         return self._stemmer.get_current()
