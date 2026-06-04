@@ -68,3 +68,4 @@ dutch_porter    UTF_8,ISO_8859_1        dutch_porter            dutch
 #                    only really applicable to a restricted type of input text
 #                    (keywords in academic publications).
 #lovins           UTF_8,ISO_8859_1        lovins                english
+korean          UTF_8                   korean,ko,kor

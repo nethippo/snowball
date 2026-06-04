@@ -3,9 +3,7 @@ class BaseStemmer:
         self.set_current("")
 
     def set_current(self, value):
-        '''
-        Set the self.current string.
-        '''
+        """Set the self.current string."""
         self.current = value
         self.cursor = 0
         self.limit = len(self.current)
@@ -14,9 +12,7 @@ class BaseStemmer:
         self.ket = self.limit
 
     def get_current(self):
-        '''
-        Get the self.current string.
-        '''
+        """Get the self.current string."""
         return self.current
 
     def copy_from(self, other):
@@ -102,19 +98,15 @@ class BaseStemmer:
     def find_among(self, v):
         i = 0
         j = len(v)
-
         c = self.cursor
         l = self.limit
-
         common_i = 0
         common_j = 0
-
         first_key_inspected = False
-
         while True:
             k = i + ((j - i) >> 1)
             diff = 0
-            common = min(common_i, common_j) # smaller
+            common = min(common_i, common_j)
             w = v[k]
             for i2 in range(common, len(w.s)):
                 if c + common == l:
@@ -132,12 +124,9 @@ class BaseStemmer:
                 common_i = common
             if j - i <= 1:
                 if i > 0:
-                    break # v->s has been inspected
+                    break
                 if j == i:
-                    break # only one item in v
-                # - but now we need to go round once more to get
-                # v->s inspected. This looks messy, but is actually
-                # the optimal approach.
+                    break
                 if first_key_inspected:
                     break
                 first_key_inspected = True
@@ -153,23 +142,20 @@ class BaseStemmer:
             i = w.substring_i
             if i < 0:
                 return 0
-        return -1 # not reachable
+        return -1
 
     def find_among_b(self, v):
-        '''
-        find_among_b is for backwards processing. Same comments apply
-        '''
+        """
+        find_among_b is for backwards processing. Same comments apply.
+        Sets self.bra and self.ket on match for slice_del() support.
+        """
         i = 0
         j = len(v)
-
         c = self.cursor
         lb = self.limit_backward
-
         common_i = 0
         common_j = 0
-
         first_key_inspected = False
-
         while True:
             k = i + ((j - i) >> 1)
             diff = 0
@@ -200,6 +186,9 @@ class BaseStemmer:
         while True:
             w = v[i]
             if common_i >= len(w.s):
+                # Match found! Set bra/ket for slice_del()
+                self.bra = c - len(w.s)
+                self.ket = c
                 self.cursor = c - len(w.s)
                 if w.method is None:
                     return w.result
@@ -209,17 +198,10 @@ class BaseStemmer:
             i = w.substring_i
             if i < 0:
                 return 0
-        return -1 # not reachable
+        return -1
 
     def replace_s(self, c_bra, c_ket, s):
-        '''
-        to replace chars between c_bra and c_ket in self.current by the
-        chars in s.
-
-        @type c_bra int
-        @type c_ket int
-        @type s: string
-        '''
+        """Replace chars between c_bra and c_ket in self.current by the chars in s."""
         adjustment = len(s) - (c_ket - c_bra)
         self.current = self.current[0:c_bra] + s + self.current[c_ket:]
         self.limit += adjustment
@@ -230,9 +212,6 @@ class BaseStemmer:
         return adjustment
 
     def slice_from(self, s):
-        '''
-        @type s string
-        '''
         assert self.bra >= 0
         assert self.bra <= self.ket
         assert self.ket <= self.limit
@@ -244,11 +223,6 @@ class BaseStemmer:
         return self.slice_from("")
 
     def insert(self, c_bra, c_ket, s):
-        '''
-        @type c_bra int
-        @type c_ket int
-        @type s: string
-        '''
         adjustment = self.replace_s(c_bra, c_ket, s)
         if c_bra <= self.bra:
             self.bra += adjustment
@@ -256,9 +230,7 @@ class BaseStemmer:
             self.ket += adjustment
 
     def slice_to(self):
-        '''
-        Return the slice as a string.
-        '''
+        """Return the slice as a string."""
         assert self.bra >= 0
         assert self.bra <= self.ket
         assert self.ket <= self.limit
@@ -266,9 +238,7 @@ class BaseStemmer:
         return self.current[self.bra:self.ket]
 
     def assign_to(self):
-        '''
-        Return the current string up to the limit.
-        '''
+        """Return the current string up to the limit."""
         return self.current[0:self.limit]
 
     def stemWord(self, word):
