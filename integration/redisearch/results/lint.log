@@ -1,0 +1,699 @@
+src/language.c:7:50: error: code should be clang-formatted [-Wclang-format-violations]
+ * GNU Affero General Public License v3 (AGPLv3).
+                                                 ^
+src/language.c:14:26: error: code should be clang-formatted [-Wclang-format-violations]
+typedef struct langPair_s
+                         ^
+src/language.c:20:29: error: code should be clang-formatted [-Wclang-format-violations]
+langPair_t __langPairs[] = {
+                            ^
+src/language.c:21:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+   ^
+src/language.c:21:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+             ^
+src/language.c:21:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+                                ^
+src/language.c:21:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+                                   ^
+src/language.c:22:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+   ^
+src/language.c:22:16: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+               ^
+src/language.c:22:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+                                  ^
+src/language.c:22:38: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+                                     ^
+src/language.c:23:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+   ^
+src/language.c:23:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+             ^
+src/language.c:23:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+                                ^
+src/language.c:23:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+                                   ^
+src/language.c:24:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+   ^
+src/language.c:24:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+              ^
+src/language.c:24:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+                                 ^
+src/language.c:24:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+                                    ^
+src/language.c:25:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+   ^
+src/language.c:25:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+              ^
+src/language.c:25:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+                                 ^
+src/language.c:25:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+                                    ^
+src/language.c:26:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+   ^
+src/language.c:26:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+             ^
+src/language.c:26:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+                                ^
+src/language.c:26:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+                                   ^
+src/language.c:27:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+   ^
+src/language.c:27:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+            ^
+src/language.c:27:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+                               ^
+src/language.c:27:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+                                  ^
+src/language.c:28:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+   ^
+src/language.c:28:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+              ^
+src/language.c:28:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+                                 ^
+src/language.c:28:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+                                    ^
+src/language.c:29:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+   ^
+src/language.c:29:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+              ^
+src/language.c:29:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+                                 ^
+src/language.c:29:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+                                    ^
+src/language.c:30:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+   ^
+src/language.c:30:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+             ^
+src/language.c:30:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+                                ^
+src/language.c:30:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+                                   ^
+src/language.c:31:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+   ^
+src/language.c:31:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+             ^
+src/language.c:31:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+                                ^
+src/language.c:31:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+                                   ^
+src/language.c:32:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+   ^
+src/language.c:32:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+            ^
+src/language.c:32:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+                               ^
+src/language.c:32:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+                                  ^
+src/language.c:33:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+   ^
+src/language.c:33:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+            ^
+src/language.c:33:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+                               ^
+src/language.c:33:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+                                  ^
+src/language.c:34:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+   ^
+src/language.c:34:17: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+                ^
+src/language.c:34:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+                                   ^
+src/language.c:34:39: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+                                      ^
+src/language.c:35:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "indonesian", RS_LANG_INDONESIAN },
+   ^
+src/language.c:35:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "indonesian", RS_LANG_INDONESIAN },
+                                    ^
+src/language.c:35:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { "indonesian", RS_LANG_INDONESIAN },
+                                       ^
+src/language.c:36:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+   ^
+src/language.c:36:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+            ^
+src/language.c:36:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+                               ^
+src/language.c:36:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+                                  ^
+src/language.c:37:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+   ^
+src/language.c:37:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+              ^
+src/language.c:37:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+                                 ^
+src/language.c:37:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+                                    ^
+src/language.c:38:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "korean",    RS_LANG_KOREAN },
+   ^
+src/language.c:38:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "korean",    RS_LANG_KOREAN },
+             ^
+src/language.c:38:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "korean",    RS_LANG_KOREAN },
+                               ^
+src/language.c:38:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "korean",    RS_LANG_KOREAN },
+                                  ^
+src/language.c:39:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "lithuanian", RS_LANG_LITHUANIAN },
+   ^
+src/language.c:39:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "lithuanian", RS_LANG_LITHUANIAN },
+                                    ^
+src/language.c:39:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { "lithuanian", RS_LANG_LITHUANIAN },
+                                       ^
+src/language.c:40:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+   ^
+src/language.c:40:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+            ^
+src/language.c:40:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+                               ^
+src/language.c:40:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+                                  ^
+src/language.c:41:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+   ^
+src/language.c:41:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+             ^
+src/language.c:41:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+                                ^
+src/language.c:41:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+                                   ^
+src/language.c:42:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+   ^
+src/language.c:42:17: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+                ^
+src/language.c:42:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+                                   ^
+src/language.c:42:39: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+                                      ^
+src/language.c:43:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "portuguese", RS_LANG_PORTUGUESE },
+   ^
+src/language.c:43:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "portuguese", RS_LANG_PORTUGUESE },
+                                    ^
+src/language.c:43:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { "portuguese", RS_LANG_PORTUGUESE },
+                                       ^
+src/language.c:44:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+   ^
+src/language.c:44:16: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+               ^
+src/language.c:44:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+                                  ^
+src/language.c:44:38: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+                                     ^
+src/language.c:45:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+   ^
+src/language.c:45:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+              ^
+src/language.c:45:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+                                 ^
+src/language.c:45:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+                                    ^
+src/language.c:46:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+   ^
+src/language.c:46:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+              ^
+src/language.c:46:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+                                 ^
+src/language.c:46:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+                                    ^
+src/language.c:47:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+   ^
+src/language.c:47:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+              ^
+src/language.c:47:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+                                 ^
+src/language.c:47:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+                                    ^
+src/language.c:48:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+   ^
+src/language.c:48:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+              ^
+src/language.c:48:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+                                 ^
+src/language.c:48:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+                                    ^
+src/language.c:49:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+   ^
+src/language.c:49:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+              ^
+src/language.c:49:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+                                 ^
+src/language.c:49:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+                                    ^
+src/language.c:50:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+   ^
+src/language.c:50:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+            ^
+src/language.c:50:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+                               ^
+src/language.c:50:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+                                  ^
+src/language.c:51:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+   ^
+src/language.c:51:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+              ^
+src/language.c:51:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+                                 ^
+src/language.c:51:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+                                    ^
+src/language.c:52:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+   ^
+src/language.c:52:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+              ^
+src/language.c:52:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+                                 ^
+src/language.c:52:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+                                    ^
+src/language.c:53:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+   ^
+src/language.c:53:10: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+         ^
+src/language.c:53:38: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+                                     ^
+src/language.c:53:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+                                       ^
+src/language.c:59:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARABIC:      ret = "arabic";     break;
+        ^
+src/language.c:59:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARABIC:      ret = "arabic";     break;
+                         ^
+src/language.c:59:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARABIC:      ret = "arabic";     break;
+                                              ^
+src/language.c:60:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARMENIAN:    ret = "armenian";   break;
+        ^
+src/language.c:60:28: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARMENIAN:    ret = "armenian";   break;
+                           ^
+src/language.c:60:49: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARMENIAN:    ret = "armenian";   break;
+                                                ^
+src/language.c:61:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_BASQUE:      ret = "basque";     break;
+        ^
+src/language.c:61:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_BASQUE:      ret = "basque";     break;
+                         ^
+src/language.c:61:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_BASQUE:      ret = "basque";     break;
+                                              ^
+src/language.c:62:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CATALAN:     ret = "catalan";    break;
+        ^
+src/language.c:62:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CATALAN:     ret = "catalan";    break;
+                          ^
+src/language.c:62:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CATALAN:     ret = "catalan";    break;
+                                               ^
+src/language.c:63:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CHINESE:     ret = "chinese";    break;
+        ^
+src/language.c:63:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CHINESE:     ret = "chinese";    break;
+                          ^
+src/language.c:63:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CHINESE:     ret = "chinese";    break;
+                                               ^
+src/language.c:64:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DANISH:      ret = "danish";     break;
+        ^
+src/language.c:64:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DANISH:      ret = "danish";     break;
+                         ^
+src/language.c:64:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DANISH:      ret = "danish";     break;
+                                              ^
+src/language.c:65:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DUTCH:       ret = "dutch";      break;
+        ^
+src/language.c:65:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DUTCH:       ret = "dutch";      break;
+                        ^
+src/language.c:65:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DUTCH:       ret = "dutch";      break;
+                                             ^
+src/language.c:66:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ENGLISH:     ret = "english";    break;
+        ^
+src/language.c:66:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ENGLISH:     ret = "english";    break;
+                          ^
+src/language.c:66:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ENGLISH:     ret = "english";    break;
+                                               ^
+src/language.c:67:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FINNISH:     ret = "finnish";    break;
+        ^
+src/language.c:67:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FINNISH:     ret = "finnish";    break;
+                          ^
+src/language.c:67:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FINNISH:     ret = "finnish";    break;
+                                               ^
+src/language.c:68:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FRENCH:      ret = "french";     break;
+        ^
+src/language.c:68:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FRENCH:      ret = "french";     break;
+                         ^
+src/language.c:68:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FRENCH:      ret = "french";     break;
+                                              ^
+src/language.c:69:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GERMAN:      ret = "german";     break;
+        ^
+src/language.c:69:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GERMAN:      ret = "german";     break;
+                         ^
+src/language.c:69:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GERMAN:      ret = "german";     break;
+                                              ^
+src/language.c:70:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GREEK:       ret = "greek";      break;
+        ^
+src/language.c:70:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GREEK:       ret = "greek";      break;
+                        ^
+src/language.c:70:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GREEK:       ret = "greek";      break;
+                                             ^
+src/language.c:71:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HINDI:       ret = "hindi";      break;
+        ^
+src/language.c:71:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HINDI:       ret = "hindi";      break;
+                        ^
+src/language.c:71:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HINDI:       ret = "hindi";      break;
+                                             ^
+src/language.c:72:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HUNGARIAN:   ret = "hungarian";  break;
+        ^
+src/language.c:72:29: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HUNGARIAN:   ret = "hungarian";  break;
+                            ^
+src/language.c:72:50: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HUNGARIAN:   ret = "hungarian";  break;
+                                                 ^
+src/language.c:73:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_INDONESIAN:  ret = "indonesian"; break;
+        ^
+src/language.c:73:30: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_INDONESIAN:  ret = "indonesian"; break;
+                             ^
+src/language.c:73:51: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_INDONESIAN:  ret = "indonesian"; break;
+                                                  ^
+src/language.c:74:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_IRISH:       ret = "irish";      break;
+        ^
+src/language.c:74:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_IRISH:       ret = "irish";      break;
+                        ^
+src/language.c:74:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_IRISH:       ret = "irish";      break;
+                                             ^
+src/language.c:75:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ITALIAN:     ret = "italian";    break;
+        ^
+src/language.c:75:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ITALIAN:     ret = "italian";    break;
+                          ^
+src/language.c:75:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ITALIAN:     ret = "italian";    break;
+                                               ^
+src/language.c:76:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_KOREAN:     ret = "korean";     break;
+        ^
+src/language.c:76:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_KOREAN:     ret = "korean";     break;
+                         ^
+src/language.c:76:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_KOREAN:     ret = "korean";     break;
+                                             ^
+src/language.c:77:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_LITHUANIAN:  ret = "lithuanian"; break;
+        ^
+src/language.c:77:30: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_LITHUANIAN:  ret = "lithuanian"; break;
+                             ^
+src/language.c:77:51: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_LITHUANIAN:  ret = "lithuanian"; break;
+                                                  ^
+src/language.c:78:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_MALAY:       ret = "malay";      break;
+        ^
+src/language.c:78:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_MALAY:       ret = "malay";      break;
+                        ^
+src/language.c:78:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_MALAY:       ret = "malay";      break;
+                                             ^
+src/language.c:79:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NEPALI:      ret = "nepali";     break;
+        ^
+src/language.c:79:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NEPALI:      ret = "nepali";     break;
+                         ^
+src/language.c:79:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NEPALI:      ret = "nepali";     break;
+                                              ^
+src/language.c:80:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NORWEGIAN:   ret = "norwegian";  break;
+        ^
+src/language.c:80:29: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NORWEGIAN:   ret = "norwegian";  break;
+                            ^
+src/language.c:80:50: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NORWEGIAN:   ret = "norwegian";  break;
+                                                 ^
+src/language.c:81:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_PORTUGUESE:  ret = "portuguese"; break;
+        ^
+src/language.c:81:30: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_PORTUGUESE:  ret = "portuguese"; break;
+                             ^
+src/language.c:81:51: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_PORTUGUESE:  ret = "portuguese"; break;
+                                                  ^
+src/language.c:82:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ROMANIAN:    ret = "romanian";   break;
+        ^
+src/language.c:82:28: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ROMANIAN:    ret = "romanian";   break;
+                           ^
+src/language.c:82:49: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ROMANIAN:    ret = "romanian";   break;
+                                                ^
+src/language.c:83:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_RUSSIAN:     ret = "russian";    break;
+        ^
+src/language.c:83:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_RUSSIAN:     ret = "russian";    break;
+                          ^
+src/language.c:83:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_RUSSIAN:     ret = "russian";    break;
+                                               ^
+src/language.c:84:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SERBIAN:     ret = "serbian";    break;
+        ^
+src/language.c:84:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SERBIAN:     ret = "serbian";    break;
+                          ^
+src/language.c:84:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SERBIAN:     ret = "serbian";    break;
+                                               ^
+src/language.c:85:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SPANISH:     ret = "spanish";    break;
+        ^
+src/language.c:85:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SPANISH:     ret = "spanish";    break;
+                          ^
+src/language.c:85:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SPANISH:     ret = "spanish";    break;
+                                               ^
+src/language.c:86:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SWEDISH:     ret = "swedish";    break;
+        ^
+src/language.c:86:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SWEDISH:     ret = "swedish";    break;
+                          ^
+src/language.c:86:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SWEDISH:     ret = "swedish";    break;
+                                               ^
+src/language.c:87:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAGALOG:     ret = "tagalog";    break;
+        ^
+src/language.c:87:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAGALOG:     ret = "tagalog";    break;
+                          ^
+src/language.c:87:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAGALOG:     ret = "tagalog";    break;
+                                               ^
+src/language.c:88:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAMIL:       ret = "tamil";      break;
+        ^
+src/language.c:88:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAMIL:       ret = "tamil";      break;
+                        ^
+src/language.c:88:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAMIL:       ret = "tamil";      break;
+                                             ^
+src/language.c:89:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TURKISH:     ret = "turkish";    break;
+        ^
+src/language.c:89:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TURKISH:     ret = "turkish";    break;
+                          ^
+src/language.c:89:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TURKISH:     ret = "turkish";    break;
+                                               ^
+src/language.c:90:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_YIDDISH:     ret = "yiddish";    break;
+        ^
+src/language.c:90:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_YIDDISH:     ret = "yiddish";    break;
+                          ^
+src/language.c:90:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_YIDDISH:     ret = "yiddish";    break;
+                                               ^
+src/language.c:91:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_UNSUPPORTED:
+        ^
+src/language.c:92:13: error: code should be clang-formatted [-Wclang-format-violations]
+    default: break;
+            ^
+src/language.c:107:24: error: code should be clang-formatted [-Wclang-format-violations]
+  if (language == NULL)
+                       ^
+src/language.h:7:50: error: code should be clang-formatted [-Wclang-format-violations]
+ * GNU Affero General Public License v3 (AGPLv3).
+                                                 ^
+src/language.h:50:17: error: code should be clang-formatted [-Wclang-format-violations]
+  RS_LANG_UNSET, // The user did not set the language for FT.SEARCH, use the index language
+                ^

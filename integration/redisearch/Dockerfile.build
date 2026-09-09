@@ -1,0 +1,9 @@
+FROM ubuntu:24.04@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    build-essential clang libclang-dev clang-format cmake git curl wget ca-certificates \
+    libssl-dev python3 python3-venv python3-dev rsync unzip lcov gdb tcl \
+    && rm -rf /var/lib/apt/lists/*
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o /tmp/rustup-init.sh \
+    && sh /tmp/rustup-init.sh -y --profile minimal --default-toolchain 1.94.0
+ENV PATH="/root/.cargo/bin:/root/.local/bin:${PATH}"
+WORKDIR /work

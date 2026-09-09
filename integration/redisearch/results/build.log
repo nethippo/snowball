@@ -1,0 +1,2282 @@
+==> Building main Redis (src/)
+make[1]: Entering directory '/work/src'
+/bin/sh: 1: pkg-config: not found
+/bin/sh: 1: pkg-config: not found
+/bin/sh: 1: pkg-config: not found
+    [34mCC[0m [33mMakefile.dep[0m
+/bin/sh: 1: pkg-config: not found
+/bin/sh: 1: pkg-config: not found
+/bin/sh: 1: pkg-config: not found
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-rdb redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html Makefile.dep *.so
+rm -f threads_mngr.d memory_prefetch.d adlist.d quicklist.d ae.d anet.d dict.d ebuckets.d eventnotifier.d iothread.d mstr.d entry.d kvstore.d fwtree.d estore.d server.d sds.d zmalloc.d lzf_c.d lzf_d.d pqsort.d zipmap.d sha1.d ziplist.d release.d networking.d util.d object.d db.d replication.d rdb.d t_string.d t_list.d t_set.d t_zset.d t_hash.d t_array.d sparsearray.d config.d aof.d pubsub.d multi.d debug.d sort.d intset.d syncio.d cluster.d cluster_asm.d cluster_legacy.d cluster_slot_stats.d crc16.d endianconv.d slowlog.d eval.d bio.d rio.d rand.d memtest.d syscheck.d crcspeed.d crccombine.d crc64.d bitops.d sentinel.d notify.d setproctitle.d blocked.d hyperloglog.d latency.d sparkline.d redis-check-rdb.d redis-check-aof.d geo.d lazyfree.d module.d evict.d expire.d geohash.d geohash_helper.d childinfo.d defrag.d siphash.d rax.d t_stream.d listpack.d localtime.d lolwut.d lolwut5.d lolwut6.d lolwut8.d acl.d tracking.d socket.d tls.d sha256.d timeout.d setcpuaffinity.d monotonic.d mt19937-64.d resp_parser.d call_reply.d script_lua.d script.d functions.d function_lua.d commands.d strl.d connection.d unix.d logreqres.d keymeta.d chk.d hotkeys.d gcra.d vector.d fast_float_strtod.d client_comp.d hnsw.d vset.d vset_config.d anet.d adlist.d dict.d redis-cli.d zmalloc.d release.d ae.d redisassert.d crcspeed.d crccombine.d crc64.d siphash.d crc16.d monotonic.d cli_common.d mt19937-64.d strl.d cli_commands.d ae.d anet.d redis-benchmark.d adlist.d dict.d zmalloc.d redisassert.d release.d crcspeed.d crccombine.d crc64.d siphash.d crc16.d monotonic.d cli_common.d mt19937-64.d strl.d
+(cd ../tests/modules && make clean)
+make[2]: Entering directory '/work/tests/modules'
+rm -f commandfilter.so basics.so testrdb.so fork.so infotest.so propagate.so misc.so hooks.so blockonkeys.so blockonbackground.so scan.so datatype.so datatype2.so auth.so keyspace_events.so blockedclient.so getkeys.so getchannels.so test_lazyfree.so timer.so defragtest.so keyspecs.so hash.so zset.so stream.so mallocsize.so aclcheck.so list.so subcommands.so reply.so cmdintrospection.so eventloop.so moduleconfigs.so moduleconfigstwo.so publish.so usercall.so postnotifications.so moduleauthtwo.so rdbloadsave.so crash.so internalsecret.so configaccess.so test_keymeta.so keymeta_notify.so postnotifications_perkey_metadata.so atomicslotmigration.so cluster_topology.so commandfilter.xo basics.xo testrdb.xo fork.xo infotest.xo propagate.xo misc.xo hooks.xo blockonkeys.xo blockonbackground.xo scan.xo datatype.xo datatype2.xo auth.xo keyspace_events.xo blockedclient.xo getkeys.xo getchannels.xo test_lazyfree.xo timer.xo defragtest.xo keyspecs.xo hash.xo zset.xo stream.xo mallocsize.xo aclcheck.xo list.xo subcommands.xo reply.xo cmdintrospection.xo eventloop.xo moduleconfigs.xo moduleconfigstwo.xo publish.xo usercall.xo postnotifications.xo moduleauthtwo.xo rdbloadsave.xo crash.xo internalsecret.xo configaccess.xo test_keymeta.xo keymeta_notify.xo postnotifications_perkey_metadata.xo atomicslotmigration.xo cluster_topology.xo
+make[2]: Leaving directory '/work/tests/modules'
+(cd ../deps && make distclean)
+make[2]: Entering directory '/work/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(cd hdr_histogram && make clean) > /dev/null || true
+(cd fpconv && make clean) > /dev/null || true
+(cd tre && make clean) > /dev/null || true
+(cd xxhash && make clean) > /dev/null || true
+(rm -f .make-*)
+make[2]: Leaving directory '/work/deps'
+(cd modules && make clean)
+make[2]: Entering directory '/work/src/modules'
+rm -rf *.xo *.so
+make[2]: Leaving directory '/work/src/modules'
+(cd ../tests/modules && make clean)
+make[2]: Entering directory '/work/tests/modules'
+rm -f commandfilter.so basics.so testrdb.so fork.so infotest.so propagate.so misc.so hooks.so blockonkeys.so blockonbackground.so scan.so datatype.so datatype2.so auth.so keyspace_events.so blockedclient.so getkeys.so getchannels.so test_lazyfree.so timer.so defragtest.so keyspecs.so hash.so zset.so stream.so mallocsize.so aclcheck.so list.so subcommands.so reply.so cmdintrospection.so eventloop.so moduleconfigs.so moduleconfigstwo.so publish.so usercall.so postnotifications.so moduleauthtwo.so rdbloadsave.so crash.so internalsecret.so configaccess.so test_keymeta.so keymeta_notify.so postnotifications_perkey_metadata.so atomicslotmigration.so cluster_topology.so commandfilter.xo basics.xo testrdb.xo fork.xo infotest.xo propagate.xo misc.xo hooks.xo blockonkeys.xo blockonbackground.xo scan.xo datatype.xo datatype2.xo auth.xo keyspace_events.xo blockedclient.xo getkeys.xo getchannels.xo test_lazyfree.xo timer.xo defragtest.xo keyspecs.xo hash.xo zset.xo stream.xo mallocsize.xo aclcheck.xo list.xo subcommands.xo reply.xo cmdintrospection.xo eventloop.xo moduleconfigs.xo moduleconfigstwo.xo publish.xo usercall.xo postnotifications.xo moduleauthtwo.xo rdbloadsave.xo crash.xo internalsecret.xo configaccess.xo test_keymeta.xo keymeta_notify.xo postnotifications_perkey_metadata.xo atomicslotmigration.xo cluster_topology.xo
+make[2]: Leaving directory '/work/tests/modules'
+(rm -f .make-*)
+echo STD=-pedantic -DREDIS_STATIC='' -std=gnu11 >> .make-settings
+echo WARN=-Wall -W -Wno-missing-field-initializers -Werror=deprecated-declarations -Wstrict-prototypes >> .make-settings
+echo OPT=-O3 -flto=auto -ffat-lto-objects -fno-omit-frame-pointer >> .make-settings
+echo MALLOC=jemalloc >> .make-settings
+echo BUILD_TLS= >> .make-settings
+echo BUILD_COMPRESSION= >> .make-settings
+echo USE_SYSTEMD= >> .make-settings
+echo CFLAGS=-funwind-tables >> .make-settings
+echo LDFLAGS= >> .make-settings
+echo REDIS_CFLAGS= >> .make-settings
+echo REDIS_LDFLAGS= >> .make-settings
+echo PREV_FINAL_CFLAGS=-pedantic -DREDIS_STATIC='' -std=gnu11 -Wall -W -Wno-missing-field-initializers -Werror=deprecated-declarations -Wstrict-prototypes -O3 -flto=auto -ffat-lto-objects -fno-omit-frame-pointer -g -ggdb -funwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -I../deps/hdr_histogram -I../deps/fpconv -I../deps/xxhash -DUSE_JEMALLOC -I../deps/jemalloc/include -DINCLUDE_VEC_SETS=1 >> .make-settings
+echo PREV_FINAL_LDFLAGS= -O3 -flto=auto -ffat-lto-objects -fno-omit-frame-pointer  -g -ggdb -rdynamic >> .make-settings
+(cd ../deps && make hiredis linenoise lua hdr_histogram fpconv xxhash tre jemalloc ENABLE_LTO="-flto=auto -ffat-lto-objects")
+make[2]: Entering directory '/work/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(cd hdr_histogram && make clean) > /dev/null || true
+(cd fpconv && make clean) > /dev/null || true
+(cd tre && make clean) > /dev/null || true
+(cd xxhash && make clean) > /dev/null || true
+(rm -f .make-*)
+(echo "" > .make-cflags)
+(echo "" > .make-ldflags)
+[32;1mMAKE[0m [37;1mhiredis[0m
+cd hiredis && make static  HIREDIS_CFLAGS="" HIREDIS_LDFLAGS=""
+make[3]: Entering directory '/work/deps/hiredis'
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic alloc.c
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic net.c
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic hiredis.c
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic sds.c
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic async.c
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic read.c
+cc -std=c99 -c -O3 -fPIC   -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb   -pedantic sockcompat.c
+ar rcs libhiredis.a alloc.o net.o hiredis.o sds.o async.o read.o sockcompat.o
+make[3]: Leaving directory '/work/deps/hiredis'
+[32;1mMAKE[0m [37;1mlinenoise[0m
+cd linenoise && make CFLAGS="" LDFLAGS=""
+make[3]: Entering directory '/work/deps/linenoise'
+cc  -Wall -Os -g  -c linenoise.c
+make[3]: Leaving directory '/work/deps/linenoise'
+[32;1mMAKE[0m [37;1mlua[0m
+cd lua/src && make all CFLAGS="-Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2 " MYLDFLAGS="" AR="ar rc"
+make[3]: Entering directory '/work/deps/lua/src'
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lapi.o lapi.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lcode.o lcode.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldebug.o ldebug.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldo.o ldo.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldump.o ldump.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lfunc.o lfunc.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lgc.o lgc.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o llex.o llex.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lmem.o lmem.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lobject.o lobject.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lopcodes.o lopcodes.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lparser.o lparser.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lstate.o lstate.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lstring.o lstring.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ltable.o ltable.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ltm.o ltm.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lundump.o lundump.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lvm.o lvm.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lzio.o lzio.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o strbuf.o strbuf.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o fpconv.o fpconv.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lauxlib.o lauxlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lbaselib.o lbaselib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ldblib.o ldblib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o liolib.o liolib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lmathlib.o lmathlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o loslib.o loslib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o ltablib.o ltablib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lstrlib.o lstrlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o loadlib.o loadlib.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o linit.o linit.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_cjson.o lua_cjson.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_struct.o lua_struct.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_cmsgpack.o lua_cmsgpack.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua_bit.o lua_bit.c
+ar rc liblua.a lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o strbuf.o fpconv.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua_cjson.o lua_struct.o lua_cmsgpack.o lua_bit.o	# DLL needs all object files
+ranlib liblua.a
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o lua.o lua.c
+cc -o lua  lua.o liblua.a -lm 
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o luac.o luac.c
+cc -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -DLUA_USE_MKSTEMP  -O2    -c -o print.o print.c
+cc -o luac  luac.o print.o liblua.a -lm 
+make[3]: Leaving directory '/work/deps/lua/src'
+[32;1mMAKE[0m [37;1mhdr_histogram[0m
+cd hdr_histogram && make CFLAGS="" LDFLAGS=""
+make[3]: Entering directory '/work/deps/hdr_histogram'
+cc -std=c99 -Wall -Os -g  -DHDR_MALLOC_INCLUDE=\"hdr_redis_malloc.h\" -c  hdr_histogram.c 
+ar rcs libhdrhistogram.a hdr_histogram.o
+make[3]: Leaving directory '/work/deps/hdr_histogram'
+[32;1mMAKE[0m [37;1mfpconv[0m
+cd fpconv && make CFLAGS="" LDFLAGS=""
+make[3]: Entering directory '/work/deps/fpconv'
+cc  -Wall -Os -g  -c  fpconv_dtoa.c 
+ar rcs libfpconv.a fpconv_dtoa.o
+make[3]: Leaving directory '/work/deps/fpconv'
+[32;1mMAKE[0m [37;1mxxhash[0m
+cd xxhash && make lib CFLAGS="-fPIC " LDFLAGS=""
+make[3]: Entering directory '/work/deps/xxhash'
+CC cachedObjs/8b127686fdf2437aa485539695352f98/xxhash.o
+AR cachedObjs/8b127686fdf2437aa485539695352f98/libxxhash.a
+CC cachedObjs/7ec56b87b019ae6787084253027bf7f8/xxhash.o
+LD cachedObjs/7ec56b87b019ae6787084253027bf7f8/libxxhash.so.0.8.3
+make[3]: Leaving directory '/work/deps/xxhash'
+[32;1mMAKE[0m [37;1mtre[0m
+cd tre && make CFLAGS="" LDFLAGS=""
+make[3]: Entering directory '/work/deps/tre'
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/regcomp.o lib/regcomp.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/regerror.o lib/regerror.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/regexec.o lib/regexec.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-ast.o lib/tre-ast.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-compile.o lib/tre-compile.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-filter.o lib/tre-filter.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-match-backtrack.o lib/tre-match-backtrack.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-match-parallel.o lib/tre-match-parallel.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-mem.o lib/tre-mem.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-parse.o lib/tre-parse.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/tre-stack.o lib/tre-stack.c
+cc -std=c99 -Wall -Os -g  -DTRE_REGEX_T_FIELD=value -Ilocal_includes -Ilib -c -o lib/xmalloc.o lib/xmalloc.c
+ar rcs libtre.a lib/regcomp.o lib/regerror.o lib/regexec.o lib/tre-ast.o lib/tre-compile.o lib/tre-filter.o lib/tre-match-backtrack.o lib/tre-match-parallel.o lib/tre-mem.o lib/tre-parse.o lib/tre-stack.o lib/xmalloc.o
+make[3]: Leaving directory '/work/deps/tre'
+[32;1mMAKE[0m [37;1mjemalloc[0m
+cd jemalloc && ./configure --disable-cxx --with-version=5.3.0-0-g0 --with-lg-quantum=3 --disable-cache-oblivious --with-jemalloc-prefix=je_ CFLAGS="-flto=auto -ffat-lto-objects " LDFLAGS="-flto=auto -ffat-lto-objects " 
+checking for xsltproc... false
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether compiler is cray... no
+checking whether compiler supports -std=gnu11... yes
+checking whether compiler supports -Werror=unknown-warning-option... no
+checking whether compiler supports -Wall... yes
+checking whether compiler supports -Wextra... yes
+checking whether compiler supports -Wshorten-64-to-32... no
+checking whether compiler supports -Wsign-compare... yes
+checking whether compiler supports -Wundef... yes
+checking whether compiler supports -Wno-format-zero-length... yes
+checking whether compiler supports -Wpointer-arith... yes
+checking whether compiler supports -Wno-missing-braces... yes
+checking whether compiler supports -Wno-missing-field-initializers... yes
+checking whether compiler supports -Wno-missing-attributes... yes
+checking whether compiler supports -pipe... yes
+checking whether compiler supports -g3... yes
+checking how to run the C preprocessor... gcc -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of intmax_t... 8
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking whether isb instruction is compilable... yes
+checking number of significant virtual address bits... 48
+checking for ar... ar
+checking for nm... nm
+checking for gawk... no
+checking for mawk... mawk
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... no
+checking for library containing log... -lm
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -fvisibility=hidden... no
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether tls_model attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether alloc_size attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether format(gnu_printf, ...) attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether format(printf, ...) attribute is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether format(printf, ...) attribute is compilable... yes
+checking whether compiler supports -Wimplicit-fallthrough... yes
+checking whether fallthrough attribute is compilable... yes
+checking whether compiler supports -Wimplicit-fallthrough... yes
+checking whether compiler supports -Wimplicit-fallthrough... no
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether cold attribute is compilable... yes
+checking whether vm_make_tag is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ld... /usr/bin/ld
+checking for autoconf... false
+checking for memalign... yes
+checking for valloc... yes
+checking for malloc_size... no
+checking whether compiler supports -O3... yes
+checking whether compiler supports -O3... no
+checking whether compiler supports -funroll-loops... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether utrace(2) with label is compilable... no
+checking whether a program using __builtin_unreachable is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking whether a program using __builtin_popcountl is compilable... yes
+checking LG_PAGE... 12
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for dlfcn.h... yes
+checking for dlsym... yes
+checking whether pthread_atfork(3) is compilable... yes
+checking whether pthread_setname_np(3) is compilable... yes
+checking whether pthread_getname_np(3) is compilable... yes
+checking whether pthread_get_name_np(3) is compilable... no
+checking for library containing clock_gettime... none required
+checking whether clock_gettime(CLOCK_MONOTONIC_COARSE, ...) is compilable... yes
+checking whether clock_gettime(CLOCK_MONOTONIC, ...) is compilable... yes
+checking whether mach_absolute_time() is compilable... no
+checking whether clock_gettime(CLOCK_REALTIME, ...) is compilable... yes
+checking whether compiler supports -Werror... yes
+checking whether syscall(2) is compilable... yes
+checking for secure_getenv... yes
+checking for sched_getcpu... yes
+checking for sched_setaffinity... yes
+checking for issetugid... no
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for memcntl... no
+checking for TLS... yes
+checking whether C11 atomics is compilable... yes
+checking whether GCC __atomic atomics is compilable... yes
+checking whether GCC 8-bit __atomic atomics is compilable... yes
+checking whether GCC __sync atomics is compilable... yes
+checking whether GCC 8-bit __sync atomics is compilable... yes
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether madvise(..., MADV_FREE) is compilable... yes
+checking whether madvise(..., MADV_DONTNEED) is compilable... yes
+checking whether madvise(..., MADV_DO[NT]DUMP) is compilable... yes
+checking whether madvise(..., MADV_[NO]HUGEPAGE) is compilable... yes
+checking whether madvise(..., MADV_[NO]CORE) is compilable... no
+checking whether mprotect(2) is compilable... yes
+checking for __builtin_clz... yes
+checking whether Darwin os_unfair_lock_*() is compilable... no
+checking whether glibc malloc hook is compilable... no
+checking whether glibc memalign hook is compilable... no
+checking whether pthreads adaptive mutexes is compilable... yes
+checking whether compiler supports -D_GNU_SOURCE... yes
+checking whether compiler supports -Werror... yes
+checking whether compiler supports -herror_on_warning... yes
+checking whether strerror_r returns char with gnu source is compilable... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating jemalloc.pc
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_preamble.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc-config
+config.status: creating bin/jemalloc.sh
+config.status: creating bin/jeprof
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/private_symbols.awk commands
+config.status: executing include/jemalloc/internal/private_symbols_jet.awk commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 5.3.0-0-g0
+library revision   : 2
+
+CONFIG             : --disable-cxx --with-version=5.3.0-0-g0 --with-lg-quantum=3 --disable-cache-oblivious --with-jemalloc-prefix=je_ 'CFLAGS=-flto=auto -ffat-lto-objects ' 'LDFLAGS=-flto=auto -ffat-lto-objects '
+CC                 : gcc
+CONFIGURE_CFLAGS   : -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops
+SPECIFIED_CFLAGS   : -flto=auto -ffat-lto-objects 
+EXTRA_CFLAGS       : 
+CPPFLAGS           : -D_GNU_SOURCE -D_REENTRANT
+CXX                : 
+CONFIGURE_CXXFLAGS : 
+SPECIFIED_CXXFLAGS : 
+EXTRA_CXXFLAGS     : 
+LDFLAGS            : -flto=auto -ffat-lto-objects 
+EXTRA_LDFLAGS      : 
+DSO_LDFLAGS        : -shared -Wl,-soname,$(@F)
+LIBS               : -lm  -pthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : false
+XSLROOT            : 
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+DATADIR            : /usr/local/share
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+MANDIR             : /usr/local/share/man
+
+srcroot            : 
+abs_srcroot        : /work/deps/jemalloc/
+objroot            : 
+abs_objroot        : /work/deps/jemalloc/
+
+JEMALLOC_PREFIX    : je_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_
+install_suffix     : 
+malloc_conf        : 
+documentation      : 1
+shared libs        : 1
+static libs        : 1
+autogen            : 0
+debug              : 0
+stats              : 1
+experimental_smallocx : 0
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+fill               : 1
+utrace             : 0
+xmalloc            : 0
+log                : 0
+lazy_lock          : 0
+cache-oblivious    : 0
+cxx                : 0
+===============================================================================
+cd jemalloc && make lib/libjemalloc.a
+make[3]: Entering directory '/work/deps/jemalloc'
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/jemalloc.sym.o src/jemalloc.c
+nm -a src/jemalloc.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/jemalloc.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/arena.sym.o src/arena.c
+nm -a src/arena.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/arena.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/background_thread.sym.o src/background_thread.c
+nm -a src/background_thread.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/background_thread.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/base.sym.o src/base.c
+nm -a src/base.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/base.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bin.sym.o src/bin.c
+nm -a src/bin.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/bin.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bin_info.sym.o src/bin_info.c
+nm -a src/bin_info.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/bin_info.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/bitmap.sym.o src/bitmap.c
+nm -a src/bitmap.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/bitmap.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/buf_writer.sym.o src/buf_writer.c
+nm -a src/buf_writer.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/buf_writer.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/cache_bin.sym.o src/cache_bin.c
+nm -a src/cache_bin.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/cache_bin.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ckh.sym.o src/ckh.c
+nm -a src/ckh.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/ckh.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/counter.sym.o src/counter.c
+nm -a src/counter.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/counter.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ctl.sym.o src/ctl.c
+nm -a src/ctl.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/ctl.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/decay.sym.o src/decay.c
+nm -a src/decay.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/decay.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/div.sym.o src/div.c
+nm -a src/div.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/div.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ecache.sym.o src/ecache.c
+nm -a src/ecache.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/ecache.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/edata.sym.o src/edata.c
+nm -a src/edata.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/edata.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/edata_cache.sym.o src/edata_cache.c
+nm -a src/edata_cache.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/edata_cache.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ehooks.sym.o src/ehooks.c
+nm -a src/ehooks.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/ehooks.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/emap.sym.o src/emap.c
+nm -a src/emap.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/emap.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/eset.sym.o src/eset.c
+nm -a src/eset.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/eset.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/exp_grow.sym.o src/exp_grow.c
+nm -a src/exp_grow.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/exp_grow.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent.sym.o src/extent.c
+nm -a src/extent.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/extent.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent_dss.sym.o src/extent_dss.c
+nm -a src/extent_dss.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/extent_dss.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/extent_mmap.sym.o src/extent_mmap.c
+nm -a src/extent_mmap.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/extent_mmap.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/fxp.sym.o src/fxp.c
+nm -a src/fxp.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/fxp.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/san.sym.o src/san.c
+nm -a src/san.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/san.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/san_bump.sym.o src/san_bump.c
+nm -a src/san_bump.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/san_bump.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hook.sym.o src/hook.c
+nm -a src/hook.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/hook.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hpa.sym.o src/hpa.c
+nm -a src/hpa.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/hpa.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hpa_hooks.sym.o src/hpa_hooks.c
+nm -a src/hpa_hooks.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/hpa_hooks.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/hpdata.sym.o src/hpdata.c
+nm -a src/hpdata.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/hpdata.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/inspect.sym.o src/inspect.c
+nm -a src/inspect.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/inspect.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/large.sym.o src/large.c
+nm -a src/large.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/large.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/log.sym.o src/log.c
+nm -a src/log.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/log.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/malloc_io.sym.o src/malloc_io.c
+nm -a src/malloc_io.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/malloc_io.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/mutex.sym.o src/mutex.c
+nm -a src/mutex.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/mutex.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/nstime.sym.o src/nstime.c
+nm -a src/nstime.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/nstime.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pa.sym.o src/pa.c
+nm -a src/pa.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/pa.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pa_extra.sym.o src/pa_extra.c
+nm -a src/pa_extra.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/pa_extra.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pai.sym.o src/pai.c
+nm -a src/pai.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/pai.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pac.sym.o src/pac.c
+nm -a src/pac.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/pac.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/pages.sym.o src/pages.c
+nm -a src/pages.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/pages.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/peak_event.sym.o src/peak_event.c
+nm -a src/peak_event.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/peak_event.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof.sym.o src/prof.c
+nm -a src/prof.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/prof.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof_data.sym.o src/prof_data.c
+nm -a src/prof_data.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/prof_data.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof_log.sym.o src/prof_log.c
+nm -a src/prof_log.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/prof_log.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof_recent.sym.o src/prof_recent.c
+nm -a src/prof_recent.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/prof_recent.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof_stats.sym.o src/prof_stats.c
+nm -a src/prof_stats.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/prof_stats.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/prof_sys.sym.o src/prof_sys.c
+nm -a src/prof_sys.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/prof_sys.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/psset.sym.o src/psset.c
+nm -a src/psset.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/psset.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/rtree.sym.o src/rtree.c
+nm -a src/rtree.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/rtree.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/safety_check.sym.o src/safety_check.c
+nm -a src/safety_check.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/safety_check.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sc.sym.o src/sc.c
+nm -a src/sc.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/sc.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sec.sym.o src/sec.c
+nm -a src/sec.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/sec.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/stats.sym.o src/stats.c
+nm -a src/stats.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/stats.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/sz.sym.o src/sz.c
+nm -a src/sz.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/sz.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/tcache.sym.o src/tcache.c
+nm -a src/tcache.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/tcache.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/test_hooks.sym.o src/test_hooks.c
+nm -a src/test_hooks.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/test_hooks.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/thread_event.sym.o src/thread_event.c
+nm -a src/thread_event.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/thread_event.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/ticker.sym.o src/ticker.c
+nm -a src/ticker.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/ticker.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/tsd.sym.o src/tsd.c
+nm -a src/tsd.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/tsd.sym
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -DJEMALLOC_NO_PRIVATE_NAMESPACE -o src/witness.sym.o src/witness.c
+nm -a src/witness.sym.o | mawk -f include/jemalloc/internal/private_symbols.awk > src/witness.sym
+/bin/sh include/jemalloc/internal/private_namespace.sh src/jemalloc.sym src/arena.sym src/background_thread.sym src/base.sym src/bin.sym src/bin_info.sym src/bitmap.sym src/buf_writer.sym src/cache_bin.sym src/ckh.sym src/counter.sym src/ctl.sym src/decay.sym src/div.sym src/ecache.sym src/edata.sym src/edata_cache.sym src/ehooks.sym src/emap.sym src/eset.sym src/exp_grow.sym src/extent.sym src/extent_dss.sym src/extent_mmap.sym src/fxp.sym src/san.sym src/san_bump.sym src/hook.sym src/hpa.sym src/hpa_hooks.sym src/hpdata.sym src/inspect.sym src/large.sym src/log.sym src/malloc_io.sym src/mutex.sym src/nstime.sym src/pa.sym src/pa_extra.sym src/pai.sym src/pac.sym src/pages.sym src/peak_event.sym src/prof.sym src/prof_data.sym src/prof_log.sym src/prof_recent.sym src/prof_stats.sym src/prof_sys.sym src/psset.sym src/rtree.sym src/safety_check.sym src/sc.sym src/sec.sym src/stats.sym src/sz.sym src/tcache.sym src/test_hooks.sym src/thread_event.sym src/ticker.sym src/tsd.sym src/witness.sym > include/jemalloc/internal/private_namespace.gen.h
+cp include/jemalloc/internal/private_namespace.gen.h include/jemalloc/internal/private_namespace.h
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc.o src/jemalloc.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/arena.o src/arena.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/background_thread.o src/background_thread.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/base.o src/base.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bin.o src/bin.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bin_info.o src/bin_info.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bitmap.o src/bitmap.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/buf_writer.o src/buf_writer.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/cache_bin.o src/cache_bin.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ckh.o src/ckh.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/counter.o src/counter.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ctl.o src/ctl.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/decay.o src/decay.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/div.o src/div.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ecache.o src/ecache.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/edata.o src/edata.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/edata_cache.o src/edata_cache.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ehooks.o src/ehooks.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/emap.o src/emap.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/eset.o src/eset.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/exp_grow.o src/exp_grow.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent.o src/extent.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent_dss.o src/extent_dss.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent_mmap.o src/extent_mmap.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/fxp.o src/fxp.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/san.o src/san.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/san_bump.o src/san_bump.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hook.o src/hook.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hpa.o src/hpa.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hpa_hooks.o src/hpa_hooks.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hpdata.o src/hpdata.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/inspect.o src/inspect.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/large.o src/large.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/log.o src/log.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/malloc_io.o src/malloc_io.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex.o src/mutex.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/nstime.o src/nstime.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pa.o src/pa.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pa_extra.o src/pa_extra.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pai.o src/pai.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pac.o src/pac.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/pages.o src/pages.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/peak_event.o src/peak_event.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof.o src/prof.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof_data.o src/prof_data.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof_log.o src/prof_log.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof_recent.o src/prof_recent.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof_stats.o src/prof_stats.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof_sys.o src/prof_sys.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/psset.o src/psset.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/rtree.o src/rtree.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/safety_check.o src/safety_check.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sc.o src/sc.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sec.o src/sec.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/stats.o src/stats.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/sz.o src/sz.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tcache.o src/tcache.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/test_hooks.o src/test_hooks.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/thread_event.o src/thread_event.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ticker.o src/ticker.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tsd.o src/tsd.c
+gcc -std=gnu11 -Wall -Wextra -Wsign-compare -Wundef -Wno-format-zero-length -Wpointer-arith -Wno-missing-braces -Wno-missing-field-initializers -Wno-missing-attributes -pipe -g3 -fvisibility=hidden -Wimplicit-fallthrough -O3 -funroll-loops -flto=auto -ffat-lto-objects -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/witness.o src/witness.c
+ar crs lib/libjemalloc.a src/jemalloc.o src/arena.o src/background_thread.o src/base.o src/bin.o src/bin_info.o src/bitmap.o src/buf_writer.o src/cache_bin.o src/ckh.o src/counter.o src/ctl.o src/decay.o src/div.o src/ecache.o src/edata.o src/edata_cache.o src/ehooks.o src/emap.o src/eset.o src/exp_grow.o src/extent.o src/extent_dss.o src/extent_mmap.o src/fxp.o src/san.o src/san_bump.o src/hook.o src/hpa.o src/hpa_hooks.o src/hpdata.o src/inspect.o src/large.o src/log.o src/malloc_io.o src/mutex.o src/nstime.o src/pa.o src/pa_extra.o src/pai.o src/pac.o src/pages.o src/peak_event.o src/prof.o src/prof_data.o src/prof_log.o src/prof_recent.o src/prof_stats.o src/prof_sys.o src/psset.o src/rtree.o src/safety_check.o src/sc.o src/sec.o src/stats.o src/sz.o src/tcache.o src/test_hooks.o src/thread_event.o src/ticker.o src/tsd.o src/witness.o
+make[3]: Leaving directory '/work/deps/jemalloc'
+make[2]: Leaving directory '/work/deps'
+    [34mCC[0m [33mthreads_mngr.o[0m
+    [34mCC[0m [33mmemory_prefetch.o[0m
+    [34mCC[0m [33madlist.o[0m
+    [34mCC[0m [33mquicklist.o[0m
+    [34mCC[0m [33mae.o[0m
+    [34mCC[0m [33manet.o[0m
+    [34mCC[0m [33mdict.o[0m
+    [34mCC[0m [33mebuckets.o[0m
+    [34mCC[0m [33meventnotifier.o[0m
+    [34mCC[0m [33miothread.o[0m
+    [34mCC[0m [33mmstr.o[0m
+    [34mCC[0m [33mentry.o[0m
+    [34mCC[0m [33mkvstore.o[0m
+    [34mCC[0m [33mfwtree.o[0m
+    [34mCC[0m [33mestore.o[0m
+sed '/Everything below this line/,$d' fmtargs.h > fmtargs.h.tmp
+/usr/bin/python3 ../utils/generate-fmtargs.py >> fmtargs.h.tmp
+mv fmtargs.h.tmp fmtargs.h
+    [34mCC[0m [33mserver.o[0m
+    [34mCC[0m [33msds.o[0m
+    [34mCC[0m [33mzmalloc.o[0m
+    [34mCC[0m [33mlzf_c.o[0m
+    [34mCC[0m [33mlzf_d.o[0m
+    [34mCC[0m [33mpqsort.o[0m
+    [34mCC[0m [33mzipmap.o[0m
+    [34mCC[0m [33msha1.o[0m
+    [34mCC[0m [33mziplist.o[0m
+    [34mCC[0m [33mrelease.o[0m
+    [34mCC[0m [33mnetworking.o[0m
+    [34mCC[0m [33mutil.o[0m
+    [34mCC[0m [33mobject.o[0m
+    [34mCC[0m [33mdb.o[0m
+    [34mCC[0m [33mreplication.o[0m
+    [34mCC[0m [33mrdb.o[0m
+    [34mCC[0m [33mt_string.o[0m
+    [34mCC[0m [33mt_list.o[0m
+    [34mCC[0m [33mt_set.o[0m
+    [34mCC[0m [33mt_zset.o[0m
+    [34mCC[0m [33mt_hash.o[0m
+    [34mCC[0m [33mt_array.o[0m
+    [34mCC[0m [33msparsearray.o[0m
+    [34mCC[0m [33mconfig.o[0m
+    [34mCC[0m [33maof.o[0m
+    [34mCC[0m [33mpubsub.o[0m
+    [34mCC[0m [33mmulti.o[0m
+    [34mCC[0m [33mdebug.o[0m
+    [34mCC[0m [33msort.o[0m
+    [34mCC[0m [33mintset.o[0m
+    [34mCC[0m [33msyncio.o[0m
+    [34mCC[0m [33mcluster.o[0m
+    [34mCC[0m [33mcluster_asm.o[0m
+    [34mCC[0m [33mcluster_legacy.o[0m
+    [34mCC[0m [33mcluster_slot_stats.o[0m
+    [34mCC[0m [33mcrc16.o[0m
+    [34mCC[0m [33mendianconv.o[0m
+    [34mCC[0m [33mslowlog.o[0m
+    [34mCC[0m [33meval.o[0m
+    [34mCC[0m [33mbio.o[0m
+    [34mCC[0m [33mrio.o[0m
+    [34mCC[0m [33mrand.o[0m
+    [34mCC[0m [33mmemtest.o[0m
+    [34mCC[0m [33msyscheck.o[0m
+    [34mCC[0m [33mcrcspeed.o[0m
+    [34mCC[0m [33mcrccombine.o[0m
+    [34mCC[0m [33mcrc64.o[0m
+    [34mCC[0m [33mbitops.o[0m
+    [34mCC[0m [33msentinel.o[0m
+    [34mCC[0m [33mnotify.o[0m
+    [34mCC[0m [33msetproctitle.o[0m
+    [34mCC[0m [33mblocked.o[0m
+    [34mCC[0m [33mhyperloglog.o[0m
+    [34mCC[0m [33mlatency.o[0m
+    [34mCC[0m [33msparkline.o[0m
+    [34mCC[0m [33mredis-check-rdb.o[0m
+    [34mCC[0m [33mredis-check-aof.o[0m
+    [34mCC[0m [33mgeo.o[0m
+    [34mCC[0m [33mlazyfree.o[0m
+    [34mCC[0m [33mmodule.o[0m
+    [34mCC[0m [33mevict.o[0m
+    [34mCC[0m [33mexpire.o[0m
+    [34mCC[0m [33mgeohash.o[0m
+    [34mCC[0m [33mgeohash_helper.o[0m
+    [34mCC[0m [33mchildinfo.o[0m
+    [34mCC[0m [33mdefrag.o[0m
+    [34mCC[0m [33msiphash.o[0m
+    [34mCC[0m [33mrax.o[0m
+    [34mCC[0m [33mt_stream.o[0m
+    [34mCC[0m [33mlistpack.o[0m
+    [34mCC[0m [33mlocaltime.o[0m
+    [34mCC[0m [33mlolwut.o[0m
+    [34mCC[0m [33mlolwut5.o[0m
+    [34mCC[0m [33mlolwut6.o[0m
+    [34mCC[0m [33mlolwut8.o[0m
+    [34mCC[0m [33macl.o[0m
+    [34mCC[0m [33mtracking.o[0m
+    [34mCC[0m [33msocket.o[0m
+    [34mCC[0m [33mtls.o[0m
+    [34mCC[0m [33msha256.o[0m
+    [34mCC[0m [33mtimeout.o[0m
+    [34mCC[0m [33msetcpuaffinity.o[0m
+    [34mCC[0m [33mmonotonic.o[0m
+    [34mCC[0m [33mmt19937-64.o[0m
+    [34mCC[0m [33mresp_parser.o[0m
+    [34mCC[0m [33mcall_reply.o[0m
+    [34mCC[0m [33mscript_lua.o[0m
+    [34mCC[0m [33mscript.o[0m
+    [34mCC[0m [33mfunctions.o[0m
+    [34mCC[0m [33mfunction_lua.o[0m
+    [34mGEN[0m [33mcommands.def[0m
+Processing json files...
+Command SFLUSH is experimental, skipping...
+Linking container command to subcommands...
+Checking all commands...
+Generating commands.def...
+All done, exiting.
+    [34mCC[0m [33mcommands.o[0m
+    [34mCC[0m [33mstrl.o[0m
+    [34mCC[0m [33mconnection.o[0m
+    [34mCC[0m [33munix.o[0m
+    [34mCC[0m [33mlogreqres.o[0m
+    [34mCC[0m [33mkeymeta.o[0m
+    [34mCC[0m [33mchk.o[0m
+    [34mCC[0m [33mhotkeys.o[0m
+    [34mCC[0m [33mgcra.o[0m
+    [34mCC[0m [33mvector.o[0m
+    [34mCC[0m [33mfast_float_strtod.o[0m
+    [34mCC[0m [33mclient_comp.o[0m
+    [34mCC[0m [33mhnsw.o[0m
+    [34mCC[0m [33mvset.o[0m
+    [34mCC[0m [33mvset_config.o[0m
+    [34;1mLINK[0m [37;1mredis-server[0m
+    [34;1mINSTALL[0m [37;1mredis-sentinel[0m
+    [34mCC[0m [33mredis-cli.o[0m
+    [34mCC[0m [33mredisassert.o[0m
+    [34mCC[0m [33mcli_common.o[0m
+    [34mCC[0m [33mcli_commands.o[0m
+    [34;1mLINK[0m [37;1mredis-cli[0m
+    [34mCC[0m [33mredis-benchmark.o[0m
+    [34;1mLINK[0m [37;1mredis-benchmark[0m
+    [34;1mINSTALL[0m [37;1mredis-check-rdb[0m
+    [34;1mINSTALL[0m [37;1mredis-check-aof[0m
+make -C ../tests/modules
+make[2]: Entering directory '/work/tests/modules'
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c commandfilter.c -o commandfilter.xo
+gcc -o commandfilter.so commandfilter.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c basics.c -o basics.xo
+gcc -o basics.so basics.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c testrdb.c -o testrdb.xo
+gcc -o testrdb.so testrdb.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c fork.c -o fork.xo
+gcc -o fork.so fork.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c infotest.c -o infotest.xo
+gcc -o infotest.so infotest.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c propagate.c -o propagate.xo
+gcc -o propagate.so propagate.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c misc.c -o misc.xo
+gcc -o misc.so misc.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c hooks.c -o hooks.xo
+gcc -o hooks.so hooks.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c blockonkeys.c -o blockonkeys.xo
+gcc -o blockonkeys.so blockonkeys.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c blockonbackground.c -o blockonbackground.xo
+gcc -o blockonbackground.so blockonbackground.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c scan.c -o scan.xo
+gcc -o scan.so scan.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c datatype.c -o datatype.xo
+gcc -o datatype.so datatype.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c datatype2.c -o datatype2.xo
+gcc -o datatype2.so datatype2.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c auth.c -o auth.xo
+gcc -o auth.so auth.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c keyspace_events.c -o keyspace_events.xo
+gcc -o keyspace_events.so keyspace_events.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c blockedclient.c -o blockedclient.xo
+gcc -o blockedclient.so blockedclient.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c getkeys.c -o getkeys.xo
+gcc -o getkeys.so getkeys.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c getchannels.c -o getchannels.xo
+gcc -o getchannels.so getchannels.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c test_lazyfree.c -o test_lazyfree.xo
+gcc -o test_lazyfree.so test_lazyfree.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c timer.c -o timer.xo
+gcc -o timer.so timer.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c defragtest.c -o defragtest.xo
+gcc -o defragtest.so defragtest.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c keyspecs.c -o keyspecs.xo
+gcc -o keyspecs.so keyspecs.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c hash.c -o hash.xo
+gcc -o hash.so hash.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c zset.c -o zset.xo
+gcc -o zset.so zset.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c stream.c -o stream.xo
+gcc -o stream.so stream.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c mallocsize.c -o mallocsize.xo
+gcc -o mallocsize.so mallocsize.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c aclcheck.c -o aclcheck.xo
+gcc -o aclcheck.so aclcheck.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c list.c -o list.xo
+gcc -o list.so list.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c subcommands.c -o subcommands.xo
+gcc -o subcommands.so subcommands.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c reply.c -o reply.xo
+gcc -o reply.so reply.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c cmdintrospection.c -o cmdintrospection.xo
+gcc -o cmdintrospection.so cmdintrospection.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c eventloop.c -o eventloop.xo
+gcc -o eventloop.so eventloop.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c moduleconfigs.c -o moduleconfigs.xo
+gcc -o moduleconfigs.so moduleconfigs.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c moduleconfigstwo.c -o moduleconfigstwo.xo
+gcc -o moduleconfigstwo.so moduleconfigstwo.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c publish.c -o publish.xo
+gcc -o publish.so publish.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c usercall.c -o usercall.xo
+gcc -o usercall.so usercall.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c postnotifications.c -o postnotifications.xo
+gcc -o postnotifications.so postnotifications.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c moduleauthtwo.c -o moduleauthtwo.xo
+gcc -o moduleauthtwo.so moduleauthtwo.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c rdbloadsave.c -o rdbloadsave.xo
+gcc -o rdbloadsave.so rdbloadsave.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c crash.c -o crash.xo
+gcc -o crash.so crash.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c internalsecret.c -o internalsecret.xo
+gcc -o internalsecret.so internalsecret.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c configaccess.c -o configaccess.xo
+gcc -o configaccess.so configaccess.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c test_keymeta.c -o test_keymeta.xo
+gcc -o test_keymeta.so test_keymeta.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c keymeta_notify.c -o keymeta_notify.xo
+gcc -o keymeta_notify.so keymeta_notify.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c postnotifications_perkey_metadata.c -o postnotifications_perkey_metadata.xo
+gcc -o postnotifications_perkey_metadata.so postnotifications_perkey_metadata.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c atomicslotmigration.c -o atomicslotmigration.xo
+gcc -o atomicslotmigration.so atomicslotmigration.xo -shared  
+gcc -I../../src  -W -Wall -Wno-missing-field-initializers -fno-common -g -ggdb -std=gnu11 -O2 -fPIC -c cluster_topology.c -o cluster_topology.xo
+gcc -o cluster_topology.so cluster_topology.xo -shared  
+rm auth.xo hooks.xo publish.xo moduleauthtwo.xo aclcheck.xo postnotifications_perkey_metadata.xo internalsecret.xo list.xo hash.xo timer.xo keymeta_notify.xo propagate.xo usercall.xo datatype2.xo getchannels.xo mallocsize.xo crash.xo scan.xo eventloop.xo basics.xo fork.xo cmdintrospection.xo atomicslotmigration.xo misc.xo testrdb.xo blockedclient.xo cluster_topology.xo moduleconfigs.xo rdbloadsave.xo postnotifications.xo defragtest.xo moduleconfigstwo.xo infotest.xo stream.xo keyspace_events.xo test_lazyfree.xo blockonkeys.xo keyspecs.xo commandfilter.xo getkeys.xo test_keymeta.xo zset.xo configaccess.xo reply.xo datatype.xo blockonbackground.xo subcommands.xo
+make[2]: Leaving directory '/work/tests/modules'
+
+Hint: It's a good idea to run 'make test' ;)
+
+make[1]: Leaving directory '/work/src'
+
+==> Building modules (REDIS_SERVER=/work/src/redis-server):
+   redisearch
+
+==> [module] redisearch (modules/redisearch)
+make[1]: Entering directory '/work/modules/redisearch'
+make -C src
+make[2]: Entering directory '/work/modules/redisearch/src'
+Verifying build dependencies...
+
+===== Build Dependencies Checker =====
+
+cmake               [0;32m✓[0m
+make                [0;32m✓[0m
+libssl-dev          [0;32m✓[0m
+cargo               [0;32m✓[0m
+python3             [0;32m✓[0m
+gcc                 [0;32m✓[0m
+g++                 [0;32m✓[0m
+
+[0;32mAll required dependencies are met.[0m
+
+[0;36mTo install or inspect dependencies, check the following script:[0m
+cd .install && ./install_script.sh 
+Building RediSearch...
+Creating compatibility symlink: /work/modules/redisearch/src/bin/linux-arm64v8-release -> /work/modules/redisearch/src/bin/linux-aarch64-release
+Configuring CMake...
+Build directory: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community
+cmake /work/modules/redisearch/src -DCOORD_TYPE=oss -DREDISEARCH_GENERATE_HEADERS=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_SHARED_LIBRARY_SUFFIX=.so -UCMAKE_TOOLCHAIN_FILE -DSVS_SHARED_LIB=OFF -DINLINE_LSE_ATOMICS=OFF -DRUST_PROFILE=release 
+-- OS detected: linux
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+# CMAKE_C_COMPILER_ID: GNU
+-- SAN: 
+-- COV: 
+-- Performing Test HAS_WERROR_DISCARDED_QUALIFIERS
+-- Performing Test HAS_WERROR_DISCARDED_QUALIFIERS - Success
+-- Performing Test HAS_WERROR_IMPLICIT_FUNCTION_DECLARATION
+-- Performing Test HAS_WERROR_IMPLICIT_FUNCTION_DECLARATION - Success
+-- Performing Test HAS_WERROR_INCOMPATIBLE_POINTER_TYPES_DISCARDS_QUALIFIERS
+-- Performing Test HAS_WERROR_INCOMPATIBLE_POINTER_TYPES_DISCARDS_QUALIFIERS - Failed
+-- Performing Test HAS_WERROR_JUMP_MISSES_INIT
+-- Performing Test HAS_WERROR_JUMP_MISSES_INIT - Success
+-- Performing Test HAS_WERROR_SOMETIMES_UNINITIALIZED
+-- Performing Test HAS_WERROR_SOMETIMES_UNINITIALIZED - Failed
+-- Performing Test HAS_WNO_ERROR_DISCARDED_QUALIFIERS
+-- Performing Test HAS_WNO_ERROR_DISCARDED_QUALIFIERS - Success
+-- Performing Test HAS_WNO_ERROR_INCOMPATIBLE_POINTER_TYPES_DISCARDS_QUALIFIERS
+-- Performing Test HAS_WNO_ERROR_INCOMPATIBLE_POINTER_TYPES_DISCARDS_QUALIFIERS - Failed
+Detected version: 1.3.0
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- BOOST_DIR: /work/modules/redisearch/src/.install/boost
+-- BOOST_DIR '/work/modules/redisearch/src/.install/boost' is not a valid boost directory path
+-- fetching boost
+-- Populating boost
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+[ 11%] Creating directories for 'boost-populate'
+[ 22%] Performing download step (download, verify and extract) for 'boost-populate'
+-- Downloading...
+   dst='/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild/boost-populate-prefix/src/boost-1.88.0-b2-nodocs.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/boostorg/boost/releases/download/boost-1.88.0/boost-1.88.0-b2-nodocs.tar.gz'
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 25% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 67% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 89% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- Downloading... done
+-- extracting...
+     src='/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild/boost-populate-prefix/src/boost-1.88.0-b2-nodocs.tar.gz'
+     dst='/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'boost-populate'
+[ 44%] No patch step for 'boost-populate'
+[ 55%] No configure step for 'boost-populate'
+[ 66%] No build step for 'boost-populate'
+[ 77%] No install step for 'boost-populate'
+[ 88%] No test step for 'boost-populate'
+[100%] Completed 'boost-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+[100%] Built target boost-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild'
+-- boost fetched
+-- boost source dir: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+-- boost binary dir: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-build
+-- BOOST_DIR: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+-- Performing Test UV_LINT_W4
+-- Performing Test UV_LINT_W4 - Failed
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER_MSVC
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER_MSVC - Failed
+-- Performing Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC
+-- Performing Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC - Failed
+-- Performing Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC
+-- Performing Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC - Failed
+-- Performing Test UV_LINT_NO_HIDES_LOCAL
+-- Performing Test UV_LINT_NO_HIDES_LOCAL - Failed
+-- Performing Test UV_LINT_NO_HIDES_PARAM
+-- Performing Test UV_LINT_NO_HIDES_PARAM - Failed
+-- Performing Test UV_LINT_NO_HIDES_GLOBAL
+-- Performing Test UV_LINT_NO_HIDES_GLOBAL - Failed
+-- Performing Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC
+-- Performing Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC - Failed
+-- Performing Test UV_LINT_NO_UNSAFE_MSVC
+-- Performing Test UV_LINT_NO_UNSAFE_MSVC - Failed
+-- Performing Test UV_LINT_WALL
+-- Performing Test UV_LINT_WALL - Success
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER
+-- Performing Test UV_LINT_NO_UNUSED_PARAMETER - Success
+-- Performing Test UV_LINT_STRICT_PROTOTYPES
+-- Performing Test UV_LINT_STRICT_PROTOTYPES - Success
+-- Performing Test UV_LINT_EXTRA
+-- Performing Test UV_LINT_EXTRA - Success
+-- Performing Test UV_LINT_UTF8_MSVC
+-- Performing Test UV_LINT_UTF8_MSVC - Failed
+-- Performing Test UV_F_STRICT_ALIASING
+-- Performing Test UV_F_STRICT_ALIASING - Success
+-- summary of build options:
+    Install prefix:  /usr/local
+    Target system:   Linux
+    Compiler:
+      C compiler:    /usr/bin/cc (GNU)
+      CFLAGS:          -fPIC -g -pthread -fno-strict-aliasing -Wno-unused-function -Wno-unused-variable -Wno-sign-compare -fcommon -funsigned-char -Werror=format
+
+# VectorSimilarity root: /work/modules/redisearch/src/deps/VectorSimilarity
+# VectorSimilarity binroot: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/src/VectorSimilarity
+-- SVS support enabled
+-- SVS LVQ is not supported on this architecture
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Detected GLIBC version: 2.39
+-- Detected GLIBCXX_RELEASE (GCC major): 13
+-- Populating eve
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+[ 11%] Creating directories for 'eve-populate'
+[ 22%] Performing download step (git clone) for 'eve-populate'
+Cloning into 'eve-src'...
+HEAD is now at 3d5821fe7 Release v2023.02.15
+[ 33%] Performing update step for 'eve-populate'
+[ 44%] No patch step for 'eve-populate'
+[ 55%] No configure step for 'eve-populate'
+[ 66%] No build step for 'eve-populate'
+[ 77%] No install step for 'eve-populate'
+[ 88%] No test step for 'eve-populate'
+[100%] Completed 'eve-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+[100%] Built target eve-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild'
+-- [eve] Building RelWithDebInfo mode with:  -fPIC -g -pthread -fno-strict-aliasing -Wno-unused-function -Wno-unused-variable -Wno-sign-compare -Werror=format -fexceptions -fPIC   
+-- [eve] Use PCH            : ON  (via EVE_USE_PCH)
+-- [eve] Unit tests         : OFF (via EVE_BUILD_TEST)
+-- [eve] Random tests       : OFF (via EVE_BUILD_RANDOM)
+-- [eve] Integration tests  : OFF (via EVE_BUILD_INTEGRATION)
+-- [eve] Benchmarks tests   : OFF (via EVE_BUILD_BENCHMARKS)
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- [eve] Doxygen need to be installed to generate the doxygen documentation
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Populating robinmap
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+[ 11%] Creating directories for 'robinmap-populate'
+[ 22%] Performing download step (git clone) for 'robinmap-populate'
+Cloning into 'robinmap-src'...
+HEAD is now at 4ec1bf1 Update version to 1.4.0
+[ 33%] Performing update step for 'robinmap-populate'
+[ 44%] No patch step for 'robinmap-populate'
+[ 55%] No configure step for 'robinmap-populate'
+[ 66%] No build step for 'robinmap-populate'
+[ 77%] No install step for 'robinmap-populate'
+[ 88%] No test step for 'robinmap-populate'
+[100%] Completed 'robinmap-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+[100%] Built target robinmap-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild'
+-- Populating fmt
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+[ 11%] Creating directories for 'fmt-populate'
+[ 22%] Performing download step (git clone) for 'fmt-populate'
+Cloning into 'fmt-src'...
+HEAD is now at 407c905e Update version
+[ 33%] Performing update step for 'fmt-populate'
+[ 44%] No patch step for 'fmt-populate'
+[ 55%] No configure step for 'fmt-populate'
+[ 66%] No build step for 'fmt-populate'
+[ 77%] No install step for 'fmt-populate'
+[ 88%] No test step for 'fmt-populate'
+[100%] Completed 'fmt-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+[100%] Built target fmt-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild'
+-- {fmt} version: 12.1.0
+-- Build type: RelWithDebInfo
+-- Populating spdlog
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+[ 11%] Creating directories for 'spdlog-populate'
+[ 22%] Performing download step (git clone) for 'spdlog-populate'
+Cloning into 'spdlog-src'...
+HEAD is now at 6fa36017 Version 1.15.3
+[ 33%] Performing update step for 'spdlog-populate'
+[ 44%] No patch step for 'spdlog-populate'
+[ 55%] No configure step for 'spdlog-populate'
+[ 66%] No build step for 'spdlog-populate'
+[ 77%] No install step for 'spdlog-populate'
+[ 88%] No test step for 'spdlog-populate'
+[100%] Completed 'spdlog-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+[100%] Built target spdlog-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild'
+-- Build spdlog: 1.15.3
+-- Build type: RelWithDebInfo
+-- Looking for fwrite_unlocked
+-- Looking for fwrite_unlocked - found
+-- Generating install
+-- Populating tomlplusplus
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+[ 11%] Creating directories for 'tomlplusplus-populate'
+[ 22%] Performing download step (git clone) for 'tomlplusplus-populate'
+Cloning into 'tomlplusplus-src'...
+HEAD is now at c635f21 v3.3.0
+[ 33%] Performing update step for 'tomlplusplus-populate'
+[ 44%] Performing patch step for 'tomlplusplus-populate'
+error: patch failed: include/toml++/impl/make_node.h:134
+error: include/toml++/impl/make_node.h: patch does not apply
+error: patch failed: CMakeLists.txt:31
+error: CMakeLists.txt: patch does not apply
+[ 55%] No configure step for 'tomlplusplus-populate'
+[ 66%] No build step for 'tomlplusplus-populate'
+[ 77%] No install step for 'tomlplusplus-populate'
+[ 88%] No test step for 'tomlplusplus-populate'
+[100%] Completed 'tomlplusplus-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+[100%] Built target tomlplusplus-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild'
+SVS LVQ implementation not found
+-- Populating cpu_features
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild
+gmake[3]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+make[4]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+make[5]: Entering directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+[ 11%] Creating directories for 'cpu_features-populate'
+[ 22%] Performing download step (git clone) for 'cpu_features-populate'
+Cloning into 'cpu_features-src'...
+HEAD is now at d3b2440 Release v0.10.1
+[ 33%] Performing update step for 'cpu_features-populate'
+[ 44%] No patch step for 'cpu_features-populate'
+[ 55%] No configure step for 'cpu_features-populate'
+[ 66%] No build step for 'cpu_features-populate'
+[ 77%] No install step for 'cpu_features-populate'
+[ 88%] No test step for 'cpu_features-populate'
+[100%] Completed 'cpu_features-populate'
+make[5]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+[100%] Built target cpu_features-populate
+make[4]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+gmake[3]: Leaving directory '/work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild'
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for getauxval
+-- Looking for getauxval - found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Building for ARM aarch64
+-- Performing Test CXX_ARMV7_NEON
+-- Performing Test CXX_ARMV7_NEON - Failed
+-- Performing Test CXX_ARMV8A
+-- Performing Test CXX_ARMV8A - Success
+-- Performing Test CXX_NEON_DOTPROD
+-- Performing Test CXX_NEON_DOTPROD - Success
+-- Performing Test CXX_SVE
+-- Performing Test CXX_SVE - Success
+-- Performing Test CXX_SVE2
+-- Performing Test CXX_SVE2 - Success
+-- Performing Test CXX_NEON_HP
+-- Performing Test CXX_NEON_HP - Success
+-- Performing Test CXX_NEON_BF16
+-- Performing Test CXX_NEON_BF16 - Success
+-- Performing Test CXX_SVE_BF16
+-- Performing Test CXX_SVE_BF16 - Success
+-- Using ARMv9.0-a with SVE2 (supported by CPU)
+-- Using ARMv8.0-a with NEON
+-- Using ARMv8.2-a with NEON half-percision extension
+Building with ARMV8.2 with dotprod
+Building with ARMV8A
+Building with NEON+HP
+Building with NEON + BF16
+Building with SVE
+Building with SVE + BF16
+Building with ARMV9A and SVE2
+-- CXXFLAGS:          -fPIC -g -pthread -fno-strict-aliasing -Wno-unused-function -Wno-unused-variable -Wno-sign-compare -Werror=format -fexceptions -fPIC   
+-- COMPILE_DEFS:     REDISEARCH_MODULE_NAME="search";REDISMODULE_SDK_RLEC;_GNU_SOURCE;REDIS_MODULE_TARGET;HAVE_SVS=1;VectorSimilarity;PUBLIC;HAVE_SVS_LVQ=0
+-- LDFLAGS:            
+CMake Warning (dev) at src/geometry/CMakeLists.txt:7 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable BOOST_ROOT is set to:
+
+    /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src (found version "1.88.0")  
+CMake Warning (dev) at src/util/hash/CMakeLists.txt:10 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable BOOST_ROOT is set to:
+
+    /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+# coord/rmr: root: /work/modules/redisearch/src
+-- SVS lib directory not found: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/svs-src/lib
+-- Static libraries for libredisearch_all.a: $<TARGET_FILE:redisearch_c>;$<TARGET_FILE:redisearch-geometry>;$<TARGET_FILE:redisearch-hash>;$<TARGET_FILE:VectorSimilarity>;$<TARGET_FILE:VectorSimilaritySpaces>;$<TARGET_FILE:VectorSimilaritySpaces_no_optimization>;$<TARGET_FILE:cpu_features>;$<TARGET_FILE:fmt>;$<TARGET_FILE:spdlog>;$<TARGET_FILE:redisearch-coord>;$<TARGET_FILE:uv_a>;$<TARGET_FILE:hiredis>;$<TARGET_FILE:hiredis_ssl>
+-- Rust configuration:
+--   Cargo: /root/.cargo/bin/cargo
+--   Toolchain: 
+--   Profile: release
+--   Cargo Build Flags: 
+--   RUSTFLAGS: 
+--   Target Dir: /work/modules/redisearch/src/bin/redisearch_rs
+--   Library Path: /work/modules/redisearch/src/bin/redisearch_rs/release/libredisearch_rs.a
+-- Building RediSearch as SHARED library
+-- Configuring done (49.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community
+Building RediSearch with 4 parallel jobs...
+[  0%] Building Rust workspace with profile release
+[  0%] Building C object hiredis/CMakeFiles/hiredis_ssl.dir/ssl.c.o
+[  0%] Building C object hiredis/CMakeFiles/hiredis.dir/alloc.c.o
+[  0%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/analyser.c.o
+[  0%] Building C object hiredis/CMakeFiles/hiredis.dir/async.c.o
+[  0%] Linking C static library libhiredis_ssl.a
+[  0%] Built target hiredis_ssl
+[  0%] Building C object hiredis/CMakeFiles/hiredis.dir/hiredis.c.o
+/work/modules/redisearch/src/deps/hiredis/hiredis.c: In function '__redisSetError':
+/work/modules/redisearch/src/deps/hiredis/hiredis.c:703:9: warning: ignoring return value of 'strerror_r' declared with attribute 'warn_unused_result' [-Wunused-result]
+  703 |         strerror_r(errno, c->errstr, sizeof(c->errstr));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Updating crates.io index
+    Updating git repository `https://github.com/RedisLabsModules/redismodule-rs.git`
+[  0%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/driver.c.o
+[  0%] Built target cheadergen_generate
+[  1%] Building C object hiredis/CMakeFiles/hiredis.dir/read.c.o
+[  1%] Building C object hiredis/CMakeFiles/hiredis.dir/net.c.o
+[  1%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator.c.o
+/work/modules/redisearch/src/deps/hiredis/net.c: In function '__redisSetErrorFromErrno':
+/work/modules/redisearch/src/deps/hiredis/net.c:109:5: warning: ignoring return value of 'strerror_r' declared with attribute 'warn_unused_result' [-Wunused-result]
+  109 |     strerror_r(errorno, (char *)(buf + len), sizeof(buf) - len);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  1%] Building C object hiredis/CMakeFiles/hiredis.dir/sds.c.o
+[  1%] Generating command_info.h, command_info.c
+Generating command info files from /work/modules/redisearch/src/commands.json to /work/modules/redisearch/src/src/command_info/command_info.h and /work/modules/redisearch/src/src/command_info/command_info.c
+[  1%] Built target generate_command_info
+[  2%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_ada.c.o
+[  2%] Building C object hiredis/CMakeFiles/hiredis.dir/sockcompat.c.o
+[  3%] Linking C static library libhiredis.a
+[  3%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/fs-poll.c.o
+[  3%] Built target hiredis
+[  3%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_csharp.c.o
+[  3%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/idna.c.o
+[  3%] Building C object src/rmutil/CMakeFiles/rmutil.dir/alloc.c.o
+[  3%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/inet.c.o
+[  3%] Building C object src/rmutil/CMakeFiles/rmutil.dir/args.c.o
+[  3%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_go.c.o
+[  4%] Building C object src/rmutil/CMakeFiles/rmutil.dir/cmdparse.c.o
+[  5%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/random.c.o
+[  5%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/strscpy.c.o
+[  5%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/strtok.c.o
+[  5%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_java.c.o
+[  5%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/thread-common.c.o
+[  5%] Building C object src/rmutil/CMakeFiles/rmutil.dir/heap.c.o
+[  5%] Building C object src/rmutil/CMakeFiles/rmutil.dir/priority_queue.c.o
+[  5%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/threadpool.c.o
+[  5%] Building C object src/rmutil/CMakeFiles/rmutil.dir/strings.c.o
+[  5%] Building C object src/rmutil/CMakeFiles/rmutil.dir/util.c.o
+[  6%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/timer.c.o
+[  7%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_js.c.o
+[  8%] Building C object src/rmutil/CMakeFiles/rmutil.dir/vector.c.o
+[  8%] Built target rmutil
+[  8%] Building C object src/coord/CMakeFiles/coordinator-core.dir/cluster_spell_check.c.o
+[  8%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/uv-common.c.o
+[  8%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_pascal.c.o
+[  8%] Building C object src/coord/CMakeFiles/coordinator-core.dir/config.c.o
+[  8%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/uv-data-getter-setters.c.o
+[  8%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/version.c.o
+[  9%] Building C object src/coord/CMakeFiles/coordinator-core.dir/coord_request_ctx.c.o
+[  9%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/async.c.o
+[  9%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_python.c.o
+[  9%] Building C object src/coord/CMakeFiles/coordinator-core.dir/debug_commands.c.o
+[ 10%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/core.c.o
+[ 10%] Building C object src/coord/CMakeFiles/coordinator-core.dir/dist_aggregate.c.o
+[ 10%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/generator_rust.c.o
+[ 10%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/dl.c.o
+[ 10%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/fs.c.o
+[ 10%] Building CXX object src/coord/CMakeFiles/coordinator-core.dir/dist_plan.cpp.o
+[ 10%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/space.c.o
+[ 11%] Building C object src/CMakeFiles/snowball_compiler.dir/__/deps/snowball/compiler/tokeniser.c.o
+[ 11%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/getaddrinfo.c.o
+[ 11%] Linking C executable snowball/bin/snowball_compiler
+[ 11%] Built target snowball_compiler
+[ 11%] Building C object src/coord/CMakeFiles/coordinator-core.dir/dist_profile.c.o
+[ 12%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/getnameinfo.c.o
+[ 12%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/loop-watcher.c.o
+[ 12%] Building C object src/friso/CMakeFiles/friso.dir/friso.c.o
+[ 12%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/loop.c.o
+[ 13%] Building C object src/coord/CMakeFiles/coordinator-core.dir/dist_utils.c.o
+ Downloading crates ...
+[ 13%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/pipe.c.o
+[ 13%] Building C object src/friso/CMakeFiles/friso.dir/friso_array.c.o
+  Downloaded autocfg v1.5.1
+  Downloaded bitflags v2.13.0
+  Downloaded cheadergen_macros v0.3.1
+  Downloaded cheadergen v0.3.1
+  Downloaded cfg-if v1.0.4
+  Downloaded bytecount v0.6.9
+  Downloaded num-traits v0.1.43
+  Downloaded heck v0.5.0
+  Downloaded enum-primitive-derive v0.1.2
+  Downloaded serde_spanned v1.1.1
+  Downloaded strum v0.27.2
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded errno v0.3.14
+  Downloaded min-max-heap v1.3.0
+  Downloaded icu_casemap_data v2.2.0
+  Downloaded nougat-proc_macros v0.2.4
+  Downloaded macro_rules_attribute v0.1.3
+  Downloaded never-say-never v6.6.666
+  Downloaded extension-traits v1.0.1
+  Downloaded nougat v0.2.4
+  Downloaded anstyle-query v1.1.5
+  Downloaded lazy_static v1.5.0
+[ 13%] Building C object src/friso/CMakeFiles/friso.dir/friso_hash.c.o
+  Downloaded matchers v0.2.0
+  Downloaded quote v0.3.15
+  Downloaded lending-iterator-proc_macros v0.1.7
+  Downloaded itoa v1.0.18
+  Downloaded heck v0.4.1
+  Downloaded approx v0.5.1
+  Downloaded equivalent v1.0.2
+  Downloaded potential_utf v0.1.5
+  Downloaded ext-trait v1.0.1
+  Downloaded hash32 v1.0.0
+  Downloaded either v1.16.0
+  Downloaded clang-sys v1.8.1
+  Downloaded decorum v0.4.0
+[ 13%] Building C object src/coord/CMakeFiles/coordinator-core.dir/hybrid/dist_hybrid.c.o
+  Downloaded unsafe-tools-mimic v0.1.2
+  Downloaded linkme-impl v0.3.36
+  Downloaded rustc-hash v2.1.2
+  Downloaded ext-trait-proc_macros v1.0.1
+  Downloaded macro_rules_attribute-proc_macro v0.1.3
+[ 13%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/poll.c.o
+  Downloaded cexpr v0.6.0
+  Downloaded same-file v1.0.6
+  Downloaded nu-ansi-term v0.50.3
+  Downloaded ppv-lite86 v0.2.21
+  Downloaded paste v1.0.15
+  Downloaded quote v1.0.46
+  Downloaded displaydoc v0.2.6
+  Downloaded zerofrom v0.1.8
+  Downloaded tracing_log_error v0.1.4
+  Downloaded pin-project-internal v1.1.13
+  Downloaded rand_core v0.6.4
+  Downloaded enumflags2 v0.7.12
+  Downloaded libloading v0.8.9
+  Downloaded console v0.16.3
+  Downloaded cc v1.2.65
+  Downloaded adler2 v2.0.1
+  Downloaded yoke-derive v0.8.2
+  Downloaded rand_core v0.10.1
+  Downloaded fastrand v2.4.1
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded bitflags v1.3.2
+  Downloaded linkme v0.3.36
+  Downloaded utf8_iter v1.0.4
+  Downloaded find-msvc-tools v0.1.9
+  Downloaded zerofrom-derive v0.1.7
+  Downloaded rustc-demangle v0.1.27
+  Downloaded rmp-serde v1.3.1
+  Downloaded once_cell v1.21.4
+[ 13%] Building C object src/friso/CMakeFiles/friso.dir/friso_lexicon.c.o
+  Downloaded polonius-the-crab v0.2.1
+  Downloaded glob v0.3.3
+  Downloaded litemap v0.8.2
+  Downloaded unicode-xid v0.0.4
+  Downloaded lending-iterator v0.1.7
+  Downloaded addr2line v0.25.1
+[ 14%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/process.c.o
+  Downloaded strip-ansi-escapes v0.2.1
+[ 15%] Building C object src/friso/CMakeFiles/friso.dir/friso_link.c.o
+  Downloaded pin-project-lite v0.2.17
+  Downloaded unsafe-tools v0.1.2
+  Downloaded rmp v0.8.15
+  Downloaded miniz_oxide v0.8.9
+  Downloaded proc-macro2 v1.0.106
+  Downloaded priority-queue v2.7.0
+  Downloaded pin-project v1.1.13
+  Downloaded prettyplease v0.2.37
+  Downloaded getrandom v0.4.3
+  Downloaded icu_locale_core v2.2.0
+  Downloaded icu_collections v2.2.0
+  Downloaded bumpalo v3.20.3
+  Downloaded num-traits v0.2.19
+  Downloaded icu_provider v2.2.0
+  Downloaded icu_properties v2.2.0
+  Downloaded icu_casemap v2.2.0
+  Downloaded backtrace v0.3.76
+  Downloaded getrandom v0.2.17
+  Downloaded log v0.4.33
+  Downloaded memchr v2.8.2
+[ 15%] Building C object src/friso/CMakeFiles/friso.dir/friso_string.c.o
+  Downloaded minimal-lexical v0.2.1
+  Downloaded nom v7.1.3
+  Downloaded unsafe-tools-canary v0.1.2
+  Downloaded insta v1.48.0
+  Downloaded indexmap v2.14.0
+[ 15%] Building CXX object src/coord/CMakeFiles/coordinator-core.dir/hybrid/dist_hybrid_plan.cpp.o
+[ 15%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/random-devurandom.c.o
+  Downloaded itertools v0.13.0
+[ 15%] Building C object src/friso/CMakeFiles/friso.dir/friso_ctype.c.o
+  Downloaded regex v1.12.4
+  Downloaded wyhash v0.5.0
+  Downloaded itertools v0.15.0
+  Downloaded hashbrown v0.17.1
+  Downloaded icu_properties_data v2.2.0
+  Downloaded aho-corasick v1.1.4
+  Downloaded shlex v1.3.0
+  Downloaded strum_macros v0.24.3
+  Downloaded rustversion v1.0.22
+  Downloaded toml_writer v1.1.1+spec-1.1.0
+  Downloaded walkdir v2.5.0
+  Downloaded synstructure v0.13.2
+  Downloaded synom v0.11.3
+[ 15%] Building C object src/friso/CMakeFiles/friso.dir/friso_UTF8.c.o
+  Downloaded tinystr v0.8.3
+  Downloaded bindgen v0.72.1
+  Downloaded[ 15%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/signal.c.o
+ gimli v0.32.3
+  Downloaded nix v0.26.4
+  Downloaded object v0.37.3
+  Downloaded regex-syntax v0.8.11
+[ 16%] Building C object src/friso/CMakeFiles/friso.dir/friso_GBK.c.o
+  Downloaded thiserror-impl v2.0.18
+  Downloaded shlex v2.0.1
+  Downloaded toml_datetime v0.7.5+spec-1.1.0
+  Downloaded thread_local v1.1.9
+  Downloaded thiserror v2.0.18
+  Downloaded zmij v1.0.21
+  Downloaded zerovec-derive v0.11.3
+[ 16%] Built target friso
+[ 16%] Building C object src/coord/CMakeFiles/coordinator-core.dir/hybrid/hybrid_cursor_mappings.c.o
+  Downloaded strum_macros v0.27.2
+  Downloaded smallvec v1.15.2
+  Downloaded simd-adler32 v0.3.9
+  Downloaded serde v1.0.228
+  Downloaded regex-automata v0.4.14
+  Downloaded toml_parser v1.1.2+spec-1.1.0
+  Downloaded writeable v0.6.3
+  Downloaded libc v0.2.186
+[ 16%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/stream.c.o
+  Downloaded tracing-attributes v0.1.31
+[ 17%] Building C object src/phonetics/CMakeFiles/metaphone.dir/double_metaphone.c.o
+  Downloaded triomphe v0.1.16
+  Downloaded yoke v0.8.3
+  Downloaded semver v1.0.28
+  Downloaded sharded-slab v0.1.7
+  Downloaded toml v0.9.12+spec-1.1.0
+[ 18%] Building C object src/coord/CMakeFiles/coordinator-core.dir/info_command.c.o
+  Downloaded similar v2.7.0
+  Downloaded serde_derive v1.0.228
+  Downloaded unicode-ident v1.0.24
+  Downloaded tracing-core v0.1.36
+  Downloaded serde_core v1.0.228
+  Downloaded tempfile v3.27.0
+  Downloaded vte v0.14.1
+[ 18%] Built target metaphone
+[ 19%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/tcp.c.o
+[ 19%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/chan.c.o
+  Downloaded syn v0.11.11
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded zerotrie v0.2.4
+  Downloaded zerocopy-derive v0.8.52
+  Downloaded serde_json v1.0.150
+  Downloaded zerovec v0.11.6
+[ 19%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/thread.c.o
+[ 19%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/cluster.c.o
+[ 19%] Building CXX object src/fast_float/CMakeFiles/fast_float_strtod.dir/fast_float_strtod.cpp.o
+  Downloaded winnow v1.0.3
+  Downloaded winnow v0.7.15
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded syn v1.0.109
+  Downloaded zerocopy v0.8.52
+  Downloaded syn v2.0.118
+  Downloaded rustix v1.1.4
+  Downloaded tracing v0.1.44
+[ 19%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/cluster_topology.c.o
+[ 19%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/tty.c.o
+[ 19%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/command.c.o
+[ 19%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/udp.c.o
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.46
+   Compiling unicode-ident v1.0.24
+   Compiling libc v0.2.186
+   Compiling serde_core v1.0.228
+[ 20%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/conn.c.o
+[ 20%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/proctitle.c.o
+   Compiling memchr v2.8.2
+   Compiling cfg-if v1.0.4
+   Compiling glob v0.3.3
+   Compiling syn v1.0.109
+[ 21%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/linux.c.o
+   Compiling clang-sys v1.8.1
+[ 21%] Built target fast_float_strtod
+[ 21%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+   Compiling autocfg v1.5.1
+[ 21%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/endpoint.c.o
+   Compiling syn v2.0.118
+   Compiling prettyplease v0.2.37
+[ 21%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/io_runtime_ctx.c.o
+   Compiling num-traits v0.2.19
+   Compiling serde v1.0.228
+   Compiling aho-corasick v1.1.4
+   Compiling bitflags v2.13.0
+[ 21%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/procfs-exepath.c.o
+   Compiling regex-syntax v0.8.11
+[ 21%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/node.c.o
+[ 21%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/redis_cluster.c.o
+[ 21%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/random-getrandom.c.o
+[ 22%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/redise.c.o
+[ 22%] Building C object src/libuv/CMakeFiles/uv_a.dir/src/unix/random-sysctl-linux.c.o
+   Compiling bindgen v0.72.1
+[ 22%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/reply.c.o
+[ 23%] Linking C static library libuv.a
+[ 23%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/rmr.c.o
+[ 23%] Built target uv_a
+[ 24%] Building C object _deps/cpu_features-build/CMakeFiles/unix_based_hardware_detection.dir/src/hwcaps_linux_or_android.c.o
+[ 24%] Building C object _deps/cpu_features-build/CMakeFiles/unix_based_hardware_detection.dir/src/hwcaps_freebsd_or_openbsd.c.o
+[ 24%] Building C object _deps/cpu_features-build/CMakeFiles/unix_based_hardware_detection.dir/src/hwcaps.c.o
+[ 24%] Built target unix_based_hardware_detection
+[ 24%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+[ 24%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rmr/rq.c.o
+[ 25%] Building C object src/coord/CMakeFiles/coordinator-core.dir/rpnet.c.o
+   Compiling regex-automata v0.4.14
+[ 25%] Building C object src/coord/CMakeFiles/coordinator-core.dir/score_explain_mr.c.o
+[ 25%] Building C object _deps/cpu_features-build/CMakeFiles/utils.dir/src/filesystem.c.o
+[ 25%] Built target coordinator-core
+[ 25%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces_no_optimization.dir/L2/L2.cpp.o
+[ 25%] Building C object _deps/cpu_features-build/CMakeFiles/utils.dir/src/stack_line_reader.c.o
+[ 26%] Building C object _deps/cpu_features-build/CMakeFiles/utils.dir/src/string_view.c.o
+   Compiling rustversion v1.0.22
+[ 26%] Built target utils
+[ 26%] Building CXX object src/geometry/CMakeFiles/redisearch-geometry.dir/geometry_api.cpp.o
+   Compiling minimal-lexical v0.2.1
+   Compiling serde_derive v1.0.228
+   Compiling getrandom v0.4.3
+   Compiling object v0.37.3
+   Compiling rustix v1.1.4
+   Compiling nom v7.1.3
+[ 26%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces_no_optimization.dir/IP/IP.cpp.o
+   Compiling libloading v0.8.9
+   Compiling regex v1.12.4
+[ 27%] Linking CXX static library libfmt.a
+   Compiling either v1.16.0
+[ 27%] Built target fmt
+[ 28%] Building C object src/buffer/CMakeFiles/buffer.dir/buffer.c.o
+[ 28%] Linking CXX static library libVectorSimilaritySpaces_no_optimization.a
+   Compiling itertools v0.13.0
+[ 28%] Built target VectorSimilaritySpaces_no_optimization
+[ 29%] Building C object src/iterators/CMakeFiles/iterators.dir/hybrid_reader.c.o
+[ 29%] Linking C static library libbuffer.a
+[ 29%] Built target buffer
+[ 29%] Building C object src/index_result/CMakeFiles/index_result.dir/index_result.c.o
+   Compiling cexpr v0.6.0
+[ 29%] Building C object src/iterators/CMakeFiles/iterators.dir/optimizer_reader.c.o
+[ 29%] Linking C static library libindex_result.a
+[ 29%] Built target index_result
+[ 30%] Building CXX object src/geometry/CMakeFiles/redisearch-geometry.dir/rtree.cpp.o
+[ 30%] Linking C static library libiterators.a
+[ 30%] Built target iterators
+[ 30%] Building C object src/util/mempool/CMakeFiles/mempool.dir/mempool.c.o
+[ 30%] Linking C static library libmempool.a
+   Compiling shlex v1.3.0
+   Compiling shlex v2.0.1
+[ 30%] Built target mempool
+   Compiling find-msvc-tools v0.1.9
+[ 30%] Building C object src/util/dict/CMakeFiles/dict.dir/dict.c.o
+   Compiling log v0.4.33
+   Compiling linkme v0.3.36
+   Compiling rustc-hash v2.1.2
+   Compiling zerocopy v0.8.52
+[ 31%] Linking C static library libdict.a
+[ 31%] Built target dict
+   Compiling zmij v1.0.21
+[ 31%] Building CXX object src/util/hash/CMakeFiles/redisearch-hash.dir/hash.cpp.o
+   Compiling linkme-impl v0.3.36
+   Compiling cc v1.2.65
+   Compiling unicode-xid v0.0.4
+   Compiling synom v0.11.3
+   Compiling zerocopy-derive v0.8.52
+   Compiling quote v0.3.15
+[ 31%] Linking CXX static library libredisearch-hash.a
+[ 31%] Built target redisearch-hash
+[ 31%] Generating snowball stemmer: stem_UTF_8_yiddish
+[ 31%] Patching snowball libstemmer.c with rmalloc
+[ 31%] Generating snowball module registry (modules.h)
+[ 31%] Patching snowball runtime/api.c with rmalloc
+   Compiling serde_json v1.0.150
+[ 31%] Patching snowball runtime/utilities.c with rmalloc
+[ 32%] Generating snowball stemmer: stem_UTF_8_arabic
+[ 32%] Generating snowball stemmer: stem_UTF_8_armenian
+[ 32%] Generating snowball stemmer: stem_UTF_8_basque
+[ 32%] Generating snowball stemmer: stem_UTF_8_catalan
+[ 32%] Generating snowball stemmer: stem_UTF_8_danish
+[ 33%] Generating snowball stemmer: stem_UTF_8_dutch
+[ 33%] Generating snowball stemmer: stem_UTF_8_english
+   Compiling syn v0.11.11
+[ 33%] Generating snowball stemmer: stem_UTF_8_finnish
+[ 33%] Generating snowball stemmer: stem_UTF_8_french
+[ 34%] Generating snowball stemmer: stem_UTF_8_german
+[ 34%] Generating snowball stemmer: stem_UTF_8_greek
+[ 34%] Generating snowball stemmer: stem_UTF_8_hindi
+[ 34%] Generating snowball stemmer: stem_UTF_8_hungarian
+[ 34%] Generating snowball stemmer: stem_UTF_8_indonesian
+[ 35%] Generating snowball stemmer: stem_UTF_8_irish
+[ 35%] Generating snowball stemmer: stem_UTF_8_italian
+[ 35%] Generating custom stemmer: stem_UTF_8_korean
+[ 35%] Generating snowball stemmer: stem_UTF_8_lithuanian
+[ 35%] Generating snowball stemmer: stem_UTF_8_nepali
+   Compiling num-traits v0.1.43
+[ 36%] Generating snowball stemmer: stem_UTF_8_norwegian
+[ 37%] Generating snowball stemmer: stem_UTF_8_porter
+[ 37%] Generating snowball stemmer: stem_UTF_8_portuguese
+[ 37%] Generating snowball stemmer: stem_UTF_8_romanian
+[ 37%] Generating snowball stemmer: stem_UTF_8_russian
+[ 37%] Generating snowball stemmer: stem_UTF_8_serbian
+   Compiling linux-raw-sys v0.12.1
+[ 38%] Generating snowball stemmer: stem_UTF_8_spanish
+[ 38%] Generating snowball stemmer: stem_UTF_8_swedish
+   Compiling rand_core v0.10.1
+[ 38%] Generating custom stemmer: stem_UTF_8_tagalog
+   Compiling once_cell v1.21.4
+[ 38%] Generating snowball stemmer: stem_UTF_8_tamil
+[ 38%] Generating snowball stemmer: stem_UTF_8_turkish
+   Compiling simd-adler32 v0.3.9
+   Compiling gimli v0.32.3
+   Compiling adler2 v2.0.1
+   Compiling heck v0.4.1
+   Compiling lazy_static v1.5.0
+   Compiling strum_macros v0.24.3
+   Compiling redis-module-macros-internals v2.0.8 (https://github.com/RedisLabsModules/redismodule-rs.git?rev=7fb620f1ef42453dea4e22c9358d0d25d4224710#7fb620f1)
+[ 39%] Building C object src/CMakeFiles/snowball.dir/snowball/runtime/api.c.o
+[ 39%] Building C object src/CMakeFiles/snowball.dir/snowball/runtime/utilities.c.o
+   Compiling miniz_oxide v0.8.9
+[ 39%] Building C object src/CMakeFiles/snowball.dir/snowball/libstemmer/libstemmer.c.o
+   Compiling redis-module v2.0.8 (https://github.com/RedisLabsModules/redismodule-rs.git?rev=7fb620f1ef42453dea4e22c9358d0d25d4224710#7fb620f1)
+[ 39%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_arabic.c.o
+   Compiling addr2line v0.25.1
+[ 39%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_armenian.c.o
+[ 40%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_basque.c.o
+   Compiling enum-primitive-derive v0.1.2
+[ 40%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_catalan.c.o
+[ 40%] Building C object src/CMakeFiles/rscore.dir/__/deps/cndict/cndict_data.c.o
+[ 40%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_danish.c.o
+[ 40%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_dutch.c.o
+[ 40%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/cesu8.c.o
+   Compiling vte v0.14.1
+[ 41%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/ducet.c.o
+[ 42%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_english.c.o
+   Compiling fastrand v2.4.1
+[ 42%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/extra.c.o
+   Compiling bitflags v1.3.2
+[ 42%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_finnish.c.o
+   Compiling rustc-demangle v0.1.27
+[ 42%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/strcoll.c.o
+[ 42%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_french.c.o
+   Compiling nix v0.26.4
+[ 42%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_german.c.o
+   Compiling tempfile v3.27.0
+   Compiling strip-ansi-escapes v0.2.1
+[ 42%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_greek.c.o
+[ 42%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/strings.c.o
+[ 42%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/tofold.c.o
+   Compiling redis-module-common v0.1.1 (https://github.com/RedisLabsModules/redismodule-rs.git?rev=7fb620f1ef42453dea4e22c9358d0d25d4224710#7fb620f1)
+[ 43%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/tolower.c.o
+[ 44%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_hindi.c.o
+[ 44%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/tounaccent.c.o
+   Compiling console v0.16.3
+[ 44%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_hungarian.c.o
+[ 44%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/toupper.c.o
+[ 44%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf16.c.o
+[ 44%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf16be.c.o
+[ 44%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_indonesian.c.o
+[ 45%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf16he.c.o
+[ 45%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf16le.c.o
+[ 45%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_irish.c.o
+   Compiling getrandom v0.2.17
+[ 45%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf32.c.o
+[ 46%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_italian.c.o
+   Compiling similar v2.7.0
+[ 46%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf32be.c.o
+[ 47%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf32he.c.o
+[ 47%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_lithuanian.c.o
+[ 47%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf32le.c.o
+[ 47%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_nepali.c.o
+[ 47%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/utf8.c.o
+[ 47%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_norwegian.c.o
+[ 47%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/validate.c.o
+[ 47%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_portuguese.c.o
+   Compiling backtrace v0.3.76
+[ 47%] Building C object src/CMakeFiles/rscore.dir/__/deps/libnu/version.c.o
+[ 48%] Building C object src/CMakeFiles/rscore.dir/__/deps/miniz/miniz.c.o
+   Compiling itoa v1.0.18
+   Compiling insta v1.48.0
+[ 49%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_romanian.c.o
+[ 49%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_russian.c.o
+[ 49%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_serbian.c.o
+   Compiling ppv-lite86 v0.2.21
+[ 49%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_spanish.c.o
+   Compiling rand_core v0.6.4
+[ 49%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_swedish.c.o
+   Compiling tracing-core v0.1.36
+   Compiling semver v1.0.28
+[ 50%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_tamil.c.o
+   Compiling stable_deref_trait v1.2.1
+[ 50%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_turkish.c.o
+   Compiling workspace_hack v0.1.0 (/work/modules/redisearch/src/src/redisearch_rs/workspace_hack)
+[ 50%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_yiddish.c.o
+[ 50%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_porter.c.o
+[ 51%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_tagalog.c.o
+[ 51%] Building C object src/CMakeFiles/snowball.dir/snowball/src_c/stem_UTF_8_korean.c.o
+[ 51%] Building C object src/CMakeFiles/rscore.dir/__/deps/thpool/barrier.c.o
+[ 51%] Built target snowball
+[ 51%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/chan.c.o
+[ 51%] Building C object src/CMakeFiles/rscore.dir/__/deps/thpool/thpool.c.o
+[ 52%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/cluster.c.o
+[ 52%] Building C object src/CMakeFiles/rscore.dir/aggregate/aggregate_debug.c.o
+[ 52%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/cluster_topology.c.o
+[ 53%] Building C object src/CMakeFiles/rscore.dir/aggregate/aggregate_exec.c.o
+[ 53%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/command.c.o
+[ 53%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/conn.c.o
+[ 53%] Building C object src/CMakeFiles/rscore.dir/aggregate/aggregate_exec_common.c.o
+[ 53%] Building C object src/CMakeFiles/rscore.dir/aggregate/aggregate_plan.c.o
+[ 53%] Building C object src/CMakeFiles/rscore.dir/aggregate/aggregate_request.c.o
+[ 53%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/endpoint.c.o
+[ 54%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/io_runtime_ctx.c.o
+[ 54%] Building C object src/CMakeFiles/rscore.dir/aggregate/expr/exprast.c.o
+[ 54%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/node.c.o
+[ 54%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/redis_cluster.c.o
+[ 55%] Building C object src/CMakeFiles/rscore.dir/aggregate/expr/expression.c.o
+[ 55%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/redise.c.o
+[ 55%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/reply.c.o
+[ 56%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/rmr.c.o
+[ 56%] Building C object src/CMakeFiles/rscore.dir/aggregate/expr/lexer.c.o
+[ 56%] Building C object src/coord/rmr/CMakeFiles/rmr.dir/rq.c.o
+[ 56%] Building C object src/CMakeFiles/rscore.dir/aggregate/expr/parser.c.o
+[ 56%] Built target rmr
+[ 56%] Building C object src/CMakeFiles/rscore.dir/aggregate/functions/date.c.o
+[ 56%] Building C object src/CMakeFiles/rscore.dir/aggregate/functions/function.c.o
+[ 56%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[ 57%] Building C object src/CMakeFiles/rscore.dir/aggregate/functions/geo.c.o
+[ 57%] Building C object src/CMakeFiles/rscore.dir/aggregate/functions/math.c.o
+[ 57%] Building C object src/CMakeFiles/rscore.dir/aggregate/functions/string.c.o
+[ 57%] Building C object src/CMakeFiles/rscore.dir/aggregate/group_by.c.o
+[ 58%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducer.c.o
+[ 58%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/collect.c.o
+[ 58%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/count.c.o
+[ 58%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/count_distinct.c.o
+[ 58%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/deviation.c.o
+   Compiling build_utils v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/build_utils)
+[ 59%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/first_value.c.o
+[ 59%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/minmax.c.o
+[ 59%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/quantile.c.o
+[ 59%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/random_sample.c.o
+[ 60%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/sum.c.o
+[ 60%] Building C object src/CMakeFiles/rscore.dir/aggregate/reducers/to_list.c.o
+[ 60%] Building C object src/CMakeFiles/rscore.dir/aggregate/reply_empty.c.o
+[ 60%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[ 60%] Building C object src/CMakeFiles/rscore.dir/alias.c.o
+[ 60%] Building C object src/CMakeFiles/rscore.dir/byte_offsets.c.o
+[ 61%] Building C object src/CMakeFiles/rscore.dir/cndict_loader.c.o
+[ 61%] Building C object src/CMakeFiles/rscore.dir/command_info/command_info.c.o
+[ 61%] Building C object src/CMakeFiles/rscore.dir/concurrent_ctx.c.o
+[ 61%] Building C object src/CMakeFiles/rscore.dir/config.c.o
+[ 61%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[ 62%] Building C object src/CMakeFiles/rscore.dir/cursor.c.o
+[ 62%] Building C object src/CMakeFiles/rscore.dir/debug_commands.c.o
+[ 62%] Building C object src/CMakeFiles/rscore.dir/dictionary.c.o
+[ 62%] Building C object src/CMakeFiles/rscore.dir/disk_gc.c.o
+[ 62%] Building C object src/CMakeFiles/rscore.dir/doc_id_meta.c.o
+[ 63%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[ 64%] Building C object src/CMakeFiles/rscore.dir/doc_table.c.o
+[ 64%] Building C object src/CMakeFiles/rscore.dir/document.c.o
+[ 64%] Building C object src/CMakeFiles/rscore.dir/document_add.c.o
+[ 64%] Building C object src/CMakeFiles/rscore.dir/document_basic.c.o
+[ 64%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o
+[ 64%] Building C object src/CMakeFiles/rscore.dir/ext/debug_scorers.c.o
+[ 65%] Building C object src/CMakeFiles/rscore.dir/ext/default.c.o
+[ 65%] Building C object src/CMakeFiles/rscore.dir/extension.c.o
+[ 65%] Building C object src/CMakeFiles/rscore.dir/field_spec.c.o
+[ 65%] Building C object src/CMakeFiles/rscore.dir/fork_gc/fork_gc.c.o
+[ 66%] Building C object src/CMakeFiles/rscore.dir/fork_gc/missing_docs.c.o
+[ 66%] Building C object src/CMakeFiles/rscore.dir/fork_gc/numeric.c.o
+[ 66%] Linking CXX static library libredisearch-geometry.a
+[ 66%] Building C object src/CMakeFiles/rscore.dir/fork_gc/pipe.c.o
+[ 66%] Building C object src/CMakeFiles/rscore.dir/fork_gc/tags.c.o
+[ 66%] Built target redisearch-geometry
+[ 66%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[ 66%] Building C object src/CMakeFiles/rscore.dir/fork_gc/terms.c.o
+[ 66%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_aarch64_cpuid.c.o
+[ 66%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_aarch64_freebsd_or_openbsd.c.o
+[ 66%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_aarch64_linux_or_android.c.o
+[ 67%] Building C object src/CMakeFiles/rscore.dir/forward_index.c.o
+[ 68%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_aarch64_macos_or_iphone.c.o
+[ 68%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_aarch64_windows.c.o
+[ 68%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_arm_linux_or_android.c.o
+[ 68%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_loongarch_linux.c.o
+[ 69%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_mips_linux_or_android.c.o
+[ 69%] Building C object src/CMakeFiles/rscore.dir/fragmenter.c.o
+[ 69%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_ppc_linux.c.o
+[ 69%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_riscv_linux.c.o
+[ 69%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_s390x_linux.c.o
+[ 69%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_x86_freebsd.c.o
+[ 70%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_x86_linux_or_android.c.o
+[ 70%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_x86_macos.c.o
+[ 70%] Building C object _deps/cpu_features-build/CMakeFiles/cpu_features.dir/src/impl_x86_windows.c.o
+[ 70%] Linking C static library libcpu_features.a
+[ 70%] Building C object src/CMakeFiles/rscore.dir/gc.c.o
+[ 70%] Built target cpu_features
+[ 70%] Linking CXX static library libredisearch-coord.a
+[ 70%] Built target redisearch-coord
+[ 70%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/L2_space.cpp.o
+[ 70%] Building C object src/CMakeFiles/rscore.dir/geo_index.c.o
+[ 70%] Linking CXX static library libspdlog.a
+[ 70%] Built target spdlog
+[ 71%] Building C object src/CMakeFiles/rscore.dir/geometry_index.c.o
+[ 71%] Building C object src/CMakeFiles/rscore.dir/highlight_processor.c.o
+[ 72%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/IP_space.cpp.o
+[ 72%] Building C object src/CMakeFiles/rscore.dir/hll/hll.c.o
+[ 72%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/spaces.cpp.o
+[ 72%] Building C object src/CMakeFiles/rscore.dir/hybrid/hybrid_debug.c.o
+[ 72%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/NEON_DOTPROD.cpp.o
+[ 72%] Building C object src/CMakeFiles/rscore.dir/hybrid/hybrid_exec.c.o
+[ 72%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/NEON.cpp.o
+[ 73%] Building C object src/CMakeFiles/rscore.dir/hybrid/hybrid_lookup_context.c.o
+[ 73%] Building C object src/CMakeFiles/rscore.dir/hybrid/hybrid_request.c.o
+[ 73%] Building C object src/CMakeFiles/rscore.dir/hybrid/hybrid_scoring.c.o
+[ 73%] Building C object src/CMakeFiles/rscore.dir/hybrid/hybrid_search_result.c.o
+[ 73%] Building C object src/CMakeFiles/rscore.dir/hybrid/parse/hybrid_callbacks.c.o
+[ 74%] Building C object src/CMakeFiles/rscore.dir/hybrid/parse/hybrid_combine.c.o
+   Compiling cheadergen_macros v0.3.1
+   Compiling thiserror v2.0.18
+   Compiling thiserror-impl v2.0.18
+[ 74%] Building C object src/CMakeFiles/rscore.dir/hybrid/parse/hybrid_optional_args.c.o
+   Compiling cheadergen v0.3.1
+   Compiling heck v0.5.0
+   Compiling strum_macros v0.27.2
+[ 74%] Building C object src/CMakeFiles/rscore.dir/hybrid/parse_hybrid.c.o
+[ 74%] Building C object src/CMakeFiles/rscore.dir/hybrid/vector_query_utils.c.o
+   Compiling enumflags2_derive v0.7.12
+[ 75%] Building C object src/CMakeFiles/rscore.dir/index_result_async_read.c.o
+[ 76%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/NEON_HP.cpp.o
+[ 76%] Building C object src/CMakeFiles/rscore.dir/indexer.c.o
+   Compiling enumflags2 v0.7.12
+   Compiling rqe_core v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/rqe_core)
+[ 76%] Building C object src/CMakeFiles/rscore.dir/indexes.c.o
+   Compiling ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/ffi)
+   Compiling strum v0.27.2
+   Compiling document v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/document)
+   Compiling query_types v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/query_types)
+   Compiling rqe_iterator_type v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/rqe_iterator_type)
+   Compiling query_term v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/query_term)
+   Compiling tracing-attributes v0.1.31
+[ 76%] Building C object src/CMakeFiles/rscore.dir/indexes_asyncscan.c.o
+[ 76%] Building C object src/CMakeFiles/rscore.dir/indexes_scan.c.o
+[ 77%] Building C object src/CMakeFiles/rscore.dir/indexes_scanner.c.o
+[ 77%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/NEON_BF16.cpp.o
+[ 77%] Building C object src/CMakeFiles/rscore.dir/info/field_spec_info.c.o
+   Compiling pin-project-lite v0.2.17
+   Compiling tracing v0.1.44
+[ 77%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/SVE.cpp.o
+[ 77%] Building C object src/CMakeFiles/rscore.dir/info/global_stats.c.o
+   Compiling thin_vec v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/thin_vec)
+   Compiling synstructure v0.13.2
+[ 77%] Building C object src/CMakeFiles/rscore.dir/info/index_error.c.o
+[ 77%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/SVE_BF16.cpp.o
+   Compiling varint v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/varint)
+[ 78%] Building C object src/CMakeFiles/rscore.dir/info/indexes_info.c.o
+   Compiling zerofrom-derive v0.1.7
+[ 78%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/functions/SVE2.cpp.o
+[ 78%] Building C object src/CMakeFiles/rscore.dir/info/info_command.c.o
+[ 78%] Building C object src/CMakeFiles/rscore.dir/info/info_redis/block_client.c.o
+[ 79%] Building CXX object src/VectorSimilarity/src/VecSim/spaces/CMakeFiles/VectorSimilaritySpaces.dir/computer/preprocessor_container.cpp.o
+[ 79%] Building C object src/CMakeFiles/rscore.dir/info/info_redis/info_redis.c.o
+   Compiling field v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/field)
+   Compiling ref_mode v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/ref_mode)
+   Compiling paste v1.0.15
+   Compiling zerofrom v0.1.8
+   Compiling index_result v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/index_result)
+   Compiling redis_reply v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/redis_reply)
+[ 79%] Building C object src/CMakeFiles/rscore.dir/info/info_redis/threads/current_thread.c.o
+   Compiling yoke-derive v0.8.2
+[ 80%] Building C object src/CMakeFiles/rscore.dir/info/info_redis/threads/main_thread.c.o
+[ 80%] Building C object src/CMakeFiles/rscore.dir/info/info_redis/types/blocked_queries.c.o
+[ 80%] Building C object src/CMakeFiles/rscore.dir/info/vector_index_stats.c.o
+[ 80%] Building C object src/CMakeFiles/rscore.dir/json.c.o
+[ 80%] Building C object src/CMakeFiles/rscore.dir/language.c.o
+[ 80%] Linking CXX static library libVectorSimilaritySpaces.a
+   Compiling qint v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/qint)
+[ 81%] Building C object src/CMakeFiles/rscore.dir/legacy_types.c.o
+   Compiling smallvec v1.15.2
+[ 81%] Building C object src/CMakeFiles/rscore.dir/module-init/module-init.c.o
+[ 81%] Built target VectorSimilaritySpaces
+[ 81%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/index_factories/brute_force_factory.cpp.o
+   Compiling inverted_index v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/inverted_index)
+[ 81%] Building C object src/CMakeFiles/rscore.dir/module.c.o
+[ 81%] Building C object src/CMakeFiles/rscore.dir/notifications.c.o
+   Compiling yoke v0.8.3
+/work/modules/redisearch/src/src/notifications.c: In function 'Initialize_RdbNotifications':
+/work/modules/redisearch/src/src/notifications.c:1081:5: warning: 'RedisModuleEvent_ReplBackup' is deprecated [-Wdeprecated-declarations]
+ 1081 |     int success = RedisModule_SubscribeToServerEvent(ctx, RedisModuleEvent_ReplBackup, ReplicaBackupCallback);
+      |     ^~~
+In file included from /work/modules/redisearch/src/src/config.h:11,
+                 from /work/modules/redisearch/src/src/notifications.c:9:
+/work/modules/redisearch/src/src/redismodule.h:713:5: note: declared here
+  713 |     RedisModuleEvent_ReplBackup = {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Compiling c_ffi_utils v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/c_ffi_utils)
+[ 82%] Building C object src/CMakeFiles/rscore.dir/numeric_filter.c.o
+   Compiling ext-trait-proc_macros v1.0.1
+[ 82%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/index_factories/hnsw_factory.cpp.o
+   Compiling macro_rules_attribute-proc_macro v0.1.3
+   Compiling ext-trait v1.0.1
+   Compiling macro_rules_attribute v0.1.3
+   Compiling query_error v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/query_error)
+   Compiling zerovec-derive v0.11.3
+   Compiling nougat-proc_macros v0.2.4
+   Compiling extension-traits v1.0.1
+   Compiling displaydoc v0.2.6
+[ 82%] Building C object src/CMakeFiles/rscore.dir/obfuscation/hidden.c.o
+   Compiling lending-iterator-proc_macros v0.1.7
+   Compiling nougat v0.2.4
+   Compiling zerovec v0.11.6
+[ 82%] Building C object src/CMakeFiles/rscore.dir/obfuscation/hidden_unicode.c.o
+   Compiling polonius-the-crab v0.2.1
+   Compiling never-say-never v6.6.666
+   Compiling hidden_string v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/hidden_string)
+[ 82%] Building C object src/CMakeFiles/rscore.dir/obfuscation/obfuscation_api.c.o
+   Compiling tracing_assert v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/tracing_assert)
+   Compiling triomphe v0.1.16
+[ 82%] Building C object src/CMakeFiles/rscore.dir/offset_vector.c.o
+   Compiling lending-iterator v0.1.7
+   Compiling writeable v0.6.3
+[ 83%] Building C object src/CMakeFiles/rscore.dir/param.c.o
+   Compiling value v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/value)
+   Compiling field_spec v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/field_spec)
+[ 83%] Building C object src/CMakeFiles/rscore.dir/phonetic_manager.c.o
+   Compiling tinystr v0.8.3
+   Compiling schema_rule v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/schema_rule)
+   Compiling litemap v0.8.2
+[ 83%] Building C object src/CMakeFiles/rscore.dir/pipeline/pipeline.c.o
+   Compiling icu_properties_data v2.2.0
+   Compiling icu_locale_core v2.2.0
+   Compiling index_spec v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/index_spec)
+   Compiling potential_utf v0.1.5
+[ 83%] Building C object src/CMakeFiles/rscore.dir/pipeline/pipeline_construction.c.o
+   Compiling zerotrie v0.2.4
+   Compiling icu_casemap_data v2.2.0
+   Compiling utf8_iter v1.0.4
+   Compiling icu_collections v2.2.0
+[ 84%] Building C object src/CMakeFiles/rscore.dir/profile/options.c.o
+[ 84%] Building C object src/CMakeFiles/rscore.dir/profile/profile.c.o
+[ 84%] Building C object src/CMakeFiles/rscore.dir/query.c.o
+   Compiling icu_provider v2.2.0
+[ 84%] Building C object src/CMakeFiles/rscore.dir/query_error_compat.c.o
+[ 84%] Building C object src/CMakeFiles/rscore.dir/query_optimizer.c.o
+[ 85%] Building C object src/CMakeFiles/rscore.dir/query_param.c.o
+   Compiling icu_properties v2.2.0
+[ 85%] Building C object src/CMakeFiles/rscore.dir/query_parser/v1/lexer.c.o
+[ 85%] Building C object src/CMakeFiles/rscore.dir/query_parser/v1/parser.c.o
+   Compiling sorting_vector v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/sorting_vector)
+   Compiling icu_casemap v2.2.0
+   Compiling rm_array v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/rm_array)
+   Compiling rqe_wildcard v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/rqe_wildcard)
+   Compiling rlookup v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/rlookup)
+   Compiling pin-project-internal v1.1.13
+[ 85%] Building C object src/CMakeFiles/rscore.dir/query_parser/v2/lexer.c.o
+   Compiling index_spec_cache v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/index_spec_cache)
+   Compiling redis_json_api v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/redis_json_api)
+   Compiling document_metadata v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/document_metadata)
+[ 86%] Building C object src/CMakeFiles/rscore.dir/query_parser/v2/parser.c.o
+   Compiling itertools v0.15.0
+[ 86%] Building C object src/CMakeFiles/rscore.dir/rdb.c.o
+[ 86%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/index_factories/tiered_factory.cpp.o
+   Compiling pin-project v1.1.13
+   Compiling hash32 v1.0.0
+   Compiling fnv v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/fnv)
+   Compiling decorum v0.4.0
+   Compiling trie_rs v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/trie_rs)
+[ 86%] Building C object src/CMakeFiles/rscore.dir/redis_index.c.o
+   Compiling wyhash v0.5.0
+   Compiling numeric_range_tree v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/numeric_range_tree)
+[ 86%] Building C object src/CMakeFiles/rscore.dir/reply.c.o
+   Compiling approx v0.5.1
+[ 86%] Building C object src/CMakeFiles/rscore.dir/result_processor.c.o
+   Compiling bytecount v0.6.9
+   Compiling hyperloglog v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/hyperloglog)
+   Compiling generational_slab v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/generational_slab)
+   Compiling ttl_table v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/ttl_table)
+   Compiling geo v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/geo)
+   Compiling buffer v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/buffer)
+   Compiling idf v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/idf)
+   Compiling rqe_iterators v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/rqe_iterators)
+   Compiling varint_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/varint_ffi)
+   Compiling types_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/types_ffi)
+[ 87%] Building C object src/CMakeFiles/rscore.dir/rlookup_load_document.c.o
+   Compiling rmp v0.8.15
+In file included from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs.h:27,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs_tiered.h:5,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/index_factories/tiered_factory.h:16,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/index_factories/tiered_factory.cpp:9:
+/work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs_extensions.h:239:17: note: '#pragma message: SVS LVQ is not available'
+  239 | #pragma message "SVS LVQ is not available"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   Compiling search_disk v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/search_disk)
+   Compiling rmp-serde v1.3.1
+   Compiling query v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_wrappers/query)
+[ 87%] Building C object src/CMakeFiles/rscore.dir/rules.c.o
+   Compiling string_utils v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/string_utils)
+   Compiling hashbrown v0.17.1
+   Compiling winnow v1.0.3
+   Compiling equivalent v1.0.2
+   Compiling toml_parser v1.1.2+spec-1.1.0
+[ 87%] Building C object src/CMakeFiles/rscore.dir/score_explain.c.o
+   Compiling sharded-slab v0.1.7
+   Compiling indexmap v2.14.0
+[ 87%] Building C object src/CMakeFiles/rscore.dir/search_disk.c.o
+   Compiling query_flags v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/query_flags)
+   Compiling reducers v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/reducers)
+   Compiling query_eval v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/query_eval)
+   Compiling result_processor v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/result_processor)
+   Compiling matchers v0.2.0
+[ 87%] Building C object src/CMakeFiles/rscore.dir/search_disk_utils.c.o
+   Compiling thread_local v1.1.9
+   Compiling toml_datetime v0.7.5+spec-1.1.0
+   Compiling serde_spanned v1.1.1
+   Compiling nu-ansi-term v0.50.3
+[ 88%] Building C object src/CMakeFiles/rscore.dir/shard_window_ratio.c.o
+   Compiling toml_writer v1.1.1+spec-1.1.0
+   Compiling winnow v0.7.15
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
+[ 88%] Building C object src/CMakeFiles/rscore.dir/slot_ranges.c.o
+   Compiling tracing-subscriber v0.3.23
+[ 88%] Building C object src/CMakeFiles/rscore.dir/sortable.c.o
+   Compiling priority-queue v2.7.0
+[ 88%] Building C object src/CMakeFiles/rscore.dir/spec.c.o
+   Compiling toml v0.9.12+spec-1.1.0
+   Compiling inverted_index_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/inverted_index_ffi)
+   Compiling value_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/value_ffi)
+   Compiling tracing_log_error v0.1.4
+   Compiling unsafe-tools-mimic v0.1.2
+[ 89%] Building C object src/CMakeFiles/rscore.dir/spell_check.c.o
+   Compiling min-max-heap v1.3.0
+   Compiling bumpalo v3.20.3
+[ 89%] Building C object src/CMakeFiles/rscore.dir/stemmer.c.o
+   Compiling unsafe-tools-canary v0.1.2
+   Compiling anstyle-query v1.1.5
+   Compiling tracing_redismodule v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/tracing_redismodule)
+[ 89%] Building C object src/CMakeFiles/rscore.dir/stopwords.c.o
+[ 89%] Building C object src/CMakeFiles/rscore.dir/suffix.c.o
+   Compiling unsafe-tools v0.1.2
+   Compiling redis_mock v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/redis_mock)
+   Compiling redisearch_rs v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/redisearch_rs)
+[ 89%] Building C object src/CMakeFiles/rscore.dir/suggest.c.o
+   Compiling numeric_range_tree_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/numeric_range_tree_ffi)
+[ 90%] Building C object src/CMakeFiles/rscore.dir/summarize_spec.c.o
+[ 90%] Building C object src/CMakeFiles/rscore.dir/synonym_map.c.o
+   Compiling term_suffix_index v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/term_suffix_index)
+[ 90%] Building C object src/CMakeFiles/rscore.dir/tag_index.c.o
+[ 90%] Building C object src/CMakeFiles/rscore.dir/tokenize.c.o
+[ 91%] Building C object src/CMakeFiles/rscore.dir/tokenize_cn.c.o
+   Compiling search_result v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/search_result)
+[ 91%] Building C object src/CMakeFiles/rscore.dir/trie/levenshtein.c.o
+[ 91%] Building C object src/CMakeFiles/rscore.dir/trie/rune_util.c.o
+[ 91%] Building C object src/CMakeFiles/rscore.dir/trie/sparse_vector.c.o
+[ 91%] Building C object src/CMakeFiles/rscore.dir/trie/trie.c.o
+[ 92%] Building C object src/CMakeFiles/rscore.dir/trie/trie_node.c.o
+[ 92%] Building C object src/CMakeFiles/rscore.dir/util/arg_parser.c.o
+[ 92%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/index_factories/svs_factory.cpp.o
+[ 92%] Building C object src/CMakeFiles/rscore.dir/util/arr/arr.c.o
+[ 92%] Building C object src/CMakeFiles/rscore.dir/util/array.c.o
+[ 92%] Building C object src/CMakeFiles/rscore.dir/util/block_alloc.c.o
+   Compiling fork_gc v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/fork_gc)
+   Compiling slots_tracker v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/slots_tracker)
+[ 93%] Building C object src/CMakeFiles/rscore.dir/util/circular_buffer.c.o
+[ 93%] Building C object src/CMakeFiles/rscore.dir/util/heap.c.o
+   Compiling query_eval_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/query_eval_ffi)
+   Compiling slots_tracker_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/slots_tracker_ffi)
+[ 93%] Building C object src/CMakeFiles/rscore.dir/util/heap_doubles.c.o
+   Compiling fork_gc_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/fork_gc_ffi)
+   Compiling reducers_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/reducers_ffi)
+[ 93%] Building C object src/CMakeFiles/rscore.dir/util/khtable.c.o
+[ 94%] Building C object src/CMakeFiles/rscore.dir/util/logging.c.o
+   Compiling iterators_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/iterators_ffi)
+In file included from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs.h:27,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/index_factories/svs_factory.cpp:15:
+/work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs_extensions.h:239:17: note: '#pragma message: SVS LVQ is not available'
+  239 | #pragma message "SVS LVQ is not available"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   Compiling result_processor_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/result_processor_ffi)
+[ 94%] Building C object src/CMakeFiles/rscore.dir/util/minmax_heap.c.o
+   Compiling search_result_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/search_result_ffi)
+   Compiling rlookup_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/rlookup_ffi)
+[ 94%] Building C object src/CMakeFiles/rscore.dir/util/misc.c.o
+[ 94%] Building C object src/CMakeFiles/rscore.dir/util/quantile.c.o
+   Compiling term_suffix_index_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/term_suffix_index_ffi)
+[ 94%] Building C object src/CMakeFiles/rscore.dir/util/redis_mem_info.c.o
+[ 95%] Building C object src/CMakeFiles/rscore.dir/util/references.c.o
+   Compiling module_init_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/module_init_ffi)
+[ 95%] Building C object src/CMakeFiles/rscore.dir/util/strconv.c.o
+[ 95%] Building C object src/CMakeFiles/rscore.dir/util/threadpool_api.c.o
+   Compiling geo_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/geo_ffi)
+   Compiling sorting_vector_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/sorting_vector_ffi)
+   Compiling idf_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/idf_ffi)
+   Compiling ttl_table_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/ttl_table_ffi)
+   Compiling triemap_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/triemap_ffi)
+   Compiling fnv_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/fnv_ffi)
+   Compiling query_error_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/query_error_ffi)
+[ 95%] Building C object src/CMakeFiles/rscore.dir/util/workers.c.o
+   Compiling metrics_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/metrics_ffi)
+[ 96%] Building C object src/CMakeFiles/rscore.dir/vector_index.c.o
+   Compiling query_term_ffi v0.0.1 (/work/modules/redisearch/src/src/redisearch_rs/c_entrypoint/query_term_ffi)
+[ 96%] Building C object src/CMakeFiles/rscore.dir/wildcard/wildcard.c.o
+[ 96%] Built target rscore
+[ 97%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/index_factories/index_factory.cpp.o
+In file included from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs.h:27,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs_tiered.h:5,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/index_factories/tiered_factory.h:16,
+                 from /work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/index_factories/index_factory.cpp:13:
+/work/modules/redisearch/src/deps/VectorSimilarity/src/VecSim/algorithms/svs/svs_extensions.h:239:17: note: '#pragma message: SVS LVQ is not available'
+  239 | #pragma message "SVS LVQ is not available"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+    Finished `release` profile [optimized + debuginfo] target(s) in 1m 33s
+[ 97%] Built target redisearch_rs_build
+[ 97%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/algorithms/hnsw/visited_nodes_handler.cpp.o
+[ 97%] Built target redisearch_rs_lib_file
+[ 97%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/vec_sim.cpp.o
+[ 97%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/vec_sim_debug.cpp.o
+[ 97%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/vec_sim_interface.cpp.o
+[ 98%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/query_results.cpp.o
+[ 98%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/info_iterator.cpp.o
+[ 98%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/utils/vec_utils.cpp.o
+[ 98%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/containers/data_block.cpp.o
+[ 99%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/containers/data_blocks_container.cpp.o
+[ 99%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/memory/vecsim_malloc.cpp.o
+[ 99%] Building CXX object src/VectorSimilarity/src/VecSim/CMakeFiles/VectorSimilarity.dir/memory/vecsim_base.cpp.o
+[ 99%] Linking CXX static library libVectorSimilarity.a
+[ 99%] Built target VectorSimilarity
+[100%] Linking CXX static library libredisearch_c.a
+[100%] Built target redisearch_c
+[100%] Creating unified libredisearch_all.a with ar
+[100%] Linking CXX shared library redisearch.so
+[100%] Built target redisearch_all
+Extracting debug symbols from redisearch
+[100%] Built target redisearch
+Build complete. Artifacts in /work/modules/redisearch/src/bin/linux-aarch64-release/search-community
+make[2]: Leaving directory '/work/modules/redisearch/src'
+cp src/bin/linux-arm64v8-release/search-community/redisearch.so ./
+make[1]: Leaving directory '/work/modules/redisearch'
+
+==> Build complete.
+    redis-server: /work/src/redis-server
+    Module artifacts:
+      redisearch:          modules/redisearch/redisearch.so
+                           modules/redisearch/src/bin/linux-aarch64-release/search-community/redisearch.so

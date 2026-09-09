@@ -1,0 +1,64 @@
+31495:C 09 Sep 2026 13:31:43.336 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+31495:C 09 Sep 2026 13:31:43.336 * Redis version=8.9.241, bits=64, commit=dce0c76d, modified=0, pid=31495, just started
+31495:C 09 Sep 2026 13:31:43.336 * Configuration loaded
+31495:M 09 Sep 2026 13:31:43.336 * monotonic clock: ARM CNTVCT @ 24 ticks/us
+31495:M 09 Sep 2026 13:31:43.338 * Running mode=standalone, port=16389.
+31495:M 09 Sep 2026 13:31:43.342 * <search> search-workers default: 8 (min of MAX_WORKER_THREADS=16 and CPU cores)
+31495:M 09 Sep 2026 13:31:43.342 * <search> Redis version found by RedisSearch : 8.9.241 - oss
+31495:M 09 Sep 2026 13:31:43.342 * <search> RediSearch version 8.10.0 (Git=294c88b)
+31495:M 09 Sep 2026 13:31:43.342 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, oom policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, default scorer: BM25STD, 
+31495:M 09 Sep 2026 13:31:43.342 * <search> Initialized thread pools!
+31495:M 09 Sep 2026 13:31:43.343 * <search> Enabled workers threadpool of size 8
+31495:M 09 Sep 2026 13:31:43.343 * <search> Subscribe to config changes
+31495:M 09 Sep 2026 13:31:43.343 * <search> Subscribe to cluster slot migration events
+31495:M 09 Sep 2026 13:31:43.343 * <search> Subscribe to cluster topology change events
+31495:M 09 Sep 2026 13:31:43.343 * <search> Enabled role change notification
+31495:M 09 Sep 2026 13:31:43.343 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+31495:M 09 Sep 2026 13:31:43.343 * Module 'search' loaded from /work/modules/redisearch/redisearch.so
+31495:M 09 Sep 2026 13:31:43.343 * Server initialized
+31495:M 09 Sep 2026 13:31:43.344 * Ready to accept connections tcp
+31495:M 09 Sep 2026 13:31:43.344 # WARNING: Redis does not require authentication. Redis will accept connections from any local client.
+31495:M 09 Sep 2026 13:31:43.428 * <search> Successfully created index ko:native
+31495:M 09 Sep 2026 13:31:43.428 * <search> Successfully created index ko:adapter
+31495:M 09 Sep 2026 13:31:43.447 * <search> Successfully created index en
+31495:M 09 Sep 2026 13:31:43.447 * <search> Scanning index en in background
+31495:M 09 Sep 2026 13:31:43.448 * <search> Scanning index en in background: done (scanned=34)
+31495:M 09 Sep 2026 13:31:43.501 * BGSAVE done, 34 keys saved, 0 keys skipped, 4155 bytes written.
+31495:M 09 Sep 2026 13:31:43.505 * DB saved on disk
+31495:M 09 Sep 2026 13:31:43.506 * User requested shutdown...
+31495:M 09 Sep 2026 13:31:43.506 * Removing the pid file.
+31495:M 09 Sep 2026 13:31:43.506 # Redis is now ready to exit, bye bye...
+31545:C 09 Sep 2026 13:31:43.509 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+31545:C 09 Sep 2026 13:31:43.509 * Redis version=8.9.241, bits=64, commit=dce0c76d, modified=0, pid=31545, just started
+31545:C 09 Sep 2026 13:31:43.509 * Configuration loaded
+31545:M 09 Sep 2026 13:31:43.509 * monotonic clock: ARM CNTVCT @ 24 ticks/us
+31545:M 09 Sep 2026 13:31:43.510 * Running mode=standalone, port=16389.
+31545:M 09 Sep 2026 13:31:43.512 * <search> search-workers default: 8 (min of MAX_WORKER_THREADS=16 and CPU cores)
+31545:M 09 Sep 2026 13:31:43.512 * <search> Redis version found by RedisSearch : 8.9.241 - oss
+31545:M 09 Sep 2026 13:31:43.512 * <search> RediSearch version 8.10.0 (Git=294c88b)
+31545:M 09 Sep 2026 13:31:43.512 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, oom policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, default scorer: BM25STD, 
+31545:M 09 Sep 2026 13:31:43.512 * <search> Initialized thread pools!
+31545:M 09 Sep 2026 13:31:43.512 * <search> Enabled workers threadpool of size 8
+31545:M 09 Sep 2026 13:31:43.512 * <search> Subscribe to config changes
+31545:M 09 Sep 2026 13:31:43.512 * <search> Subscribe to cluster slot migration events
+31545:M 09 Sep 2026 13:31:43.512 * <search> Subscribe to cluster topology change events
+31545:M 09 Sep 2026 13:31:43.512 * <search> Enabled role change notification
+31545:M 09 Sep 2026 13:31:43.513 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+31545:M 09 Sep 2026 13:31:43.513 * Module 'search' loaded from /work/modules/redisearch/redisearch.so
+31545:M 09 Sep 2026 13:31:43.513 * Server initialized
+31545:M 09 Sep 2026 13:31:43.513 * <search> LOAD start source=RDB_FILE sst=false disk=rebuild-from-keyspace
+31545:M 09 Sep 2026 13:31:43.514 * Loading RDB produced by version 8.9.241
+31545:M 09 Sep 2026 13:31:43.514 * RDB age 0 seconds
+31545:M 09 Sep 2026 13:31:43.514 * RDB memory usage when created 1.50 Mb
+31545:M 09 Sep 2026 13:31:43.514 * <search> RDB Load, SST persistence: false
+31545:M 09 Sep 2026 13:31:43.514 * <search> Loading RDB for IndexSpec without SST flag
+31545:M 09 Sep 2026 13:31:43.514 * <search> Loading RDB for IndexSpec without SST flag
+31545:M 09 Sep 2026 13:31:43.514 * <search> Loading RDB for IndexSpec without SST flag
+31545:M 09 Sep 2026 13:31:43.514 * Done loading RDB, keys loaded: 34, keys expired: 0.
+31545:M 09 Sep 2026 13:31:43.514 * <search> LOAD end disk=rebuild-from-keyspace ok=true
+31545:M 09 Sep 2026 13:31:43.514 * DB loaded from disk: 0.001 seconds
+31545:M 09 Sep 2026 13:31:43.514 * Ready to accept connections tcp
+31545:M 09 Sep 2026 13:31:43.514 # WARNING: Redis does not require authentication. Redis will accept connections from any local client.
+31545:M 09 Sep 2026 13:31:43.616 * User requested shutdown...
+31545:M 09 Sep 2026 13:31:43.616 * Removing the pid file.
+31545:M 09 Sep 2026 13:31:43.616 # Redis is now ready to exit, bye bye...

@@ -50,3 +50,5 @@
 /zig/*_stemmer.zig
 /zig/algorithms.zig
 /zig/stemwords
+# Local design and work reports
+/docs/

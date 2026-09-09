@@ -1,0 +1,678 @@
+/tmp/ko-baseline-language.c:7:50: error: code should be clang-formatted [-Wclang-format-violations]
+ * GNU Affero General Public License v3 (AGPLv3).
+                                                 ^
+/tmp/ko-baseline-language.c:14:26: error: code should be clang-formatted [-Wclang-format-violations]
+typedef struct langPair_s
+                         ^
+/tmp/ko-baseline-language.c:20:29: error: code should be clang-formatted [-Wclang-format-violations]
+langPair_t __langPairs[] = {
+                            ^
+/tmp/ko-baseline-language.c:21:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+   ^
+/tmp/ko-baseline-language.c:21:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+             ^
+/tmp/ko-baseline-language.c:21:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+                                ^
+/tmp/ko-baseline-language.c:21:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "arabic",     RS_LANG_ARABIC },
+                                   ^
+/tmp/ko-baseline-language.c:22:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+   ^
+/tmp/ko-baseline-language.c:22:16: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+               ^
+/tmp/ko-baseline-language.c:22:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+                                  ^
+/tmp/ko-baseline-language.c:22:38: error: code should be clang-formatted [-Wclang-format-violations]
+  { "armenian",   RS_LANG_ARMENIAN },
+                                     ^
+/tmp/ko-baseline-language.c:23:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+   ^
+/tmp/ko-baseline-language.c:23:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+             ^
+/tmp/ko-baseline-language.c:23:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+                                ^
+/tmp/ko-baseline-language.c:23:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "basque",     RS_LANG_BASQUE },
+                                   ^
+/tmp/ko-baseline-language.c:24:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+   ^
+/tmp/ko-baseline-language.c:24:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+              ^
+/tmp/ko-baseline-language.c:24:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+                                 ^
+/tmp/ko-baseline-language.c:24:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "catalan",    RS_LANG_CATALAN },
+                                    ^
+/tmp/ko-baseline-language.c:25:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+   ^
+/tmp/ko-baseline-language.c:25:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+              ^
+/tmp/ko-baseline-language.c:25:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+                                 ^
+/tmp/ko-baseline-language.c:25:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "chinese",    RS_LANG_CHINESE },
+                                    ^
+/tmp/ko-baseline-language.c:26:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+   ^
+/tmp/ko-baseline-language.c:26:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+             ^
+/tmp/ko-baseline-language.c:26:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+                                ^
+/tmp/ko-baseline-language.c:26:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "danish",     RS_LANG_DANISH },
+                                   ^
+/tmp/ko-baseline-language.c:27:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+   ^
+/tmp/ko-baseline-language.c:27:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+            ^
+/tmp/ko-baseline-language.c:27:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+                               ^
+/tmp/ko-baseline-language.c:27:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "dutch",      RS_LANG_DUTCH },
+                                  ^
+/tmp/ko-baseline-language.c:28:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+   ^
+/tmp/ko-baseline-language.c:28:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+              ^
+/tmp/ko-baseline-language.c:28:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+                                 ^
+/tmp/ko-baseline-language.c:28:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "english",    RS_LANG_ENGLISH },
+                                    ^
+/tmp/ko-baseline-language.c:29:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+   ^
+/tmp/ko-baseline-language.c:29:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+              ^
+/tmp/ko-baseline-language.c:29:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+                                 ^
+/tmp/ko-baseline-language.c:29:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "finnish",    RS_LANG_FINNISH },
+                                    ^
+/tmp/ko-baseline-language.c:30:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+   ^
+/tmp/ko-baseline-language.c:30:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+             ^
+/tmp/ko-baseline-language.c:30:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+                                ^
+/tmp/ko-baseline-language.c:30:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "french",     RS_LANG_FRENCH },
+                                   ^
+/tmp/ko-baseline-language.c:31:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+   ^
+/tmp/ko-baseline-language.c:31:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+             ^
+/tmp/ko-baseline-language.c:31:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+                                ^
+/tmp/ko-baseline-language.c:31:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "german",     RS_LANG_GERMAN },
+                                   ^
+/tmp/ko-baseline-language.c:32:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+   ^
+/tmp/ko-baseline-language.c:32:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+            ^
+/tmp/ko-baseline-language.c:32:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+                               ^
+/tmp/ko-baseline-language.c:32:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "greek",      RS_LANG_GREEK },
+                                  ^
+/tmp/ko-baseline-language.c:33:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+   ^
+/tmp/ko-baseline-language.c:33:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+            ^
+/tmp/ko-baseline-language.c:33:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+                               ^
+/tmp/ko-baseline-language.c:33:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hindi",      RS_LANG_HINDI },
+                                  ^
+/tmp/ko-baseline-language.c:34:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+   ^
+/tmp/ko-baseline-language.c:34:17: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+                ^
+/tmp/ko-baseline-language.c:34:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+                                   ^
+/tmp/ko-baseline-language.c:34:39: error: code should be clang-formatted [-Wclang-format-violations]
+  { "hungarian",  RS_LANG_HUNGARIAN },
+                                      ^
+/tmp/ko-baseline-language.c:35:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "indonesian", RS_LANG_INDONESIAN },
+   ^
+/tmp/ko-baseline-language.c:35:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "indonesian", RS_LANG_INDONESIAN },
+                                    ^
+/tmp/ko-baseline-language.c:35:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { "indonesian", RS_LANG_INDONESIAN },
+                                       ^
+/tmp/ko-baseline-language.c:36:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+   ^
+/tmp/ko-baseline-language.c:36:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+            ^
+/tmp/ko-baseline-language.c:36:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+                               ^
+/tmp/ko-baseline-language.c:36:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "irish",      RS_LANG_IRISH },
+                                  ^
+/tmp/ko-baseline-language.c:37:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+   ^
+/tmp/ko-baseline-language.c:37:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+              ^
+/tmp/ko-baseline-language.c:37:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+                                 ^
+/tmp/ko-baseline-language.c:37:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "italian",    RS_LANG_ITALIAN },
+                                    ^
+/tmp/ko-baseline-language.c:38:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "lithuanian", RS_LANG_LITHUANIAN },
+   ^
+/tmp/ko-baseline-language.c:38:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "lithuanian", RS_LANG_LITHUANIAN },
+                                    ^
+/tmp/ko-baseline-language.c:38:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { "lithuanian", RS_LANG_LITHUANIAN },
+                                       ^
+/tmp/ko-baseline-language.c:39:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+   ^
+/tmp/ko-baseline-language.c:39:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+            ^
+/tmp/ko-baseline-language.c:39:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+                               ^
+/tmp/ko-baseline-language.c:39:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "malay",      RS_LANG_MALAY },
+                                  ^
+/tmp/ko-baseline-language.c:40:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+   ^
+/tmp/ko-baseline-language.c:40:14: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+             ^
+/tmp/ko-baseline-language.c:40:33: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+                                ^
+/tmp/ko-baseline-language.c:40:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "nepali",     RS_LANG_NEPALI },
+                                   ^
+/tmp/ko-baseline-language.c:41:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+   ^
+/tmp/ko-baseline-language.c:41:17: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+                ^
+/tmp/ko-baseline-language.c:41:36: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+                                   ^
+/tmp/ko-baseline-language.c:41:39: error: code should be clang-formatted [-Wclang-format-violations]
+  { "norwegian",  RS_LANG_NORWEGIAN },
+                                      ^
+/tmp/ko-baseline-language.c:42:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "portuguese", RS_LANG_PORTUGUESE },
+   ^
+/tmp/ko-baseline-language.c:42:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "portuguese", RS_LANG_PORTUGUESE },
+                                    ^
+/tmp/ko-baseline-language.c:42:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { "portuguese", RS_LANG_PORTUGUESE },
+                                       ^
+/tmp/ko-baseline-language.c:43:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+   ^
+/tmp/ko-baseline-language.c:43:16: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+               ^
+/tmp/ko-baseline-language.c:43:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+                                  ^
+/tmp/ko-baseline-language.c:43:38: error: code should be clang-formatted [-Wclang-format-violations]
+  { "romanian",   RS_LANG_ROMANIAN },
+                                     ^
+/tmp/ko-baseline-language.c:44:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+   ^
+/tmp/ko-baseline-language.c:44:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+              ^
+/tmp/ko-baseline-language.c:44:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+                                 ^
+/tmp/ko-baseline-language.c:44:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "russian",    RS_LANG_RUSSIAN },
+                                    ^
+/tmp/ko-baseline-language.c:45:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+   ^
+/tmp/ko-baseline-language.c:45:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+              ^
+/tmp/ko-baseline-language.c:45:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+                                 ^
+/tmp/ko-baseline-language.c:45:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "serbian",    RS_LANG_SERBIAN },
+                                    ^
+/tmp/ko-baseline-language.c:46:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+   ^
+/tmp/ko-baseline-language.c:46:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+              ^
+/tmp/ko-baseline-language.c:46:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+                                 ^
+/tmp/ko-baseline-language.c:46:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "spanish",    RS_LANG_SPANISH },
+                                    ^
+/tmp/ko-baseline-language.c:47:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+   ^
+/tmp/ko-baseline-language.c:47:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+              ^
+/tmp/ko-baseline-language.c:47:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+                                 ^
+/tmp/ko-baseline-language.c:47:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "swedish",    RS_LANG_SWEDISH },
+                                    ^
+/tmp/ko-baseline-language.c:48:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+   ^
+/tmp/ko-baseline-language.c:48:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+              ^
+/tmp/ko-baseline-language.c:48:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+                                 ^
+/tmp/ko-baseline-language.c:48:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tagalog",    RS_LANG_TAGALOG },
+                                    ^
+/tmp/ko-baseline-language.c:49:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+   ^
+/tmp/ko-baseline-language.c:49:13: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+            ^
+/tmp/ko-baseline-language.c:49:32: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+                               ^
+/tmp/ko-baseline-language.c:49:35: error: code should be clang-formatted [-Wclang-format-violations]
+  { "tamil",      RS_LANG_TAMIL },
+                                  ^
+/tmp/ko-baseline-language.c:50:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+   ^
+/tmp/ko-baseline-language.c:50:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+              ^
+/tmp/ko-baseline-language.c:50:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+                                 ^
+/tmp/ko-baseline-language.c:50:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "turkish",    RS_LANG_TURKISH },
+                                    ^
+/tmp/ko-baseline-language.c:51:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+   ^
+/tmp/ko-baseline-language.c:51:15: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+              ^
+/tmp/ko-baseline-language.c:51:34: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+                                 ^
+/tmp/ko-baseline-language.c:51:37: error: code should be clang-formatted [-Wclang-format-violations]
+  { "yiddish",    RS_LANG_YIDDISH },
+                                    ^
+/tmp/ko-baseline-language.c:52:4: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+   ^
+/tmp/ko-baseline-language.c:52:10: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+         ^
+/tmp/ko-baseline-language.c:52:38: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+                                     ^
+/tmp/ko-baseline-language.c:52:40: error: code should be clang-formatted [-Wclang-format-violations]
+  { NULL,         RS_LANG_UNSUPPORTED }
+                                       ^
+/tmp/ko-baseline-language.c:58:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARABIC:      ret = "arabic";     break;
+        ^
+/tmp/ko-baseline-language.c:58:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARABIC:      ret = "arabic";     break;
+                         ^
+/tmp/ko-baseline-language.c:58:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARABIC:      ret = "arabic";     break;
+                                              ^
+/tmp/ko-baseline-language.c:59:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARMENIAN:    ret = "armenian";   break;
+        ^
+/tmp/ko-baseline-language.c:59:28: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARMENIAN:    ret = "armenian";   break;
+                           ^
+/tmp/ko-baseline-language.c:59:49: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ARMENIAN:    ret = "armenian";   break;
+                                                ^
+/tmp/ko-baseline-language.c:60:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_BASQUE:      ret = "basque";     break;
+        ^
+/tmp/ko-baseline-language.c:60:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_BASQUE:      ret = "basque";     break;
+                         ^
+/tmp/ko-baseline-language.c:60:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_BASQUE:      ret = "basque";     break;
+                                              ^
+/tmp/ko-baseline-language.c:61:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CATALAN:     ret = "catalan";    break;
+        ^
+/tmp/ko-baseline-language.c:61:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CATALAN:     ret = "catalan";    break;
+                          ^
+/tmp/ko-baseline-language.c:61:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CATALAN:     ret = "catalan";    break;
+                                               ^
+/tmp/ko-baseline-language.c:62:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CHINESE:     ret = "chinese";    break;
+        ^
+/tmp/ko-baseline-language.c:62:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CHINESE:     ret = "chinese";    break;
+                          ^
+/tmp/ko-baseline-language.c:62:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_CHINESE:     ret = "chinese";    break;
+                                               ^
+/tmp/ko-baseline-language.c:63:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DANISH:      ret = "danish";     break;
+        ^
+/tmp/ko-baseline-language.c:63:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DANISH:      ret = "danish";     break;
+                         ^
+/tmp/ko-baseline-language.c:63:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DANISH:      ret = "danish";     break;
+                                              ^
+/tmp/ko-baseline-language.c:64:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DUTCH:       ret = "dutch";      break;
+        ^
+/tmp/ko-baseline-language.c:64:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DUTCH:       ret = "dutch";      break;
+                        ^
+/tmp/ko-baseline-language.c:64:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_DUTCH:       ret = "dutch";      break;
+                                             ^
+/tmp/ko-baseline-language.c:65:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ENGLISH:     ret = "english";    break;
+        ^
+/tmp/ko-baseline-language.c:65:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ENGLISH:     ret = "english";    break;
+                          ^
+/tmp/ko-baseline-language.c:65:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ENGLISH:     ret = "english";    break;
+                                               ^
+/tmp/ko-baseline-language.c:66:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FINNISH:     ret = "finnish";    break;
+        ^
+/tmp/ko-baseline-language.c:66:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FINNISH:     ret = "finnish";    break;
+                          ^
+/tmp/ko-baseline-language.c:66:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FINNISH:     ret = "finnish";    break;
+                                               ^
+/tmp/ko-baseline-language.c:67:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FRENCH:      ret = "french";     break;
+        ^
+/tmp/ko-baseline-language.c:67:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FRENCH:      ret = "french";     break;
+                         ^
+/tmp/ko-baseline-language.c:67:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_FRENCH:      ret = "french";     break;
+                                              ^
+/tmp/ko-baseline-language.c:68:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GERMAN:      ret = "german";     break;
+        ^
+/tmp/ko-baseline-language.c:68:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GERMAN:      ret = "german";     break;
+                         ^
+/tmp/ko-baseline-language.c:68:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GERMAN:      ret = "german";     break;
+                                              ^
+/tmp/ko-baseline-language.c:69:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GREEK:       ret = "greek";      break;
+        ^
+/tmp/ko-baseline-language.c:69:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GREEK:       ret = "greek";      break;
+                        ^
+/tmp/ko-baseline-language.c:69:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_GREEK:       ret = "greek";      break;
+                                             ^
+/tmp/ko-baseline-language.c:70:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HINDI:       ret = "hindi";      break;
+        ^
+/tmp/ko-baseline-language.c:70:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HINDI:       ret = "hindi";      break;
+                        ^
+/tmp/ko-baseline-language.c:70:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HINDI:       ret = "hindi";      break;
+                                             ^
+/tmp/ko-baseline-language.c:71:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HUNGARIAN:   ret = "hungarian";  break;
+        ^
+/tmp/ko-baseline-language.c:71:29: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HUNGARIAN:   ret = "hungarian";  break;
+                            ^
+/tmp/ko-baseline-language.c:71:50: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_HUNGARIAN:   ret = "hungarian";  break;
+                                                 ^
+/tmp/ko-baseline-language.c:72:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_INDONESIAN:  ret = "indonesian"; break;
+        ^
+/tmp/ko-baseline-language.c:72:30: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_INDONESIAN:  ret = "indonesian"; break;
+                             ^
+/tmp/ko-baseline-language.c:72:51: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_INDONESIAN:  ret = "indonesian"; break;
+                                                  ^
+/tmp/ko-baseline-language.c:73:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_IRISH:       ret = "irish";      break;
+        ^
+/tmp/ko-baseline-language.c:73:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_IRISH:       ret = "irish";      break;
+                        ^
+/tmp/ko-baseline-language.c:73:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_IRISH:       ret = "irish";      break;
+                                             ^
+/tmp/ko-baseline-language.c:74:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ITALIAN:     ret = "italian";    break;
+        ^
+/tmp/ko-baseline-language.c:74:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ITALIAN:     ret = "italian";    break;
+                          ^
+/tmp/ko-baseline-language.c:74:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ITALIAN:     ret = "italian";    break;
+                                               ^
+/tmp/ko-baseline-language.c:75:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_LITHUANIAN:  ret = "lithuanian"; break;
+        ^
+/tmp/ko-baseline-language.c:75:30: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_LITHUANIAN:  ret = "lithuanian"; break;
+                             ^
+/tmp/ko-baseline-language.c:75:51: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_LITHUANIAN:  ret = "lithuanian"; break;
+                                                  ^
+/tmp/ko-baseline-language.c:76:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_MALAY:       ret = "malay";      break;
+        ^
+/tmp/ko-baseline-language.c:76:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_MALAY:       ret = "malay";      break;
+                        ^
+/tmp/ko-baseline-language.c:76:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_MALAY:       ret = "malay";      break;
+                                             ^
+/tmp/ko-baseline-language.c:77:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NEPALI:      ret = "nepali";     break;
+        ^
+/tmp/ko-baseline-language.c:77:26: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NEPALI:      ret = "nepali";     break;
+                         ^
+/tmp/ko-baseline-language.c:77:47: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NEPALI:      ret = "nepali";     break;
+                                              ^
+/tmp/ko-baseline-language.c:78:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NORWEGIAN:   ret = "norwegian";  break;
+        ^
+/tmp/ko-baseline-language.c:78:29: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NORWEGIAN:   ret = "norwegian";  break;
+                            ^
+/tmp/ko-baseline-language.c:78:50: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_NORWEGIAN:   ret = "norwegian";  break;
+                                                 ^
+/tmp/ko-baseline-language.c:79:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_PORTUGUESE:  ret = "portuguese"; break;
+        ^
+/tmp/ko-baseline-language.c:79:30: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_PORTUGUESE:  ret = "portuguese"; break;
+                             ^
+/tmp/ko-baseline-language.c:79:51: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_PORTUGUESE:  ret = "portuguese"; break;
+                                                  ^
+/tmp/ko-baseline-language.c:80:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ROMANIAN:    ret = "romanian";   break;
+        ^
+/tmp/ko-baseline-language.c:80:28: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ROMANIAN:    ret = "romanian";   break;
+                           ^
+/tmp/ko-baseline-language.c:80:49: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_ROMANIAN:    ret = "romanian";   break;
+                                                ^
+/tmp/ko-baseline-language.c:81:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_RUSSIAN:     ret = "russian";    break;
+        ^
+/tmp/ko-baseline-language.c:81:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_RUSSIAN:     ret = "russian";    break;
+                          ^
+/tmp/ko-baseline-language.c:81:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_RUSSIAN:     ret = "russian";    break;
+                                               ^
+/tmp/ko-baseline-language.c:82:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SERBIAN:     ret = "serbian";    break;
+        ^
+/tmp/ko-baseline-language.c:82:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SERBIAN:     ret = "serbian";    break;
+                          ^
+/tmp/ko-baseline-language.c:82:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SERBIAN:     ret = "serbian";    break;
+                                               ^
+/tmp/ko-baseline-language.c:83:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SPANISH:     ret = "spanish";    break;
+        ^
+/tmp/ko-baseline-language.c:83:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SPANISH:     ret = "spanish";    break;
+                          ^
+/tmp/ko-baseline-language.c:83:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SPANISH:     ret = "spanish";    break;
+                                               ^
+/tmp/ko-baseline-language.c:84:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SWEDISH:     ret = "swedish";    break;
+        ^
+/tmp/ko-baseline-language.c:84:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SWEDISH:     ret = "swedish";    break;
+                          ^
+/tmp/ko-baseline-language.c:84:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_SWEDISH:     ret = "swedish";    break;
+                                               ^
+/tmp/ko-baseline-language.c:85:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAGALOG:     ret = "tagalog";    break;
+        ^
+/tmp/ko-baseline-language.c:85:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAGALOG:     ret = "tagalog";    break;
+                          ^
+/tmp/ko-baseline-language.c:85:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAGALOG:     ret = "tagalog";    break;
+                                               ^
+/tmp/ko-baseline-language.c:86:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAMIL:       ret = "tamil";      break;
+        ^
+/tmp/ko-baseline-language.c:86:25: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAMIL:       ret = "tamil";      break;
+                        ^
+/tmp/ko-baseline-language.c:86:46: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TAMIL:       ret = "tamil";      break;
+                                             ^
+/tmp/ko-baseline-language.c:87:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TURKISH:     ret = "turkish";    break;
+        ^
+/tmp/ko-baseline-language.c:87:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TURKISH:     ret = "turkish";    break;
+                          ^
+/tmp/ko-baseline-language.c:87:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_TURKISH:     ret = "turkish";    break;
+                                               ^
+/tmp/ko-baseline-language.c:88:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_YIDDISH:     ret = "yiddish";    break;
+        ^
+/tmp/ko-baseline-language.c:88:27: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_YIDDISH:     ret = "yiddish";    break;
+                          ^
+/tmp/ko-baseline-language.c:88:48: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_YIDDISH:     ret = "yiddish";    break;
+                                               ^
+/tmp/ko-baseline-language.c:89:9: error: code should be clang-formatted [-Wclang-format-violations]
+    case  RS_LANG_UNSUPPORTED:
+        ^
+/tmp/ko-baseline-language.c:90:13: error: code should be clang-formatted [-Wclang-format-violations]
+    default: break;
+            ^
+/tmp/ko-baseline-language.c:105:24: error: code should be clang-formatted [-Wclang-format-violations]
+  if (language == NULL)
+                       ^
+/tmp/ko-baseline-language.h:7:50: error: code should be clang-formatted [-Wclang-format-violations]
+ * GNU Affero General Public License v3 (AGPLv3).
+                                                 ^
+/tmp/ko-baseline-language.h:49:17: error: code should be clang-formatted [-Wclang-format-violations]
+  RS_LANG_UNSET, // The user did not set the language for FT.SEARCH, use the index language
+                ^

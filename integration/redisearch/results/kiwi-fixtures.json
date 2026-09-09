@@ -1,0 +1,3218 @@
+{
+  "analysis_version": "ko-morph-v1:1396d9b7c534610e",
+  "metadata": {
+    "engine": "kiwipiepy",
+    "engine_version": "0.23.1",
+    "model_package_version": "0.23.0",
+    "model_type": "cong",
+    "user_dictionary_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "load_typo_dict": false,
+    "load_multi_dict": false,
+    "integrate_allomorph": true,
+    "policy": "case_only_v1",
+    "normalization": "NFC",
+    "unicode_version": "14.0.0",
+    "ambiguity_margin": 2.0,
+    "separators": "|+=<>~",
+    "top_n": 3,
+    "max_chars": 100000
+  },
+  "documents": [
+    {
+      "id": "d01",
+      "text": "학생이 사과를 먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹었다",
+          "normalized": "먹었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d02",
+      "text": "학생이 사과를 먹는다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹는다",
+          "normalized": "먹는다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "는다",
+              "tag": "EF",
+              "start": 9,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d03",
+      "text": "내가 한국어를 공부했다.",
+      "canonical": [
+        "나",
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "나",
+          "lemma": "나",
+          "pos": "PRONOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "내가",
+          "normalized": "내가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "나",
+              "tag": "NP",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "한국어를",
+          "normalized": "한국어를",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 19,
+          "normalized_start": 3,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 3,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "derived_predicate",
+          "surface": "공부했다",
+          "normalized": "공부했다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 32,
+          "normalized_start": 8,
+          "normalized_end": 12,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 8,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 11,
+              "end": 12,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d04",
+      "text": "길을 걸었다.",
+      "canonical": [
+        "길",
+        "걷다"
+      ],
+      "tokens": [
+        {
+          "canonical": "길",
+          "lemma": "길",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "길을",
+          "normalized": "길을",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "길",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걷다",
+          "lemma": "걷다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "걸었다",
+          "normalized": "걸었다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "걷",
+              "tag": "VV-I",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d05",
+      "text": "전화를 걸었다.",
+      "canonical": [
+        "전화",
+        "걸다"
+      ],
+      "tokens": [
+        {
+          "canonical": "전화",
+          "lemma": "전화",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "전화를",
+          "normalized": "전화를",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "전화",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걸다",
+          "lemma": "걸다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "걸었다",
+          "normalized": "걸었다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "걸",
+              "tag": "VV",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d06",
+      "text": "소리를 들었다.",
+      "canonical": [
+        "소리",
+        "듣다"
+      ],
+      "tokens": [
+        {
+          "canonical": "소리",
+          "lemma": "소리",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "소리를",
+          "normalized": "소리를",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "소리",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "듣다",
+          "lemma": "듣다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "들었다",
+          "normalized": "들었다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "듣",
+              "tag": "VV-I",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "text": "짐을 들었다.",
+      "canonical": [
+        "짐",
+        "들다"
+      ],
+      "tokens": [
+        {
+          "canonical": "짐",
+          "lemma": "짐",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "짐을",
+          "normalized": "짐을",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "짐",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "들다",
+          "lemma": "들다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "들었다",
+          "normalized": "들었다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "들",
+              "tag": "VV",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d08",
+      "text": "꽃이 예뻤다.",
+      "canonical": [
+        "꽃",
+        "예쁘다"
+      ],
+      "tokens": [
+        {
+          "canonical": "꽃",
+          "lemma": "꽃",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "꽃이",
+          "normalized": "꽃이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "꽃",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "예쁘다",
+          "lemma": "예쁘다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "예뻤다",
+          "normalized": "예뻤다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "예쁘",
+              "tag": "VA",
+              "start": 3,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d09",
+      "text": "빠르게 달렸다.",
+      "canonical": [
+        "빠르다",
+        "달리다"
+      ],
+      "tokens": [
+        {
+          "canonical": "빠르다",
+          "lemma": "빠르다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "빠르게",
+          "normalized": "빠르게",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "빠르",
+              "tag": "VA",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "게",
+              "tag": "EC",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "달리다",
+          "lemma": "달리다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "달렸다",
+          "normalized": "달렸다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "달리",
+              "tag": "VV",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "text": "빨리 매우 조용히 함께",
+      "canonical": [
+        "빨리",
+        "매우",
+        "조용히",
+        "함께"
+      ],
+      "tokens": [
+        {
+          "canonical": "빨리",
+          "lemma": "빨리",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "빨리",
+          "normalized": "빨리",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "빨리",
+              "tag": "MAG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "매우",
+          "lemma": "매우",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "매우",
+          "normalized": "매우",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "매우",
+              "tag": "MAG",
+              "start": 3,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "조용히",
+          "lemma": "조용히",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "조용히",
+          "normalized": "조용히",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 23,
+          "normalized_start": 6,
+          "normalized_end": 9,
+          "morphemes": [
+            {
+              "form": "조용히",
+              "tag": "MAG",
+              "start": 6,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "함께",
+          "lemma": "함께",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "함께",
+          "normalized": "함께",
+          "eojeol_id": 3,
+          "start_byte": 24,
+          "end_byte": 30,
+          "normalized_start": 10,
+          "normalized_end": 12,
+          "morphemes": [
+            {
+              "form": "함께",
+              "tag": "MAG",
+              "start": 10,
+              "end": 12,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "text": "고양이가 책을 읽었다.",
+      "canonical": [
+        "고양이",
+        "책",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "고양이",
+          "lemma": "고양이",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "고양이가",
+          "normalized": "고양이가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "고양이",
+              "tag": "NNG",
+              "start": 0,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책",
+          "lemma": "책",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "책을",
+          "normalized": "책을",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 19,
+          "normalized_start": 5,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "text": "학생이，사과를/먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 12,
+          "end_byte": 21,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹었다",
+          "normalized": "먹었다",
+          "eojeol_id": 2,
+          "start_byte": 22,
+          "end_byte": 31,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "text": "한국어를 공부했다.",
+      "canonical": [
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "한국어를",
+          "normalized": "한국어를",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 33,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 0,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "derived_predicate",
+          "surface": "공부했다",
+          "normalized": "공부했다",
+          "eojeol_id": 1,
+          "start_byte": 34,
+          "end_byte": 64,
+          "normalized_start": 5,
+          "normalized_end": 9,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 5,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "text": "학교에서 책만 읽었다.",
+      "canonical": [
+        "학교에서",
+        "책만",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학교에서",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "학교에서",
+          "normalized": "학교에서",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "학교",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "에서",
+              "tag": "JKB",
+              "start": 2,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책만",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "책만",
+          "normalized": "책만",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 19,
+          "normalized_start": 5,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "만",
+              "tag": "JX",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "text": "나는 책을 읽었다.",
+      "canonical": [
+        "나는",
+        "책",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "나는",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "나는",
+          "normalized": "나는",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "나",
+              "tag": "NP",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "는",
+              "tag": "JX",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책",
+          "lemma": "책",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "책을",
+          "normalized": "책을",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 23,
+          "normalized_start": 6,
+          "normalized_end": 9,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "text": "쀍쀍이가 좋았다.",
+      "canonical": [
+        "쀍쀍이가",
+        "좋다"
+      ],
+      "tokens": [
+        {
+          "canonical": "쀍쀍이가",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "out_of_vocabulary",
+          "surface": "쀍쀍이가",
+          "normalized": "쀍쀍이가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "쀍쀍",
+              "tag": "NNP",
+              "start": 0,
+              "end": 2,
+              "oov": true,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "XSN",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "좋다",
+          "lemma": "좋다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "좋았다",
+          "normalized": "좋았다",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 22,
+          "normalized_start": 5,
+          "normalized_end": 8,
+          "morphemes": [
+            {
+              "form": "좋",
+              "tag": "VA",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "text": "학생 사과 먹다",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "학생",
+          "normalized": "학생",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "사과",
+          "normalized": "사과",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 3,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "먹다",
+          "normalized": "먹다",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 20,
+          "normalized_start": 6,
+          "normalized_end": 8,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "학생이 사과를 먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹었다",
+          "normalized": "먹었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "먹는다",
+      "canonical": [
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹는다",
+          "normalized": "먹는다",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "는다",
+              "tag": "EF",
+              "start": 1,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "한국어 공부하다",
+      "canonical": [
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "한국어",
+          "normalized": "한국어",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 0,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "derived_predicate",
+          "surface": "공부하다",
+          "normalized": "공부하다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 22,
+          "normalized_start": 4,
+          "normalized_end": 8,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "내가 한국어를 공부했다.",
+      "canonical": [
+        "나",
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "나",
+          "lemma": "나",
+          "pos": "PRONOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "내가",
+          "normalized": "내가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "나",
+              "tag": "NP",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "한국어를",
+          "normalized": "한국어를",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 19,
+          "normalized_start": 3,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 3,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "derived_predicate",
+          "surface": "공부했다",
+          "normalized": "공부했다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 32,
+          "normalized_start": 8,
+          "normalized_end": 12,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 8,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 11,
+              "end": 12,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "나 한국어 공부하다",
+      "canonical": [
+        "나",
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "나",
+          "lemma": "나",
+          "pos": "PRONOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "나",
+          "normalized": "나",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 3,
+          "normalized_start": 0,
+          "normalized_end": 1,
+          "morphemes": [
+            {
+              "form": "나",
+              "tag": "NP",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "한국어",
+          "normalized": "한국어",
+          "eojeol_id": 1,
+          "start_byte": 4,
+          "end_byte": 13,
+          "normalized_start": 2,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 2,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "derived_predicate",
+          "surface": "공부하다",
+          "normalized": "공부하다",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 26,
+          "normalized_start": 6,
+          "normalized_end": 10,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 6,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "길을 걸었다.",
+      "canonical": [
+        "길",
+        "걷다"
+      ],
+      "tokens": [
+        {
+          "canonical": "길",
+          "lemma": "길",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "길을",
+          "normalized": "길을",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "길",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걷다",
+          "lemma": "걷다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "걸었다",
+          "normalized": "걸었다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "걷",
+              "tag": "VV-I",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "길 걷다",
+      "canonical": [
+        "길",
+        "걷다"
+      ],
+      "tokens": [
+        {
+          "canonical": "길",
+          "lemma": "길",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "길",
+          "normalized": "길",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 3,
+          "normalized_start": 0,
+          "normalized_end": 1,
+          "morphemes": [
+            {
+              "form": "길",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걷다",
+          "lemma": "걷다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "걷다",
+          "normalized": "걷다",
+          "eojeol_id": 1,
+          "start_byte": 4,
+          "end_byte": 10,
+          "normalized_start": 2,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "걷",
+              "tag": "VV-I",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "전화 걸다",
+      "canonical": [
+        "전화",
+        "걸다"
+      ],
+      "tokens": [
+        {
+          "canonical": "전화",
+          "lemma": "전화",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "전화",
+          "normalized": "전화",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "전화",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걸다",
+          "lemma": "걸다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "걸다",
+          "normalized": "걸다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "걸",
+              "tag": "VV",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EC",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "소리 듣다",
+      "canonical": [
+        "소리",
+        "듣다"
+      ],
+      "tokens": [
+        {
+          "canonical": "소리",
+          "lemma": "소리",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "소리",
+          "normalized": "소리",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "소리",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "듣다",
+          "lemma": "듣다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "듣다",
+          "normalized": "듣다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "듣",
+              "tag": "VV-I",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "짐 들다",
+      "canonical": [
+        "짐",
+        "들다"
+      ],
+      "tokens": [
+        {
+          "canonical": "짐",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "ambiguous_analysis",
+          "surface": "짐",
+          "normalized": "짐",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 3,
+          "normalized_start": 0,
+          "normalized_end": 1,
+          "morphemes": [
+            {
+              "form": "짐",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "들다",
+          "lemma": "들다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "들다",
+          "normalized": "들다",
+          "eojeol_id": 1,
+          "start_byte": 4,
+          "end_byte": 10,
+          "normalized_start": 2,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "들",
+              "tag": "VV",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "꽃 예쁘다",
+      "canonical": [
+        "꽃",
+        "예쁘다"
+      ],
+      "tokens": [
+        {
+          "canonical": "꽃",
+          "lemma": "꽃",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "꽃",
+          "normalized": "꽃",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 3,
+          "normalized_start": 0,
+          "normalized_end": 1,
+          "morphemes": [
+            {
+              "form": "꽃",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "예쁘다",
+          "lemma": "예쁘다",
+          "pos": "ADJECTIVE",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "예쁘다",
+          "normalized": "예쁘다",
+          "eojeol_id": 1,
+          "start_byte": 4,
+          "end_byte": 13,
+          "normalized_start": 2,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "예쁘",
+              "tag": "VA",
+              "start": 2,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "빠르다 달리다",
+      "canonical": [
+        "빠르다",
+        "달리다"
+      ],
+      "tokens": [
+        {
+          "canonical": "빠르다",
+          "lemma": "빠르다",
+          "pos": "ADJECTIVE",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "빠르다",
+          "normalized": "빠르다",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "빠르",
+              "tag": "VA",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EC",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "달리다",
+          "lemma": "달리다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "달리다",
+          "normalized": "달리다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "달리",
+              "tag": "VV",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "빨리",
+      "canonical": [
+        "빨리"
+      ],
+      "tokens": [
+        {
+          "canonical": "빨리",
+          "lemma": "빨리",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "빨리",
+          "normalized": "빨리",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "빨리",
+              "tag": "MAG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "고양이 책 읽다",
+      "canonical": [
+        "고양이",
+        "책",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "고양이",
+          "lemma": "고양이",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "고양이",
+          "normalized": "고양이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "고양이",
+              "tag": "NNG",
+              "start": 0,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책",
+          "lemma": "책",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "책",
+          "normalized": "책",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 13,
+          "normalized_start": 4,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "읽다",
+          "normalized": "읽다",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 20,
+          "normalized_start": 6,
+          "normalized_end": 8,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "학생이，사과를/먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 12,
+          "end_byte": 21,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹었다",
+          "normalized": "먹었다",
+          "eojeol_id": 2,
+          "start_byte": 22,
+          "end_byte": 31,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "학교 책 읽다",
+      "canonical": [
+        "학교",
+        "책",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학교",
+          "lemma": "학교",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "학교",
+          "normalized": "학교",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "학교",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책",
+          "lemma": "책",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "책",
+          "normalized": "책",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 10,
+          "normalized_start": 3,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "preserved",
+          "rule": "predicate_ending",
+          "surface": "읽다",
+          "normalized": "읽다",
+          "eojeol_id": 2,
+          "start_byte": 11,
+          "end_byte": 17,
+          "normalized_start": 5,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "학교에서 책만 읽었다.",
+      "canonical": [
+        "학교에서",
+        "책만",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학교에서",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "학교에서",
+          "normalized": "학교에서",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "학교",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "에서",
+              "tag": "JKB",
+              "start": 2,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책만",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "책만",
+          "normalized": "책만",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 19,
+          "normalized_start": 5,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "만",
+              "tag": "JX",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "쀍쀍이가 좋았다.",
+      "canonical": [
+        "쀍쀍이가",
+        "좋다"
+      ],
+      "tokens": [
+        {
+          "canonical": "쀍쀍이가",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "out_of_vocabulary",
+          "surface": "쀍쀍이가",
+          "normalized": "쀍쀍이가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "쀍쀍",
+              "tag": "NNP",
+              "start": 0,
+              "end": 2,
+              "oov": true,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "XSN",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "좋다",
+          "lemma": "좋다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "좋았다",
+          "normalized": "좋았다",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 22,
+          "normalized_start": 5,
+          "normalized_end": 8,
+          "morphemes": [
+            {
+              "form": "좋",
+              "tag": "VA",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "국",
+      "canonical": [
+        "국"
+      ],
+      "tokens": [
+        {
+          "canonical": "국",
+          "lemma": "국",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "국",
+          "normalized": "국",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 3,
+          "normalized_start": 0,
+          "normalized_end": 1,
+          "morphemes": [
+            {
+              "form": "국",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "국어",
+      "canonical": [
+        "국어"
+      ],
+      "tokens": [
+        {
+          "canonical": "국어",
+          "lemma": "국어",
+          "pos": "NOUN",
+          "status": "preserved",
+          "rule": "noun_unchanged",
+          "surface": "국어",
+          "normalized": "국어",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "국어",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

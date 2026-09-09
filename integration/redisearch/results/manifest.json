@@ -1,0 +1,52 @@
+{
+  "redis": {
+    "repository": "https://github.com/redis/redis",
+    "commit": "dce0c76d4fc34fa4c56f1003aafbd9f6364c8fb4",
+    "version": "8.9.241"
+  },
+  "redisearch": {
+    "repository": "https://github.com/redisearch/redisearch",
+    "commit": "294c88bca92b3e686d336dc165bcf68512d91ac5",
+    "tag": "v8.10.0"
+  },
+  "snowball": {
+    "base_submodule": "4764395431c8f2a0b4fe18b816ab1fc966a45837",
+    "korean_source_commit": "1d3c386fddcfd49bfe7b74dab66018ae0832c9a8",
+    "integration": "deps/stemmers custom algorithm CMake path"
+  },
+  "build": {
+    "platform": "linux/arm64",
+    "image": "ubuntu:24.04@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+    "gcc": "13.3.0",
+    "cmake": "3.28.3",
+    "rust": "1.94.0",
+    "command": "taskset -c 0-3 make build redisearch LTO=0 REDISEARCH_GENERATE_HEADERS=0 INLINE_LSE_ATOMICS=0"
+  },
+  "sha256": {
+    "redis-server": "877976327994d9f726c88ed52f9af30ec1d7a321dc9222d6de7d7b3fef5bbd30",
+    "redis-cli": "457edb88041d61bf5f127d4f0bcc547307f42960f0de30947fc74dc3d678e505",
+    "redisearch.so": "95c573e3218eeec8e811892523e67d47eda0e86e5b72af8c5f00dda03c678470",
+    "korean.sbl": "a847f8cdf6f64dd226923ad0edd6b9a9023b34d93a78aff8370d349b3b63d4f0"
+  },
+  "runtime_image": {
+    "tag": "snowball-ko-redis:20260909",
+    "id": "sha256:6df56effd454a68f6035ace6e3802b3bd1c8dde09ba8ce4c8ac9a885006d6077",
+    "size_bytes": 157961515,
+    "source_checkout_mounted": false,
+    "user": "65534:65534"
+  },
+  "validation": {
+    "integration_checks": {
+      "passed": 50,
+      "failed": 0
+    },
+    "c_cpp_unit_checks": {
+      "passed": 959,
+      "failed": 0
+    },
+    "behavioral_tests": {
+      "passed": 9,
+      "failed": 0
+    }
+  }
+}

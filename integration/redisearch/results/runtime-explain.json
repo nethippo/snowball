@@ -1,0 +1,1 @@
+"INTERSECT {\n  UNION {\n    학생\n    +학생(expanded)\n  }\n  UNION {\n    사과\n    +사과(expanded)\n  }\n  UNION {\n    먹다\n    +먹다(expanded)\n  }\n}\n"

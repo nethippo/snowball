@@ -1,0 +1,6146 @@
+{
+  "fixture_version": "ko-morph-v1:1396d9b7c534610e",
+  "checks": [
+    {
+      "name": "native index registration",
+      "passed": true,
+      "actual": "OK",
+      "expected": "OK"
+    },
+    {
+      "name": "adapter index",
+      "passed": true,
+      "actual": "OK",
+      "expected": "OK"
+    },
+    {
+      "name": "adapter: 학생 사과 먹다",
+      "passed": true,
+      "actual": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ],
+      "expected": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ]
+    },
+    {
+      "name": "adapter: 학생이 사과를 먹었다.",
+      "passed": true,
+      "actual": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ],
+      "expected": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ]
+    },
+    {
+      "name": "adapter: 먹는다",
+      "passed": true,
+      "actual": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ],
+      "expected": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ]
+    },
+    {
+      "name": "adapter: 한국어 공부하다",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "adapter: 내가 한국어를 공부했다.",
+      "passed": true,
+      "actual": [
+        "adapter:d03"
+      ],
+      "expected": [
+        "adapter:d03"
+      ]
+    },
+    {
+      "name": "adapter: 나 한국어 공부하다",
+      "passed": true,
+      "actual": [
+        "adapter:d03"
+      ],
+      "expected": [
+        "adapter:d03"
+      ]
+    },
+    {
+      "name": "adapter: 길을 걸었다.",
+      "passed": true,
+      "actual": [
+        "adapter:d04"
+      ],
+      "expected": [
+        "adapter:d04"
+      ]
+    },
+    {
+      "name": "adapter: 길 걷다",
+      "passed": true,
+      "actual": [
+        "adapter:d04"
+      ],
+      "expected": [
+        "adapter:d04"
+      ]
+    },
+    {
+      "name": "adapter: 전화 걸다",
+      "passed": true,
+      "actual": [
+        "adapter:d05"
+      ],
+      "expected": [
+        "adapter:d05"
+      ]
+    },
+    {
+      "name": "adapter: 소리 듣다",
+      "passed": true,
+      "actual": [
+        "adapter:d06"
+      ],
+      "expected": [
+        "adapter:d06"
+      ]
+    },
+    {
+      "name": "adapter: 짐 들다",
+      "passed": true,
+      "actual": [
+        "adapter:d07"
+      ],
+      "expected": [
+        "adapter:d07"
+      ]
+    },
+    {
+      "name": "adapter: 꽃 예쁘다",
+      "passed": true,
+      "actual": [
+        "adapter:d08"
+      ],
+      "expected": [
+        "adapter:d08"
+      ]
+    },
+    {
+      "name": "adapter: 빠르다 달리다",
+      "passed": true,
+      "actual": [
+        "adapter:d09"
+      ],
+      "expected": [
+        "adapter:d09"
+      ]
+    },
+    {
+      "name": "adapter: 빨리",
+      "passed": true,
+      "actual": [
+        "adapter:d10"
+      ],
+      "expected": [
+        "adapter:d10"
+      ]
+    },
+    {
+      "name": "adapter: 고양이 책 읽다",
+      "passed": true,
+      "actual": [
+        "adapter:d11"
+      ],
+      "expected": [
+        "adapter:d11"
+      ]
+    },
+    {
+      "name": "adapter: 학생이，사과를/먹었다.",
+      "passed": true,
+      "actual": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ],
+      "expected": [
+        "adapter:d01",
+        "adapter:d02",
+        "adapter:d12"
+      ]
+    },
+    {
+      "name": "adapter: 학교 책 읽다",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "adapter: 학교에서 책만 읽었다.",
+      "passed": true,
+      "actual": [
+        "adapter:d14"
+      ],
+      "expected": [
+        "adapter:d14"
+      ]
+    },
+    {
+      "name": "adapter: 쀍쀍이가 좋았다.",
+      "passed": true,
+      "actual": [
+        "adapter:d16"
+      ],
+      "expected": [
+        "adapter:d16"
+      ]
+    },
+    {
+      "name": "adapter: 국",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "adapter: 국어",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "native lemma sentence",
+      "passed": true,
+      "actual": [
+        "native:d01"
+      ],
+      "expected": [
+        "native:d01"
+      ]
+    },
+    {
+      "name": "native unlisted 먹는다 stays literal",
+      "passed": true,
+      "actual": [
+        "native:d02"
+      ],
+      "expected": [
+        "native:d02"
+      ]
+    },
+    {
+      "name": "native supported 먹어요 stems symmetrically",
+      "passed": true,
+      "actual": [
+        "native:d01",
+        "native:d12"
+      ],
+      "expected": [
+        "native:d01",
+        "native:d12"
+      ]
+    },
+    {
+      "name": "native VERBATIM removes stem expansion",
+      "passed": true,
+      "actual": [
+        0
+      ],
+      "expected": [
+        0
+      ]
+    },
+    {
+      "name": "native ambiguous walk preserved",
+      "passed": true,
+      "actual": [
+        0
+      ],
+      "expected": [
+        0
+      ]
+    },
+    {
+      "name": "native ambiguous pronoun preserved",
+      "passed": true,
+      "actual": [
+        0
+      ],
+      "expected": [
+        0
+      ]
+    },
+    {
+      "name": "native NFC only",
+      "passed": true,
+      "actual": [
+        "native:d03"
+      ],
+      "expected": [
+        "native:d03"
+      ]
+    },
+    {
+      "name": "native exact syllable does not search substrings",
+      "passed": true,
+      "actual": [
+        0
+      ],
+      "expected": [
+        0
+      ]
+    },
+    {
+      "name": "native case-insensitive language",
+      "passed": true,
+      "actual": [
+        "native:d01",
+        "native:d12"
+      ],
+      "expected": [
+        "native:d01",
+        "native:d12"
+      ]
+    },
+    {
+      "name": "Redis does not expose libstemmer ko alias",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "gram substring: 국",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "gram substring: 국어",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "gram substring: 한국어",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "gram substring: 어국",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "gram substring: 공부",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "gram substring: 공부하다",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "gram substring: 부하다",
+      "passed": true,
+      "actual": [
+        "adapter:d03",
+        "adapter:d13"
+      ],
+      "expected": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "name": "gram boundary candidate exists",
+      "passed": true,
+      "actual": [
+        "adapter:boundary"
+      ],
+      "expected": [
+        "adapter:boundary"
+      ]
+    },
+    {
+      "name": "gram boundary postfilter rejects",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "English regression",
+      "passed": true,
+      "actual": [
+        "en:1"
+      ],
+      "expected": [
+        "en:1"
+      ]
+    },
+    {
+      "name": "write",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "update removes previous stem",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "update adds new stem",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "delete removes stem",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "RDB save",
+      "passed": true,
+      "actual": "OK",
+      "expected": "OK"
+    },
+    {
+      "name": "RDB preserves Korean language and index",
+      "passed": true,
+      "actual": [
+        "native:d01"
+      ],
+      "expected": [
+        "native:d01"
+      ]
+    },
+    {
+      "name": "RDB preserves English language",
+      "passed": true,
+      "actual": [
+        "en:1"
+      ],
+      "expected": [
+        "en:1"
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query": "학생 사과 먹다",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "native": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ],
+      "adapter_expression": "@terms:(학생 사과 먹다)",
+      "adapter": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    학생\n    +학생(expanded)\n  }\n  UNION {\n    사과\n    +사과(expanded)\n  }\n  UNION {\n    먹다\n    +먹다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "학생이 사과를 먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "native": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ],
+      "adapter_expression": "@terms:(학생 사과 먹다)",
+      "adapter": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    학생이\n    +학생(expanded)\n    학생(expanded)\n  }\n  UNION {\n    사과를\n    +사과(expanded)\n    사과(expanded)\n  }\n  UNION {\n    먹었다\n    +먹다(expanded)\n    먹다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "먹는다",
+      "canonical": [
+        "먹다"
+      ],
+      "native": [
+        1,
+        "native:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다."
+        ]
+      ],
+      "adapter_expression": "@terms:(먹다)",
+      "adapter": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ],
+      "native_explain": "UNION {\n  먹는다\n  +먹는다(expanded)\n}\n"
+    },
+    {
+      "query": "한국어 공부하다",
+      "canonical": [
+        "한국어",
+        "공부하다"
+      ],
+      "native": [
+        1,
+        "native:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다."
+        ]
+      ],
+      "adapter_expression": "@terms:(한국어 공부하다)",
+      "adapter": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    한국어\n    +한국어(expanded)\n  }\n  UNION {\n    공부하다\n    +공부하다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "내가 한국어를 공부했다.",
+      "canonical": [
+        "나",
+        "한국어",
+        "공부하다"
+      ],
+      "native": [
+        1,
+        "native:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다."
+        ]
+      ],
+      "adapter_expression": "@terms:(나 한국어 공부하다)",
+      "adapter": [
+        1,
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    내가\n    +내가(expanded)\n  }\n  UNION {\n    한국어를\n    +한국어(expanded)\n    한국어(expanded)\n  }\n  UNION {\n    공부했다\n    +공부하다(expanded)\n    공부하다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "나 한국어 공부하다",
+      "canonical": [
+        "나",
+        "한국어",
+        "공부하다"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(나 한국어 공부하다)",
+      "adapter": [
+        1,
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    나\n    +나(expanded)\n  }\n  UNION {\n    한국어\n    +한국어(expanded)\n  }\n  UNION {\n    공부하다\n    +공부하다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "길을 걸었다.",
+      "canonical": [
+        "길",
+        "걷다"
+      ],
+      "native": [
+        1,
+        "native:d04",
+        [
+          "raw",
+          "길을 걸었다."
+        ]
+      ],
+      "adapter_expression": "@terms:(길 걷다)",
+      "adapter": [
+        1,
+        "adapter:d04",
+        [
+          "raw",
+          "길을 걸었다.",
+          "canonical",
+          "[\"길\", \"걷다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    길을\n    +길을(expanded)\n  }\n  UNION {\n    걸었다\n    +걸었다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "길 걷다",
+      "canonical": [
+        "길",
+        "걷다"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(길 걷다)",
+      "adapter": [
+        1,
+        "adapter:d04",
+        [
+          "raw",
+          "길을 걸었다.",
+          "canonical",
+          "[\"길\", \"걷다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    길\n    +길(expanded)\n  }\n  UNION {\n    걷다\n    +걷다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "전화 걸다",
+      "canonical": [
+        "전화",
+        "걸다"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(전화 걸다)",
+      "adapter": [
+        1,
+        "adapter:d05",
+        [
+          "raw",
+          "전화를 걸었다.",
+          "canonical",
+          "[\"전화\", \"걸다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    전화\n    +전화(expanded)\n  }\n  UNION {\n    걸다\n    +걸다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "소리 듣다",
+      "canonical": [
+        "소리",
+        "듣다"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(소리 듣다)",
+      "adapter": [
+        1,
+        "adapter:d06",
+        [
+          "raw",
+          "소리를 들었다.",
+          "canonical",
+          "[\"소리\", \"듣다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    소리\n    +소리(expanded)\n  }\n  UNION {\n    듣다\n    +듣다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "짐 들다",
+      "canonical": [
+        "짐",
+        "들다"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(짐 들다)",
+      "adapter": [
+        1,
+        "adapter:d07",
+        [
+          "raw",
+          "짐을 들었다.",
+          "canonical",
+          "[\"짐\", \"들다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    짐\n    +짐(expanded)\n  }\n  UNION {\n    들다\n    +들다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "꽃 예쁘다",
+      "canonical": [
+        "꽃",
+        "예쁘다"
+      ],
+      "native": [
+        1,
+        "native:d08",
+        [
+          "raw",
+          "꽃이 예뻤다."
+        ]
+      ],
+      "adapter_expression": "@terms:(꽃 예쁘다)",
+      "adapter": [
+        1,
+        "adapter:d08",
+        [
+          "raw",
+          "꽃이 예뻤다.",
+          "canonical",
+          "[\"꽃\", \"예쁘다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    꽃\n    +꽃(expanded)\n  }\n  UNION {\n    예쁘다\n    +예쁘다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "빠르다 달리다",
+      "canonical": [
+        "빠르다",
+        "달리다"
+      ],
+      "native": [
+        1,
+        "native:d09",
+        [
+          "raw",
+          "빠르게 달렸다."
+        ]
+      ],
+      "adapter_expression": "@terms:(빠르다 달리다)",
+      "adapter": [
+        1,
+        "adapter:d09",
+        [
+          "raw",
+          "빠르게 달렸다.",
+          "canonical",
+          "[\"빠르다\", \"달리다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    빠르다\n    +빠르다(expanded)\n  }\n  UNION {\n    달리다\n    +달리다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "빨리",
+      "canonical": [
+        "빨리"
+      ],
+      "native": [
+        1,
+        "native:d10",
+        [
+          "raw",
+          "빨리 매우 조용히 함께"
+        ]
+      ],
+      "adapter_expression": "@terms:(빨리)",
+      "adapter": [
+        1,
+        "adapter:d10",
+        [
+          "raw",
+          "빨리 매우 조용히 함께",
+          "canonical",
+          "[\"빨리\", \"매우\", \"조용히\", \"함께\"]"
+        ]
+      ],
+      "native_explain": "UNION {\n  빨리\n  +빨리(expanded)\n}\n"
+    },
+    {
+      "query": "고양이 책 읽다",
+      "canonical": [
+        "고양이",
+        "책",
+        "읽다"
+      ],
+      "native": [
+        1,
+        "native:d11",
+        [
+          "raw",
+          "고양이가 책을 읽었다."
+        ]
+      ],
+      "adapter_expression": "@terms:(고양이 책 읽다)",
+      "adapter": [
+        1,
+        "adapter:d11",
+        [
+          "raw",
+          "고양이가 책을 읽었다.",
+          "canonical",
+          "[\"고양이\", \"책\", \"읽다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    고양이\n    +고양이(expanded)\n  }\n  UNION {\n    책\n    +책(expanded)\n  }\n  UNION {\n    읽다\n    +읽다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "학생이，사과를/먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "native": [
+        1,
+        "native:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다."
+        ]
+      ],
+      "adapter_expression": "@terms:(학생 사과 먹다)",
+      "adapter": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    학생이，사과를\n    +학생이，사과를(expanded)\n  }\n  UNION {\n    먹었다\n    +먹다(expanded)\n    먹다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "학교 책 읽다",
+      "canonical": [
+        "학교",
+        "책",
+        "읽다"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(학교 책 읽다)",
+      "adapter": [
+        0
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    학교\n    +학교(expanded)\n  }\n  UNION {\n    책\n    +책(expanded)\n  }\n  UNION {\n    읽다\n    +읽다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "학교에서 책만 읽었다.",
+      "canonical": [
+        "학교에서",
+        "책만",
+        "읽다"
+      ],
+      "native": [
+        1,
+        "native:d14",
+        [
+          "raw",
+          "학교에서 책만 읽었다."
+        ]
+      ],
+      "adapter_expression": "@terms:(학교에서 책만 읽다)",
+      "adapter": [
+        1,
+        "adapter:d14",
+        [
+          "raw",
+          "학교에서 책만 읽었다.",
+          "canonical",
+          "[\"학교에서\", \"책만\", \"읽다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    학교에서\n    +학교에서(expanded)\n  }\n  UNION {\n    책만\n    +책만(expanded)\n  }\n  UNION {\n    읽었다\n    +읽다(expanded)\n    읽다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "쀍쀍이가 좋았다.",
+      "canonical": [
+        "쀍쀍이가",
+        "좋다"
+      ],
+      "native": [
+        1,
+        "native:d16",
+        [
+          "raw",
+          "쀍쀍이가 좋았다."
+        ]
+      ],
+      "adapter_expression": "@terms:(쀍쀍이가 좋다)",
+      "adapter": [
+        1,
+        "adapter:d16",
+        [
+          "raw",
+          "쀍쀍이가 좋았다.",
+          "canonical",
+          "[\"쀍쀍이가\", \"좋다\"]"
+        ]
+      ],
+      "native_explain": "INTERSECT {\n  UNION {\n    쀍쀍이가\n    +쀍쀍이가(expanded)\n  }\n  UNION {\n    좋았다\n    +좋다(expanded)\n    좋다(expanded)\n  }\n}\n"
+    },
+    {
+      "query": "국",
+      "canonical": [
+        "국"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(국)",
+      "adapter": [
+        0
+      ],
+      "native_explain": "UNION {\n  국\n  +국(expanded)\n}\n"
+    },
+    {
+      "query": "국어",
+      "canonical": [
+        "국어"
+      ],
+      "native": [
+        0
+      ],
+      "adapter_expression": "@terms:(국어)",
+      "adapter": [
+        0
+      ],
+      "native_explain": "UNION {\n  국어\n  +국어(expanded)\n}\n"
+    }
+  ],
+  "commands": [
+    {
+      "args": [
+        "MODULE",
+        "LIST"
+      ],
+      "response": [
+        [
+          "name",
+          "search",
+          "ver",
+          81000,
+          "path",
+          "/work/modules/redisearch/redisearch.so",
+          "args",
+          []
+        ],
+        [
+          "name",
+          "vectorset",
+          "ver",
+          1,
+          "path",
+          "",
+          "args",
+          []
+        ]
+      ]
+    },
+    {
+      "args": [
+        "CONFIG",
+        "GET",
+        "search-min-prefix"
+      ],
+      "response": [
+        "search-min-prefix",
+        "2"
+      ]
+    },
+    {
+      "args": [
+        "FT.CREATE",
+        "ko:native",
+        "ON",
+        "HASH",
+        "PREFIX",
+        1,
+        "native:",
+        "LANGUAGE",
+        "korean",
+        "STOPWORDS",
+        0,
+        "SCHEMA",
+        "raw",
+        "TEXT"
+      ],
+      "response": "OK"
+    },
+    {
+      "args": [
+        "FT.CREATE",
+        "ko:adapter",
+        "ON",
+        "HASH",
+        "PREFIX",
+        1,
+        "adapter:",
+        "STOPWORDS",
+        0,
+        "SCHEMA",
+        "terms",
+        "TEXT",
+        "NOSTEM",
+        "chars",
+        "TAG",
+        "bigrams",
+        "TAG"
+      ],
+      "response": "OK"
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d01",
+        "raw",
+        "학생이 사과를 먹었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d01",
+        "raw",
+        "학생이 사과를 먹었다.",
+        "canonical",
+        "[\"학생\", \"사과\", \"먹다\"]",
+        "terms",
+        "학생 사과 먹다",
+        "chars",
+        "과,다,먹,사,생,학",
+        "bigrams",
+        "먹다,사과,학생"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d02",
+        "raw",
+        "학생이 사과를 먹는다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d02",
+        "raw",
+        "학생이 사과를 먹는다.",
+        "canonical",
+        "[\"학생\", \"사과\", \"먹다\"]",
+        "terms",
+        "학생 사과 먹다",
+        "chars",
+        "과,다,먹,사,생,학",
+        "bigrams",
+        "먹다,사과,학생"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d03",
+        "raw",
+        "내가 한국어를 공부했다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d03",
+        "raw",
+        "내가 한국어를 공부했다.",
+        "canonical",
+        "[\"나\", \"한국어\", \"공부하다\"]",
+        "terms",
+        "나 한국어 공부하다",
+        "chars",
+        "공,국,나,다,부,어,하,한",
+        "bigrams",
+        "공부,국어,부하,하다,한국"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d04",
+        "raw",
+        "길을 걸었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d04",
+        "raw",
+        "길을 걸었다.",
+        "canonical",
+        "[\"길\", \"걷다\"]",
+        "terms",
+        "길 걷다",
+        "chars",
+        "걷,길,다",
+        "bigrams",
+        "걷다"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d05",
+        "raw",
+        "전화를 걸었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d05",
+        "raw",
+        "전화를 걸었다.",
+        "canonical",
+        "[\"전화\", \"걸다\"]",
+        "terms",
+        "전화 걸다",
+        "chars",
+        "걸,다,전,화",
+        "bigrams",
+        "걸다,전화"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d06",
+        "raw",
+        "소리를 들었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d06",
+        "raw",
+        "소리를 들었다.",
+        "canonical",
+        "[\"소리\", \"듣다\"]",
+        "terms",
+        "소리 듣다",
+        "chars",
+        "다,듣,리,소",
+        "bigrams",
+        "듣다,소리"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d07",
+        "raw",
+        "짐을 들었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d07",
+        "raw",
+        "짐을 들었다.",
+        "canonical",
+        "[\"짐\", \"들다\"]",
+        "terms",
+        "짐 들다",
+        "chars",
+        "다,들,짐",
+        "bigrams",
+        "들다"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d08",
+        "raw",
+        "꽃이 예뻤다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d08",
+        "raw",
+        "꽃이 예뻤다.",
+        "canonical",
+        "[\"꽃\", \"예쁘다\"]",
+        "terms",
+        "꽃 예쁘다",
+        "chars",
+        "꽃,다,쁘,예",
+        "bigrams",
+        "쁘다,예쁘"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d09",
+        "raw",
+        "빠르게 달렸다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d09",
+        "raw",
+        "빠르게 달렸다.",
+        "canonical",
+        "[\"빠르다\", \"달리다\"]",
+        "terms",
+        "빠르다 달리다",
+        "chars",
+        "다,달,르,리,빠",
+        "bigrams",
+        "달리,르다,리다,빠르"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d10",
+        "raw",
+        "빨리 매우 조용히 함께"
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d10",
+        "raw",
+        "빨리 매우 조용히 함께",
+        "canonical",
+        "[\"빨리\", \"매우\", \"조용히\", \"함께\"]",
+        "terms",
+        "빨리 매우 조용히 함께",
+        "chars",
+        "께,리,매,빨,용,우,조,함,히",
+        "bigrams",
+        "매우,빨리,용히,조용,함께"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d11",
+        "raw",
+        "고양이가 책을 읽었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d11",
+        "raw",
+        "고양이가 책을 읽었다.",
+        "canonical",
+        "[\"고양이\", \"책\", \"읽다\"]",
+        "terms",
+        "고양이 책 읽다",
+        "chars",
+        "고,다,양,이,읽,책",
+        "bigrams",
+        "고양,양이,읽다"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d12",
+        "raw",
+        "학생이，사과를/먹었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d12",
+        "raw",
+        "학생이，사과를/먹었다.",
+        "canonical",
+        "[\"학생\", \"사과\", \"먹다\"]",
+        "terms",
+        "학생 사과 먹다",
+        "chars",
+        "과,다,먹,사,생,학",
+        "bigrams",
+        "먹다,사과,학생"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d13",
+        "raw",
+        "한국어를 공부했다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d13",
+        "raw",
+        "한국어를 공부했다.",
+        "canonical",
+        "[\"한국어\", \"공부하다\"]",
+        "terms",
+        "한국어 공부하다",
+        "chars",
+        "공,국,다,부,어,하,한",
+        "bigrams",
+        "공부,국어,부하,하다,한국"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d14",
+        "raw",
+        "학교에서 책만 읽었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d14",
+        "raw",
+        "학교에서 책만 읽었다.",
+        "canonical",
+        "[\"학교에서\", \"책만\", \"읽다\"]",
+        "terms",
+        "학교에서 책만 읽다",
+        "chars",
+        "교,다,만,서,에,읽,책,학",
+        "bigrams",
+        "교에,에서,읽다,책만,학교"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d15",
+        "raw",
+        "나는 책을 읽었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d15",
+        "raw",
+        "나는 책을 읽었다.",
+        "canonical",
+        "[\"나는\", \"책\", \"읽다\"]",
+        "terms",
+        "나는 책 읽다",
+        "chars",
+        "나,는,다,읽,책",
+        "bigrams",
+        "나는,읽다"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "HSET",
+        "native:d16",
+        "raw",
+        "쀍쀍이가 좋았다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:d16",
+        "raw",
+        "쀍쀍이가 좋았다.",
+        "canonical",
+        "[\"쀍쀍이가\", \"좋다\"]",
+        "terms",
+        "쀍쀍이가 좋다",
+        "chars",
+        "가,다,쀍,이,좋",
+        "bigrams",
+        "쀍쀍,쀍이,이가,좋다"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생 사과 먹다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(학생 사과 먹다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "학생 사과 먹다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    학생\n    +학생(expanded)\n  }\n  UNION {\n    사과\n    +사과(expanded)\n  }\n  UNION {\n    먹다\n    +먹다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생이 사과를 먹었다.",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(학생 사과 먹다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "학생이 사과를 먹었다.",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    학생이\n    +학생(expanded)\n    학생(expanded)\n  }\n  UNION {\n    사과를\n    +사과(expanded)\n    사과(expanded)\n  }\n  UNION {\n    먹었다\n    +먹다(expanded)\n    먹다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹는다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(먹다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "먹는다",
+        "DIALECT",
+        2
+      ],
+      "response": "UNION {\n  먹는다\n  +먹는다(expanded)\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "한국어 공부하다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(한국어 공부하다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "한국어 공부하다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    한국어\n    +한국어(expanded)\n  }\n  UNION {\n    공부하다\n    +공부하다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "내가 한국어를 공부했다.",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(나 한국어 공부하다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "내가 한국어를 공부했다.",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    내가\n    +내가(expanded)\n  }\n  UNION {\n    한국어를\n    +한국어(expanded)\n    한국어(expanded)\n  }\n  UNION {\n    공부했다\n    +공부하다(expanded)\n    공부하다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "나 한국어 공부하다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(나 한국어 공부하다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "나 한국어 공부하다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    나\n    +나(expanded)\n  }\n  UNION {\n    한국어\n    +한국어(expanded)\n  }\n  UNION {\n    공부하다\n    +공부하다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "길을 걸었다.",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d04",
+        [
+          "raw",
+          "길을 걸었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(길 걷다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d04",
+        [
+          "raw",
+          "길을 걸었다.",
+          "canonical",
+          "[\"길\", \"걷다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "길을 걸었다.",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    길을\n    +길을(expanded)\n  }\n  UNION {\n    걸었다\n    +걸었다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "길 걷다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(길 걷다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d04",
+        [
+          "raw",
+          "길을 걸었다.",
+          "canonical",
+          "[\"길\", \"걷다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "길 걷다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    길\n    +길(expanded)\n  }\n  UNION {\n    걷다\n    +걷다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "전화 걸다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(전화 걸다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d05",
+        [
+          "raw",
+          "전화를 걸었다.",
+          "canonical",
+          "[\"전화\", \"걸다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "전화 걸다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    전화\n    +전화(expanded)\n  }\n  UNION {\n    걸다\n    +걸다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "소리 듣다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(소리 듣다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d06",
+        [
+          "raw",
+          "소리를 들었다.",
+          "canonical",
+          "[\"소리\", \"듣다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "소리 듣다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    소리\n    +소리(expanded)\n  }\n  UNION {\n    듣다\n    +듣다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "짐 들다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(짐 들다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d07",
+        [
+          "raw",
+          "짐을 들었다.",
+          "canonical",
+          "[\"짐\", \"들다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "짐 들다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    짐\n    +짐(expanded)\n  }\n  UNION {\n    들다\n    +들다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "꽃 예쁘다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d08",
+        [
+          "raw",
+          "꽃이 예뻤다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(꽃 예쁘다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d08",
+        [
+          "raw",
+          "꽃이 예뻤다.",
+          "canonical",
+          "[\"꽃\", \"예쁘다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "꽃 예쁘다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    꽃\n    +꽃(expanded)\n  }\n  UNION {\n    예쁘다\n    +예쁘다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "빠르다 달리다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d09",
+        [
+          "raw",
+          "빠르게 달렸다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(빠르다 달리다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d09",
+        [
+          "raw",
+          "빠르게 달렸다.",
+          "canonical",
+          "[\"빠르다\", \"달리다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "빠르다 달리다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    빠르다\n    +빠르다(expanded)\n  }\n  UNION {\n    달리다\n    +달리다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "빨리",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d10",
+        [
+          "raw",
+          "빨리 매우 조용히 함께"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(빨리)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d10",
+        [
+          "raw",
+          "빨리 매우 조용히 함께",
+          "canonical",
+          "[\"빨리\", \"매우\", \"조용히\", \"함께\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "빨리",
+        "DIALECT",
+        2
+      ],
+      "response": "UNION {\n  빨리\n  +빨리(expanded)\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "고양이 책 읽다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d11",
+        [
+          "raw",
+          "고양이가 책을 읽었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(고양이 책 읽다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d11",
+        [
+          "raw",
+          "고양이가 책을 읽었다.",
+          "canonical",
+          "[\"고양이\", \"책\", \"읽다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "고양이 책 읽다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    고양이\n    +고양이(expanded)\n  }\n  UNION {\n    책\n    +책(expanded)\n  }\n  UNION {\n    읽다\n    +읽다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생이，사과를/먹었다.",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(학생 사과 먹다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        3,
+        "adapter:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ],
+        "adapter:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다.",
+          "canonical",
+          "[\"학생\", \"사과\", \"먹다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "학생이，사과를/먹었다.",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    학생이，사과를\n    +학생이，사과를(expanded)\n  }\n  UNION {\n    먹었다\n    +먹다(expanded)\n    먹다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학교 책 읽다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(학교 책 읽다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "학교 책 읽다",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    학교\n    +학교(expanded)\n  }\n  UNION {\n    책\n    +책(expanded)\n  }\n  UNION {\n    읽다\n    +읽다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학교에서 책만 읽었다.",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d14",
+        [
+          "raw",
+          "학교에서 책만 읽었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(학교에서 책만 읽다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d14",
+        [
+          "raw",
+          "학교에서 책만 읽었다.",
+          "canonical",
+          "[\"학교에서\", \"책만\", \"읽다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "학교에서 책만 읽었다.",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    학교에서\n    +학교에서(expanded)\n  }\n  UNION {\n    책만\n    +책만(expanded)\n  }\n  UNION {\n    읽었다\n    +읽다(expanded)\n    읽다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "쀍쀍이가 좋았다.",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d16",
+        [
+          "raw",
+          "쀍쀍이가 좋았다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(쀍쀍이가 좋다)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:d16",
+        [
+          "raw",
+          "쀍쀍이가 좋았다.",
+          "canonical",
+          "[\"쀍쀍이가\", \"좋다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "쀍쀍이가 좋았다.",
+        "DIALECT",
+        2
+      ],
+      "response": "INTERSECT {\n  UNION {\n    쀍쀍이가\n    +쀍쀍이가(expanded)\n  }\n  UNION {\n    좋았다\n    +좋다(expanded)\n    좋다(expanded)\n  }\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "국",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(국)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "국",
+        "DIALECT",
+        2
+      ],
+      "response": "UNION {\n  국\n  +국(expanded)\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "국어",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@terms:(국어)",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.EXPLAIN",
+        "ko:native",
+        "국어",
+        "DIALECT",
+        2
+      ],
+      "response": "UNION {\n  국어\n  +국어(expanded)\n}\n"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생 사과 먹다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹는다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d02",
+        [
+          "raw",
+          "학생이 사과를 먹는다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹어요",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "native:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다."
+        ],
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생 사과 먹다",
+        "VERBATIM",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "걷다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "나 한국어 공부하다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "한국어 공부하다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "국",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹다",
+        "LANGUAGE",
+        "KOREAN",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "native:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다."
+        ],
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹다",
+        "LANGUAGE",
+        "ko",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": {
+        "error": "SEARCH_QUERY_BAD No such language"
+      }
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@chars:{국}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{국어}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{한국} @bigrams:{국어}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{어국}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        0
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{공부}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{공부} @bigrams:{부하} @bigrams:{하다}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{부하} @bigrams:{하다}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "HSET",
+        "adapter:boundary",
+        "raw",
+        "가나 다나다",
+        "canonical",
+        "[\"가나\", \"다나다\"]",
+        "terms",
+        "가나 다나다",
+        "chars",
+        "가,나,다",
+        "bigrams",
+        "가나,다나,나다"
+      ],
+      "response": 5
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:adapter",
+        "@bigrams:{가나} @bigrams:{나다}",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "adapter:boundary",
+        [
+          "raw",
+          "가나 다나다",
+          "canonical",
+          "[\"가나\", \"다나다\"]"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.CREATE",
+        "en",
+        "PREFIX",
+        1,
+        "en:",
+        "LANGUAGE",
+        "english",
+        "SCHEMA",
+        "raw",
+        "TEXT"
+      ],
+      "response": "OK"
+    },
+    {
+      "args": [
+        "HSET",
+        "en:1",
+        "raw",
+        "running cats"
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "en",
+        "run cat",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "en:1",
+        [
+          "raw",
+          "running cats"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "HSET",
+        "native:change",
+        "raw",
+        "학생이 사과를 먹었다."
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        3,
+        "native:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다."
+        ],
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ],
+        "native:change",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "HSET",
+        "native:change",
+        "raw",
+        "꽃이 예뻤다."
+      ],
+      "response": 0
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "먹다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "native:d12",
+        [
+          "raw",
+          "학생이，사과를/먹었다."
+        ],
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "예쁘다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        2,
+        "native:d08",
+        [
+          "raw",
+          "꽃이 예뻤다."
+        ],
+        "native:change",
+        [
+          "raw",
+          "꽃이 예뻤다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "DEL",
+        "native:change"
+      ],
+      "response": 1
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "예쁘다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d08",
+        [
+          "raw",
+          "꽃이 예뻤다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생 사과 먹다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "SAVE"
+      ],
+      "response": "OK"
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "ko:native",
+        "학생 사과 먹다",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "native:d01",
+        [
+          "raw",
+          "학생이 사과를 먹었다."
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.SEARCH",
+        "en",
+        "run cat",
+        "LIMIT",
+        0,
+        100,
+        "RETURN",
+        2,
+        "raw",
+        "canonical",
+        "DIALECT",
+        2
+      ],
+      "response": [
+        1,
+        "en:1",
+        [
+          "raw",
+          "running cats"
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.INFO",
+        "ko:native"
+      ],
+      "response": [
+        "index_name",
+        "ko:native",
+        "index_options",
+        [],
+        "index_definition",
+        [
+          "key_type",
+          "HASH",
+          "prefixes",
+          [
+            "native:"
+          ],
+          "default_language",
+          "korean",
+          "default_score",
+          "1",
+          "indexes_all",
+          "false"
+        ],
+        "attributes",
+        [
+          [
+            "identifier",
+            "raw",
+            "attribute",
+            "raw",
+            "type",
+            "TEXT",
+            "WEIGHT",
+            "1"
+          ]
+        ],
+        "num_docs",
+        16,
+        "max_doc_id",
+        16,
+        "num_terms",
+        45,
+        "num_records",
+        59,
+        "inverted_sz_mb",
+        "0.004513740539550781",
+        "vector_index_sz_mb",
+        "0",
+        "total_inverted_index_blocks",
+        45,
+        "offset_vectors_sz_mb",
+        "5.626678466796875e-5",
+        "doc_table_size_mb",
+        "0.00885772705078125",
+        "sortable_values_size_mb",
+        "0",
+        "key_table_size_mb",
+        "6.1798095703125e-4",
+        "tag_overhead_sz_mb",
+        "0",
+        "text_overhead_sz_mb",
+        "0.0018453598022460938",
+        "total_index_memory_sz_mb",
+        "0.01630687713623047",
+        "geoshapes_sz_mb",
+        "0",
+        "records_per_doc_avg",
+        "3.6875",
+        "bytes_per_record_avg",
+        "80.2203369140625",
+        "offsets_per_term_avg",
+        "1",
+        "offset_bits_per_record_avg",
+        "8",
+        "hash_indexing_failures",
+        0,
+        "total_indexing_time",
+        "0.065334",
+        "indexing",
+        0,
+        "percent_indexed",
+        "1",
+        "number_of_uses",
+        3,
+        "cleaning",
+        0,
+        "gc_stats",
+        [
+          "bytes_collected",
+          "0",
+          "total_ms_run",
+          "0",
+          "total_cycles",
+          "0",
+          "average_cycle_time_ms",
+          "nan",
+          "last_run_time_ms",
+          "0",
+          "gc_numeric_trees_missed",
+          "0",
+          "gc_blocks_denied",
+          "0"
+        ],
+        "cursor_stats",
+        [
+          "global_idle",
+          0,
+          "global_total",
+          0,
+          "index_capacity",
+          128,
+          "index_total",
+          0
+        ],
+        "stopwords_list",
+        [],
+        "dialect_stats",
+        [
+          "dialect_1",
+          0,
+          "dialect_2",
+          1,
+          "dialect_3",
+          0,
+          "dialect_4",
+          0
+        ],
+        "Index Errors",
+        [
+          "indexing failures",
+          0,
+          "last indexing error",
+          "N/A",
+          "last indexing error key",
+          "N/A",
+          "background indexing status",
+          "OK"
+        ],
+        "field statistics",
+        [
+          [
+            "identifier",
+            "raw",
+            "attribute",
+            "raw",
+            "Index Errors",
+            [
+              "indexing failures",
+              0,
+              "last indexing error",
+              "N/A",
+              "last indexing error key",
+              "N/A"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "args": [
+        "FT.INFO",
+        "ko:adapter"
+      ],
+      "response": [
+        "index_name",
+        "ko:adapter",
+        "index_options",
+        [],
+        "index_definition",
+        [
+          "key_type",
+          "HASH",
+          "prefixes",
+          [
+            "adapter:"
+          ],
+          "default_score",
+          "1",
+          "indexes_all",
+          "false"
+        ],
+        "attributes",
+        [
+          [
+            "identifier",
+            "terms",
+            "attribute",
+            "terms",
+            "type",
+            "TEXT",
+            "WEIGHT",
+            "1",
+            "NOSTEM"
+          ],
+          [
+            "identifier",
+            "chars",
+            "attribute",
+            "chars",
+            "type",
+            "TAG",
+            "SEPARATOR",
+            ","
+          ],
+          [
+            "identifier",
+            "bigrams",
+            "attribute",
+            "bigrams",
+            "type",
+            "TAG",
+            "SEPARATOR",
+            ","
+          ]
+        ],
+        "num_docs",
+        17,
+        "max_doc_id",
+        17,
+        "num_terms",
+        32,
+        "num_records",
+        188,
+        "inverted_sz_mb",
+        "0.010222434997558594",
+        "vector_index_sz_mb",
+        "0",
+        "total_inverted_index_blocks",
+        122,
+        "offset_vectors_sz_mb",
+        "4.100799560546875e-5",
+        "doc_table_size_mb",
+        "0.008951187133789063",
+        "sortable_values_size_mb",
+        "0",
+        "key_table_size_mb",
+        "6.866455078125e-4",
+        "tag_overhead_sz_mb",
+        "0.00394439697265625",
+        "text_overhead_sz_mb",
+        "0.001312255859375",
+        "total_index_memory_sz_mb",
+        "0.025363922119140625",
+        "geoshapes_sz_mb",
+        "0",
+        "records_per_doc_avg",
+        "11.058823585510254",
+        "bytes_per_record_avg",
+        "57.01595687866211",
+        "offsets_per_term_avg",
+        "0.228723406791687",
+        "offset_bits_per_record_avg",
+        "8",
+        "hash_indexing_failures",
+        0,
+        "total_indexing_time",
+        "0.121791",
+        "indexing",
+        0,
+        "percent_indexed",
+        "1",
+        "number_of_uses",
+        1,
+        "cleaning",
+        0,
+        "gc_stats",
+        [
+          "bytes_collected",
+          "0",
+          "total_ms_run",
+          "0",
+          "total_cycles",
+          "0",
+          "average_cycle_time_ms",
+          "nan",
+          "last_run_time_ms",
+          "0",
+          "gc_numeric_trees_missed",
+          "0",
+          "gc_blocks_denied",
+          "0"
+        ],
+        "cursor_stats",
+        [
+          "global_idle",
+          0,
+          "global_total",
+          0,
+          "index_capacity",
+          128,
+          "index_total",
+          0
+        ],
+        "stopwords_list",
+        [],
+        "dialect_stats",
+        [
+          "dialect_1",
+          0,
+          "dialect_2",
+          0,
+          "dialect_3",
+          0,
+          "dialect_4",
+          0
+        ],
+        "Index Errors",
+        [
+          "indexing failures",
+          0,
+          "last indexing error",
+          "N/A",
+          "last indexing error key",
+          "N/A",
+          "background indexing status",
+          "OK"
+        ],
+        "field statistics",
+        [
+          [
+            "identifier",
+            "terms",
+            "attribute",
+            "terms",
+            "Index Errors",
+            [
+              "indexing failures",
+              0,
+              "last indexing error",
+              "N/A",
+              "last indexing error key",
+              "N/A"
+            ]
+          ],
+          [
+            "identifier",
+            "chars",
+            "attribute",
+            "chars",
+            "Index Errors",
+            [
+              "indexing failures",
+              0,
+              "last indexing error",
+              "N/A",
+              "last indexing error key",
+              "N/A"
+            ]
+          ],
+          [
+            "identifier",
+            "bigrams",
+            "attribute",
+            "bigrams",
+            "Index Errors",
+            [
+              "indexing failures",
+              0,
+              "last indexing error",
+              "N/A",
+              "last indexing error key",
+              "N/A"
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "gram_queries": [
+    {
+      "query": "국",
+      "expression": "@chars:{국}",
+      "candidate_response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "final_ids": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "query": "국어",
+      "expression": "@bigrams:{국어}",
+      "candidate_response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "final_ids": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "query": "한국어",
+      "expression": "@bigrams:{한국} @bigrams:{국어}",
+      "candidate_response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "final_ids": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "query": "어국",
+      "expression": "@bigrams:{어국}",
+      "candidate_response": [
+        0
+      ],
+      "final_ids": []
+    },
+    {
+      "query": "공부",
+      "expression": "@bigrams:{공부}",
+      "candidate_response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "final_ids": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "query": "공부하다",
+      "expression": "@bigrams:{공부} @bigrams:{부하} @bigrams:{하다}",
+      "candidate_response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "final_ids": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    },
+    {
+      "query": "부하다",
+      "expression": "@bigrams:{부하} @bigrams:{하다}",
+      "candidate_response": [
+        2,
+        "adapter:d13",
+        [
+          "raw",
+          "한국어를 공부했다.",
+          "canonical",
+          "[\"한국어\", \"공부하다\"]"
+        ],
+        "adapter:d03",
+        [
+          "raw",
+          "내가 한국어를 공부했다.",
+          "canonical",
+          "[\"나\", \"한국어\", \"공부하다\"]"
+        ]
+      ],
+      "final_ids": [
+        "adapter:d03",
+        "adapter:d13"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "d01",
+      "text": "학생이 사과를 먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹었다",
+          "normalized": "먹었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d02",
+      "text": "학생이 사과를 먹는다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹는다",
+          "normalized": "먹는다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "는다",
+              "tag": "EF",
+              "start": 9,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d03",
+      "text": "내가 한국어를 공부했다.",
+      "canonical": [
+        "나",
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "나",
+          "lemma": "나",
+          "pos": "PRONOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "내가",
+          "normalized": "내가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "나",
+              "tag": "NP",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "한국어를",
+          "normalized": "한국어를",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 19,
+          "normalized_start": 3,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 3,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "derived_predicate",
+          "surface": "공부했다",
+          "normalized": "공부했다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 32,
+          "normalized_start": 8,
+          "normalized_end": 12,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 8,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 11,
+              "end": 12,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d04",
+      "text": "길을 걸었다.",
+      "canonical": [
+        "길",
+        "걷다"
+      ],
+      "tokens": [
+        {
+          "canonical": "길",
+          "lemma": "길",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "길을",
+          "normalized": "길을",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "길",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걷다",
+          "lemma": "걷다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "걸었다",
+          "normalized": "걸었다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "걷",
+              "tag": "VV-I",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d05",
+      "text": "전화를 걸었다.",
+      "canonical": [
+        "전화",
+        "걸다"
+      ],
+      "tokens": [
+        {
+          "canonical": "전화",
+          "lemma": "전화",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "전화를",
+          "normalized": "전화를",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "전화",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "걸다",
+          "lemma": "걸다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "걸었다",
+          "normalized": "걸었다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "걸",
+              "tag": "VV",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d06",
+      "text": "소리를 들었다.",
+      "canonical": [
+        "소리",
+        "듣다"
+      ],
+      "tokens": [
+        {
+          "canonical": "소리",
+          "lemma": "소리",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "소리를",
+          "normalized": "소리를",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "소리",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "듣다",
+          "lemma": "듣다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "들었다",
+          "normalized": "들었다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "듣",
+              "tag": "VV-I",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d07",
+      "text": "짐을 들었다.",
+      "canonical": [
+        "짐",
+        "들다"
+      ],
+      "tokens": [
+        {
+          "canonical": "짐",
+          "lemma": "짐",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "짐을",
+          "normalized": "짐을",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "짐",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "들다",
+          "lemma": "들다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "들었다",
+          "normalized": "들었다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "들",
+              "tag": "VV",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d08",
+      "text": "꽃이 예뻤다.",
+      "canonical": [
+        "꽃",
+        "예쁘다"
+      ],
+      "tokens": [
+        {
+          "canonical": "꽃",
+          "lemma": "꽃",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "꽃이",
+          "normalized": "꽃이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "꽃",
+              "tag": "NNG",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "예쁘다",
+          "lemma": "예쁘다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "예뻤다",
+          "normalized": "예뻤다",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 16,
+          "normalized_start": 3,
+          "normalized_end": 6,
+          "morphemes": [
+            {
+              "form": "예쁘",
+              "tag": "VA",
+              "start": 3,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d09",
+      "text": "빠르게 달렸다.",
+      "canonical": [
+        "빠르다",
+        "달리다"
+      ],
+      "tokens": [
+        {
+          "canonical": "빠르다",
+          "lemma": "빠르다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "빠르게",
+          "normalized": "빠르게",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "빠르",
+              "tag": "VA",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "게",
+              "tag": "EC",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "달리다",
+          "lemma": "달리다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "달렸다",
+          "normalized": "달렸다",
+          "eojeol_id": 1,
+          "start_byte": 10,
+          "end_byte": 19,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "달리",
+              "tag": "VV",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d10",
+      "text": "빨리 매우 조용히 함께",
+      "canonical": [
+        "빨리",
+        "매우",
+        "조용히",
+        "함께"
+      ],
+      "tokens": [
+        {
+          "canonical": "빨리",
+          "lemma": "빨리",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "빨리",
+          "normalized": "빨리",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "빨리",
+              "tag": "MAG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "매우",
+          "lemma": "매우",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "매우",
+          "normalized": "매우",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "매우",
+              "tag": "MAG",
+              "start": 3,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "조용히",
+          "lemma": "조용히",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "조용히",
+          "normalized": "조용히",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 23,
+          "normalized_start": 6,
+          "normalized_end": 9,
+          "morphemes": [
+            {
+              "form": "조용히",
+              "tag": "MAG",
+              "start": 6,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "함께",
+          "lemma": "함께",
+          "pos": "ADVERB",
+          "status": "preserved",
+          "rule": "adverb_unchanged",
+          "surface": "함께",
+          "normalized": "함께",
+          "eojeol_id": 3,
+          "start_byte": 24,
+          "end_byte": 30,
+          "normalized_start": 10,
+          "normalized_end": 12,
+          "morphemes": [
+            {
+              "form": "함께",
+              "tag": "MAG",
+              "start": 10,
+              "end": 12,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d11",
+      "text": "고양이가 책을 읽었다.",
+      "canonical": [
+        "고양이",
+        "책",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "고양이",
+          "lemma": "고양이",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "고양이가",
+          "normalized": "고양이가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "고양이",
+              "tag": "NNG",
+              "start": 0,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책",
+          "lemma": "책",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "책을",
+          "normalized": "책을",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 19,
+          "normalized_start": 5,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d12",
+      "text": "학생이，사과를/먹었다.",
+      "canonical": [
+        "학생",
+        "사과",
+        "먹다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학생",
+          "lemma": "학생",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "학생이",
+          "normalized": "학생이",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 9,
+          "normalized_start": 0,
+          "normalized_end": 3,
+          "morphemes": [
+            {
+              "form": "학생",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "JKS",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "사과",
+          "lemma": "사과",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "사과를",
+          "normalized": "사과를",
+          "eojeol_id": 1,
+          "start_byte": 12,
+          "end_byte": 21,
+          "normalized_start": 4,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "사과",
+              "tag": "NNG",
+              "start": 4,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "먹다",
+          "lemma": "먹다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "먹었다",
+          "normalized": "먹었다",
+          "eojeol_id": 2,
+          "start_byte": 22,
+          "end_byte": 31,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "먹",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d13",
+      "text": "한국어를 공부했다.",
+      "canonical": [
+        "한국어",
+        "공부하다"
+      ],
+      "tokens": [
+        {
+          "canonical": "한국어",
+          "lemma": "한국어",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "한국어를",
+          "normalized": "한국어를",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 33,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "한국어",
+              "tag": "NNP",
+              "start": 0,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "를",
+              "tag": "JKO",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "공부하다",
+          "lemma": "공부하다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "derived_predicate",
+          "surface": "공부했다",
+          "normalized": "공부했다",
+          "eojeol_id": 1,
+          "start_byte": 34,
+          "end_byte": 64,
+          "normalized_start": 5,
+          "normalized_end": 9,
+          "morphemes": [
+            {
+              "form": "공부",
+              "tag": "NNG",
+              "start": 5,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "하",
+              "tag": "XSV",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d14",
+      "text": "학교에서 책만 읽었다.",
+      "canonical": [
+        "학교에서",
+        "책만",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "학교에서",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "학교에서",
+          "normalized": "학교에서",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "학교",
+              "tag": "NNG",
+              "start": 0,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "에서",
+              "tag": "JKB",
+              "start": 2,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책만",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "책만",
+          "normalized": "책만",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 19,
+          "normalized_start": 5,
+          "normalized_end": 7,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "만",
+              "tag": "JX",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 20,
+          "end_byte": 29,
+          "normalized_start": 8,
+          "normalized_end": 11,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 9,
+              "end": 10,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 10,
+              "end": 11,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d15",
+      "text": "나는 책을 읽었다.",
+      "canonical": [
+        "나는",
+        "책",
+        "읽다"
+      ],
+      "tokens": [
+        {
+          "canonical": "나는",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "unsupported_particle",
+          "surface": "나는",
+          "normalized": "나는",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 6,
+          "normalized_start": 0,
+          "normalized_end": 2,
+          "morphemes": [
+            {
+              "form": "나",
+              "tag": "NP",
+              "start": 0,
+              "end": 1,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "는",
+              "tag": "JX",
+              "start": 1,
+              "end": 2,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "책",
+          "lemma": "책",
+          "pos": "NOUN",
+          "status": "normalized",
+          "rule": "case_particle",
+          "surface": "책을",
+          "normalized": "책을",
+          "eojeol_id": 1,
+          "start_byte": 7,
+          "end_byte": 13,
+          "normalized_start": 3,
+          "normalized_end": 5,
+          "morphemes": [
+            {
+              "form": "책",
+              "tag": "NNG",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "을",
+              "tag": "JKO",
+              "start": 4,
+              "end": 5,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "읽다",
+          "lemma": "읽다",
+          "pos": "VERB",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "읽었다",
+          "normalized": "읽었다",
+          "eojeol_id": 2,
+          "start_byte": 14,
+          "end_byte": 23,
+          "normalized_start": 6,
+          "normalized_end": 9,
+          "morphemes": [
+            {
+              "form": "읽",
+              "tag": "VV",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 8,
+              "end": 9,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d16",
+      "text": "쀍쀍이가 좋았다.",
+      "canonical": [
+        "쀍쀍이가",
+        "좋다"
+      ],
+      "tokens": [
+        {
+          "canonical": "쀍쀍이가",
+          "lemma": null,
+          "pos": "UNKNOWN",
+          "status": "preserved",
+          "rule": "out_of_vocabulary",
+          "surface": "쀍쀍이가",
+          "normalized": "쀍쀍이가",
+          "eojeol_id": 0,
+          "start_byte": 0,
+          "end_byte": 12,
+          "normalized_start": 0,
+          "normalized_end": 4,
+          "morphemes": [
+            {
+              "form": "쀍쀍",
+              "tag": "NNP",
+              "start": 0,
+              "end": 2,
+              "oov": true,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "이",
+              "tag": "XSN",
+              "start": 2,
+              "end": 3,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "가",
+              "tag": "JKS",
+              "start": 3,
+              "end": 4,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        },
+        {
+          "canonical": "좋다",
+          "lemma": "좋다",
+          "pos": "ADJECTIVE",
+          "status": "normalized",
+          "rule": "predicate_ending",
+          "surface": "좋았다",
+          "normalized": "좋았다",
+          "eojeol_id": 1,
+          "start_byte": 13,
+          "end_byte": 22,
+          "normalized_start": 5,
+          "normalized_end": 8,
+          "morphemes": [
+            {
+              "form": "좋",
+              "tag": "VA",
+              "start": 5,
+              "end": 6,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "었",
+              "tag": "EP",
+              "start": 6,
+              "end": 7,
+              "oov": false,
+              "typo_cost": 0.0
+            },
+            {
+              "form": "다",
+              "tag": "EF",
+              "start": 7,
+              "end": 8,
+              "oov": false,
+              "typo_cost": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "server": {
+    "redis_version": "8.9.241",
+    "redis_git_sha1": "dce0c76d",
+    "redis_git_dirty": "0",
+    "redis_build_id": "3ff0d778d0e1bd57",
+    "redis_mode": "standalone",
+    "os": "Linux 7.0.14-orbstack-00380-ga7e0a2dc9535 aarch64",
+    "arch_bits": "64",
+    "monotonic_clock": "ARM CNTVCT @ 24 ticks/us",
+    "multiplexing_api": "epoll",
+    "atomicvar_api": "c11-builtin",
+    "gcc_version": "13.3.0",
+    "process_id": "31495",
+    "process_supervised": "no",
+    "run_id": "79e764aa4bd7fbbb6869bd80a4372e4aa7ac2660",
+    "tcp_port": "16389",
+    "server_time_usec": "1788960703427718",
+    "uptime_in_seconds": "0",
+    "uptime_in_days": "0",
+    "hz": "10",
+    "configured_hz": "10",
+    "lru_clock": "10575807",
+    "executable": "/work/src/redis-server",
+    "config_file": "/work/ko-run/redis.conf",
+    "io_threads_active": "0",
+    "listener0": "name=tcp,bind=127.0.0.1,port=16389"
+  },
+  "modules": [
+    [
+      "name",
+      "search",
+      "ver",
+      81000,
+      "path",
+      "/work/modules/redisearch/redisearch.so",
+      "args",
+      []
+    ],
+    [
+      "name",
+      "vectorset",
+      "ver",
+      1,
+      "path",
+      "",
+      "args",
+      []
+    ]
+  ],
+  "prefix_config": [
+    "search-min-prefix",
+    "2"
+  ],
+  "gram_boundary": [
+    1,
+    "adapter:boundary",
+    [
+      "raw",
+      "가나 다나다",
+      "canonical",
+      "[\"가나\", \"다나다\"]"
+    ]
+  ],
+  "server_after_reload": {
+    "redis_version": "8.9.241",
+    "redis_git_sha1": "dce0c76d",
+    "redis_git_dirty": "0",
+    "redis_build_id": "3ff0d778d0e1bd57",
+    "redis_mode": "standalone",
+    "os": "Linux 7.0.14-orbstack-00380-ga7e0a2dc9535 aarch64",
+    "arch_bits": "64",
+    "monotonic_clock": "ARM CNTVCT @ 24 ticks/us",
+    "multiplexing_api": "epoll",
+    "atomicvar_api": "c11-builtin",
+    "gcc_version": "13.3.0",
+    "process_id": "31545",
+    "process_supervised": "no",
+    "run_id": "0451f5fde056d418561c0fa4f79275b899090d02",
+    "tcp_port": "16389",
+    "server_time_usec": "1788960703611130",
+    "uptime_in_seconds": "0",
+    "uptime_in_days": "0",
+    "hz": "10",
+    "configured_hz": "10",
+    "lru_clock": "10575807",
+    "executable": "/work/src/redis-server",
+    "config_file": "/work/ko-run/redis.conf",
+    "io_threads_active": "0",
+    "listener0": "name=tcp,bind=127.0.0.1,port=16389"
+  },
+  "native_info": [
+    "index_name",
+    "ko:native",
+    "index_options",
+    [],
+    "index_definition",
+    [
+      "key_type",
+      "HASH",
+      "prefixes",
+      [
+        "native:"
+      ],
+      "default_language",
+      "korean",
+      "default_score",
+      "1",
+      "indexes_all",
+      "false"
+    ],
+    "attributes",
+    [
+      [
+        "identifier",
+        "raw",
+        "attribute",
+        "raw",
+        "type",
+        "TEXT",
+        "WEIGHT",
+        "1"
+      ]
+    ],
+    "num_docs",
+    16,
+    "max_doc_id",
+    16,
+    "num_terms",
+    45,
+    "num_records",
+    59,
+    "inverted_sz_mb",
+    "0.004513740539550781",
+    "vector_index_sz_mb",
+    "0",
+    "total_inverted_index_blocks",
+    45,
+    "offset_vectors_sz_mb",
+    "5.626678466796875e-5",
+    "doc_table_size_mb",
+    "0.00885772705078125",
+    "sortable_values_size_mb",
+    "0",
+    "key_table_size_mb",
+    "6.1798095703125e-4",
+    "tag_overhead_sz_mb",
+    "0",
+    "text_overhead_sz_mb",
+    "0.0018453598022460938",
+    "total_index_memory_sz_mb",
+    "0.01630687713623047",
+    "geoshapes_sz_mb",
+    "0",
+    "records_per_doc_avg",
+    "3.6875",
+    "bytes_per_record_avg",
+    "80.2203369140625",
+    "offsets_per_term_avg",
+    "1",
+    "offset_bits_per_record_avg",
+    "8",
+    "hash_indexing_failures",
+    0,
+    "total_indexing_time",
+    "0.065334",
+    "indexing",
+    0,
+    "percent_indexed",
+    "1",
+    "number_of_uses",
+    3,
+    "cleaning",
+    0,
+    "gc_stats",
+    [
+      "bytes_collected",
+      "0",
+      "total_ms_run",
+      "0",
+      "total_cycles",
+      "0",
+      "average_cycle_time_ms",
+      "nan",
+      "last_run_time_ms",
+      "0",
+      "gc_numeric_trees_missed",
+      "0",
+      "gc_blocks_denied",
+      "0"
+    ],
+    "cursor_stats",
+    [
+      "global_idle",
+      0,
+      "global_total",
+      0,
+      "index_capacity",
+      128,
+      "index_total",
+      0
+    ],
+    "stopwords_list",
+    [],
+    "dialect_stats",
+    [
+      "dialect_1",
+      0,
+      "dialect_2",
+      1,
+      "dialect_3",
+      0,
+      "dialect_4",
+      0
+    ],
+    "Index Errors",
+    [
+      "indexing failures",
+      0,
+      "last indexing error",
+      "N/A",
+      "last indexing error key",
+      "N/A",
+      "background indexing status",
+      "OK"
+    ],
+    "field statistics",
+    [
+      [
+        "identifier",
+        "raw",
+        "attribute",
+        "raw",
+        "Index Errors",
+        [
+          "indexing failures",
+          0,
+          "last indexing error",
+          "N/A",
+          "last indexing error key",
+          "N/A"
+        ]
+      ]
+    ]
+  ],
+  "adapter_info": [
+    "index_name",
+    "ko:adapter",
+    "index_options",
+    [],
+    "index_definition",
+    [
+      "key_type",
+      "HASH",
+      "prefixes",
+      [
+        "adapter:"
+      ],
+      "default_score",
+      "1",
+      "indexes_all",
+      "false"
+    ],
+    "attributes",
+    [
+      [
+        "identifier",
+        "terms",
+        "attribute",
+        "terms",
+        "type",
+        "TEXT",
+        "WEIGHT",
+        "1",
+        "NOSTEM"
+      ],
+      [
+        "identifier",
+        "chars",
+        "attribute",
+        "chars",
+        "type",
+        "TAG",
+        "SEPARATOR",
+        ","
+      ],
+      [
+        "identifier",
+        "bigrams",
+        "attribute",
+        "bigrams",
+        "type",
+        "TAG",
+        "SEPARATOR",
+        ","
+      ]
+    ],
+    "num_docs",
+    17,
+    "max_doc_id",
+    17,
+    "num_terms",
+    32,
+    "num_records",
+    188,
+    "inverted_sz_mb",
+    "0.010222434997558594",
+    "vector_index_sz_mb",
+    "0",
+    "total_inverted_index_blocks",
+    122,
+    "offset_vectors_sz_mb",
+    "4.100799560546875e-5",
+    "doc_table_size_mb",
+    "0.008951187133789063",
+    "sortable_values_size_mb",
+    "0",
+    "key_table_size_mb",
+    "6.866455078125e-4",
+    "tag_overhead_sz_mb",
+    "0.00394439697265625",
+    "text_overhead_sz_mb",
+    "0.001312255859375",
+    "total_index_memory_sz_mb",
+    "0.025363922119140625",
+    "geoshapes_sz_mb",
+    "0",
+    "records_per_doc_avg",
+    "11.058823585510254",
+    "bytes_per_record_avg",
+    "57.01595687866211",
+    "offsets_per_term_avg",
+    "0.228723406791687",
+    "offset_bits_per_record_avg",
+    "8",
+    "hash_indexing_failures",
+    0,
+    "total_indexing_time",
+    "0.121791",
+    "indexing",
+    0,
+    "percent_indexed",
+    "1",
+    "number_of_uses",
+    1,
+    "cleaning",
+    0,
+    "gc_stats",
+    [
+      "bytes_collected",
+      "0",
+      "total_ms_run",
+      "0",
+      "total_cycles",
+      "0",
+      "average_cycle_time_ms",
+      "nan",
+      "last_run_time_ms",
+      "0",
+      "gc_numeric_trees_missed",
+      "0",
+      "gc_blocks_denied",
+      "0"
+    ],
+    "cursor_stats",
+    [
+      "global_idle",
+      0,
+      "global_total",
+      0,
+      "index_capacity",
+      128,
+      "index_total",
+      0
+    ],
+    "stopwords_list",
+    [],
+    "dialect_stats",
+    [
+      "dialect_1",
+      0,
+      "dialect_2",
+      0,
+      "dialect_3",
+      0,
+      "dialect_4",
+      0
+    ],
+    "Index Errors",
+    [
+      "indexing failures",
+      0,
+      "last indexing error",
+      "N/A",
+      "last indexing error key",
+      "N/A",
+      "background indexing status",
+      "OK"
+    ],
+    "field statistics",
+    [
+      [
+        "identifier",
+        "terms",
+        "attribute",
+        "terms",
+        "Index Errors",
+        [
+          "indexing failures",
+          0,
+          "last indexing error",
+          "N/A",
+          "last indexing error key",
+          "N/A"
+        ]
+      ],
+      [
+        "identifier",
+        "chars",
+        "attribute",
+        "chars",
+        "Index Errors",
+        [
+          "indexing failures",
+          0,
+          "last indexing error",
+          "N/A",
+          "last indexing error key",
+          "N/A"
+        ]
+      ],
+      [
+        "identifier",
+        "bigrams",
+        "attribute",
+        "bigrams",
+        "Index Errors",
+        [
+          "indexing failures",
+          0,
+          "last indexing error",
+          "N/A",
+          "last indexing error key",
+          "N/A"
+        ]
+      ]
+    ]
+  ],
+  "summary": {
+    "passed": 50,
+    "failed": 0
+  }
+}

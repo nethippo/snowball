@@ -1,0 +1,116 @@
+{
+  "server": {
+    "redis_version": "8.9.241",
+    "redis_git_sha1": "dce0c76d",
+    "redis_git_dirty": "0",
+    "redis_build_id": "3ff0d778d0e1bd57",
+    "redis_mode": "standalone",
+    "os": "Linux 7.0.14-orbstack-00380-ga7e0a2dc9535 aarch64",
+    "arch_bits": "64",
+    "monotonic_clock": "ARM CNTVCT @ 24 ticks/us",
+    "multiplexing_api": "epoll",
+    "atomicvar_api": "c11-builtin",
+    "gcc_version": "13.3.0",
+    "process_id": "67",
+    "process_supervised": "no",
+    "run_id": "ae53826e5cde5868cfc597c620fbbd6505067bf6",
+    "tcp_port": "16391",
+    "server_time_usec": "1788961689536660",
+    "uptime_in_seconds": "0",
+    "uptime_in_days": "0",
+    "hz": "10",
+    "configured_hz": "10",
+    "lru_clock": "10576793",
+    "executable": "/work/src/redis-server",
+    "config_file": "",
+    "io_threads_active": "0",
+    "listener0": "name=tcp,bind=127.0.0.1,port=16391"
+  },
+  "modules": [
+    [
+      "name",
+      "vectorset",
+      "ver",
+      1,
+      "path",
+      "",
+      "args",
+      []
+    ],
+    [
+      "name",
+      "search",
+      "ver",
+      81000,
+      "path",
+      "/work/modules/redisearch/redisearch.so",
+      "args",
+      []
+    ]
+  ],
+  "groups": [
+    {
+      "name": "ping",
+      "calls_per_trial": 2057,
+      "trials_ns_per_call": [
+        24775.17501215362,
+        32232.58580456976,
+        34283.882352941175,
+        24209.90763247448,
+        22816.44871171609,
+        31803.358288770054,
+        33818.63976665046,
+        31696.041808458922,
+        34163.62177929023
+      ]
+    },
+    {
+      "name": "search_count",
+      "calls_per_trial": 2057,
+      "trials_ns_per_call": [
+        51468.807000486144,
+        50043.62664073894,
+        49617.66067087992,
+        52345.774914924645,
+        51959.6728245017,
+        51100.529897909575,
+        50856.80845892076,
+        51050.5580943121,
+        51628.46524064171
+      ]
+    },
+    {
+      "name": "search_return_raw",
+      "calls_per_trial": 2057,
+      "trials_ns_per_call": [
+        71588.09285367039,
+        68106.18813806515,
+        69123.95673310646,
+        68237.97423432182,
+        65961.83519688867,
+        50082.72095284395,
+        55926.529411764706,
+        73369.78026251824,
+        68954.08896451142
+      ]
+    }
+  ],
+  "example": [
+    3,
+    "bench:0",
+    [
+      "raw",
+      "학생이"
+    ],
+    "bench:143",
+    [
+      "raw",
+      "학생"
+    ],
+    "bench:1",
+    [
+      "raw",
+      "학생을"
+    ]
+  ]
+}

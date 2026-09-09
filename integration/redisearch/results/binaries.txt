@@ -1,0 +1,19 @@
+	linux-vdso.so.1 (0x0000ffffa0ef7000)
+	libssl.so.3 => /lib/aarch64-linux-gnu/libssl.so.3 (0x0000ffff9feb0000)
+	libcrypto.so.3 => /lib/aarch64-linux-gnu/libcrypto.so.3 (0x0000ffff9fa20000)
+	libstdc++.so.6 => /lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000ffff9f790000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000ffff9f6e0000)
+	libgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x0000ffff9f6a0000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffff9f4e0000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffffa0eb0000)
+	linux-vdso.so.1 (0x0000ffffa3f7c000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000ffffa37d0000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffffa3610000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffffa3f40000)
+Redis server v=8.9.241 sha=dce0c76d:0 malloc=jemalloc-5.3.0 bits=64 build=3ff0d778d0e1bd57
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cmake version 3.28.3
+rustc 1.94.0 (4a4ef493e 2026-03-02)
+877976327994d9f726c88ed52f9af30ec1d7a321dc9222d6de7d7b3fef5bbd30  /work/src/redis-server
+457edb88041d61bf5f127d4f0bcc547307f42960f0de30947fc74dc3d678e505  /work/src/redis-cli
+95c573e3218eeec8e811892523e67d47eda0e86e5b72af8c5f00dda03c678470  /work/modules/redisearch/redisearch.so

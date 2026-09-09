@@ -1,0 +1,296 @@
+Test execution requested, enabling test build automatically
+Configuring CMake...
+Build directory: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community
+cmake /work/modules/redisearch/src -DCOORD_TYPE=oss -DBUILD_SEARCH_UNIT_TESTS=ON -DREDISEARCH_GENERATE_HEADERS=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_SHARED_LIBRARY_SUFFIX=.so -UCMAKE_TOOLCHAIN_FILE -DSVS_SHARED_LIB=OFF -DINLINE_LSE_ATOMICS=OFF -DRUST_PROFILE=optimised_test  -DENABLE_ASSERT=1
+-- OS detected: linux
+# CMAKE_C_COMPILER_ID: GNU
+-- SAN: 
+-- COV: 
+Detected version: 1.3.0
+-- BOOST_DIR: /work/modules/redisearch/src/.install/boost
+-- BOOST_DIR '/work/modules/redisearch/src/.install/boost' is not a valid boost directory path
+-- fetching boost
+-- Populating boost
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-subbuild
+[100%] Built target boost-populate
+-- boost fetched
+-- boost source dir: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+-- boost binary dir: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-build
+-- BOOST_DIR: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+-- summary of build options:
+    Install prefix:  /usr/local
+    Target system:   Linux
+    Compiler:
+      C compiler:    /usr/bin/cc (GNU)
+      CFLAGS:          -fPIC -g -pthread -fno-strict-aliasing -Wno-unused-function -Wno-unused-variable -Wno-sign-compare -fcommon -funsigned-char -Werror=format
+
+# VectorSimilarity root: /work/modules/redisearch/src/deps/VectorSimilarity
+# VectorSimilarity binroot: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/src/VectorSimilarity
+-- SVS support enabled
+-- SVS LVQ is not supported on this architecture
+-- Detected GLIBC version: 2.39
+-- Detected GLIBCXX_RELEASE (GCC major): 13
+-- Populating eve
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/eve-subbuild
+[ 11%] Performing update step for 'eve-populate'
+[ 22%] No patch step for 'eve-populate'
+[ 33%] No configure step for 'eve-populate'
+[ 44%] No build step for 'eve-populate'
+[ 55%] No install step for 'eve-populate'
+[ 66%] No test step for 'eve-populate'
+[ 77%] Completed 'eve-populate'
+[100%] Built target eve-populate
+-- [eve] Building RelWithDebInfo mode with:  -fPIC -g -pthread -fno-strict-aliasing -Wno-unused-function -Wno-unused-variable -Wno-sign-compare -Werror=format -fexceptions -fPIC   
+-- [eve] Use PCH            : ON  (via EVE_USE_PCH)
+-- [eve] Unit tests         : OFF (via EVE_BUILD_TEST)
+-- [eve] Random tests       : OFF (via EVE_BUILD_RANDOM)
+-- [eve] Integration tests  : OFF (via EVE_BUILD_INTEGRATION)
+-- [eve] Benchmarks tests   : OFF (via EVE_BUILD_BENCHMARKS)
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- [eve] Doxygen need to be installed to generate the doxygen documentation
+-- Populating robinmap
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/robinmap-subbuild
+[ 11%] Performing update step for 'robinmap-populate'
+[ 22%] No patch step for 'robinmap-populate'
+[ 33%] No configure step for 'robinmap-populate'
+[ 44%] No build step for 'robinmap-populate'
+[ 55%] No install step for 'robinmap-populate'
+[ 66%] No test step for 'robinmap-populate'
+[ 77%] Completed 'robinmap-populate'
+[100%] Built target robinmap-populate
+-- Populating fmt
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/fmt-subbuild
+[ 11%] Performing update step for 'fmt-populate'
+[ 22%] No patch step for 'fmt-populate'
+[ 33%] No configure step for 'fmt-populate'
+[ 44%] No build step for 'fmt-populate'
+[ 55%] No install step for 'fmt-populate'
+[ 66%] No test step for 'fmt-populate'
+[ 77%] Completed 'fmt-populate'
+[100%] Built target fmt-populate
+-- {fmt} version: 12.1.0
+-- Build type: RelWithDebInfo
+-- Populating spdlog
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/spdlog-subbuild
+[ 11%] Performing update step for 'spdlog-populate'
+[ 22%] No patch step for 'spdlog-populate'
+[ 33%] No configure step for 'spdlog-populate'
+[ 44%] No build step for 'spdlog-populate'
+[ 55%] No install step for 'spdlog-populate'
+[ 66%] No test step for 'spdlog-populate'
+[ 77%] Completed 'spdlog-populate'
+[100%] Built target spdlog-populate
+-- Build spdlog: 1.15.3
+-- Build type: RelWithDebInfo
+-- Generating install
+-- Populating tomlplusplus
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/tomlplusplus-subbuild
+[ 11%] Performing update step for 'tomlplusplus-populate'
+[ 22%] Performing patch step for 'tomlplusplus-populate'
+[ 33%] No configure step for 'tomlplusplus-populate'
+[ 44%] No build step for 'tomlplusplus-populate'
+[ 55%] No install step for 'tomlplusplus-populate'
+[ 66%] No test step for 'tomlplusplus-populate'
+[ 77%] Completed 'tomlplusplus-populate'
+[100%] Built target tomlplusplus-populate
+SVS LVQ implementation not found
+-- Populating cpu_features
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/cpu_features-subbuild
+[ 11%] Performing update step for 'cpu_features-populate'
+[ 22%] No patch step for 'cpu_features-populate'
+[ 33%] No configure step for 'cpu_features-populate'
+[ 44%] No build step for 'cpu_features-populate'
+[ 55%] No install step for 'cpu_features-populate'
+[ 66%] No test step for 'cpu_features-populate'
+[ 77%] Completed 'cpu_features-populate'
+[100%] Built target cpu_features-populate
+-- Building for ARM aarch64
+-- Using ARMv9.0-a with SVE2 (supported by CPU)
+-- Using ARMv8.0-a with NEON
+-- Using ARMv8.2-a with NEON half-percision extension
+Building with ARMV8.2 with dotprod
+Building with ARMV8A
+Building with NEON+HP
+Building with NEON + BF16
+Building with SVE
+Building with SVE + BF16
+Building with ARMV9A and SVE2
+-- CXXFLAGS:          -fPIC -g -pthread -fno-strict-aliasing -Wno-unused-function -Wno-unused-variable -Wno-sign-compare -Werror=format -fexceptions -fPIC   
+-- COMPILE_DEFS:     REDISEARCH_MODULE_NAME="search";REDISMODULE_SDK_RLEC;_GNU_SOURCE;REDIS_MODULE_TARGET;ENABLE_ASSERT=1;HAVE_SVS=1;VectorSimilarity;PUBLIC;HAVE_SVS_LVQ=0
+-- LDFLAGS:            
+CMake Warning (dev) at src/geometry/CMakeLists.txt:7 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable BOOST_ROOT is set to:
+
+    /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/util/hash/CMakeLists.txt:10 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable BOOST_ROOT is set to:
+
+    /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/boost-src
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+# coord/rmr: root: /work/modules/redisearch/src
+-- SVS lib directory not found: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/svs-src/lib
+-- Static libraries for libredisearch_all.a: $<TARGET_FILE:redisearch_c>;$<TARGET_FILE:redisearch-geometry>;$<TARGET_FILE:redisearch-hash>;$<TARGET_FILE:VectorSimilarity>;$<TARGET_FILE:VectorSimilaritySpaces>;$<TARGET_FILE:VectorSimilaritySpaces_no_optimization>;$<TARGET_FILE:cpu_features>;$<TARGET_FILE:fmt>;$<TARGET_FILE:spdlog>;$<TARGET_FILE:redisearch-coord>;$<TARGET_FILE:uv_a>;$<TARGET_FILE:hiredis>;$<TARGET_FILE:hiredis_ssl>
+-- Rust configuration:
+--   Cargo: /root/.cargo/bin/cargo
+--   Toolchain: 
+--   Profile: optimised_test
+--   Cargo Build Flags: 
+--   RUSTFLAGS: 
+--   Target Dir: /work/modules/redisearch/src/bin/redisearch_rs
+--   Library Path: /work/modules/redisearch/src/bin/redisearch_rs/optimised_test/libredisearch_rs.a
+-- Building RediSearch as SHARED library
+-- Populating googlebench
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/_deps/googlebench-subbuild
+[ 11%] Performing update step for 'googlebench-populate'
+[ 22%] No patch step for 'googlebench-populate'
+[ 33%] No configure step for 'googlebench-populate'
+[ 44%] No build step for 'googlebench-populate'
+[ 55%] No install step for 'googlebench-populate'
+[ 66%] No test step for 'googlebench-populate'
+[ 77%] Completed 'googlebench-populate'
+[100%] Built target googlebench-populate
+-- Google Benchmark version: v1.9.1, normalized to 1.9.1
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Performing Test HAVE_PTHREAD_AFFINITY -- success
+-- Configuring done (1.5s)
+-- Generating done (0.4s)
+-- Build files have been written to: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community
+Building RediSearch with 4 parallel jobs...
+[  1%] Building Rust workspace with profile optimised_test
+[  2%] Built target hiredis_ssl
+[  3%] Built target hiredis
+[  3%] Built target cheadergen_generate
+[  6%] Built target snowball_compiler
+[  6%] Built target generate_command_info
+[  8%] Built target rmutil
+[  9%] Built target friso
+[  9%] Built target metaphone
+[  9%] Built target fast_float_strtod
+[ 10%] Built target fmt
+[ 16%] Built target uv_a
+[ 16%] Built target unix_based_hardware_detection
+[ 17%] Built target utils
+[ 19%] Built target VectorSimilaritySpaces_no_optimization
+[ 23%] Built target coordinator-core
+[ 23%] Built target buffer
+[ 23%] Built target iterators
+[ 23%] Built target index_result
+[ 24%] Built target mempool
+[ 25%] Built target dict
+[ 25%] Built target redisearch-hash
+[ 26%] Built target redismock
+[ 26%] Built target gtest
+[ 26%] Built target example_extension
+[ 27%] Built target redisearch-geometry
+[ 38%] Built target snowball
+[ 41%] Built target benchmark
+[ 43%] Built target rmr
+[ 44%] Built target spdlog
+[ 46%] Built target cpu_features
+[ 46%] Built target gtest_main
+[ 46%] Built target benchmark_main
+[ 46%] Built target redisearch-coord
+[ 48%] Built target VectorSimilaritySpaces
+    Finished `optimised_test` profile [optimized + debuginfo] target(s) in 0.57s
+[ 48%] Built target redisearch_rs_build
+[ 48%] Built target redisearch_rs_lib_file
+[ 50%] Built target VectorSimilarity
+[ 81%] Built target rscore
+[ 81%] Built target redisearch_c
+[ 81%] Built target redisearch_all
+[ 81%] Built target redisearch
+[ 82%] Built target test_distagg
+[ 82%] Built target rsbench
+[ 83%] Built target benchmark_unicode_tolower
+[ 83%] Built target test_array
+[ 83%] Built target test_asm_state_machine
+[ 84%] Built target test_blkalloc
+[ 85%] Built target test_cntokenize
+[ 85%] Built target test_error_parsing
+[ 87%] Built target rstest_coord
+[ 87%] Built target test_khtable
+[ 88%] Built target test_obfuscation
+[ 88%] Built target test_quantile
+[ 89%] Built target test_stopwords
+[ 89%] Built target test_stemmer
+[ 89%] Built target test_summarize
+[ 90%] Built target test_trie
+[ 90%] Built target test_synonym_map
+[ 90%] Built target test_vector_index_stats
+[ 90%] Built target test_chan
+[ 91%] Built target test_wildcard
+[ 91%] Built target test_cluster
+[ 91%] Built target test_command
+[ 91%] Built target test_shard_window_ratio
+[100%] Built target rstest
+Building ext-example for unit tests...
+Built target example_extension
+Example extension located at: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/example_extension/libexample_extension.so
+Build complete. Artifacts in /work/modules/redisearch/src/bin/linux-aarch64-release/search-community
+Running Python behavioral tests...
+Running Python tests matching: test_korean test_language:testHashIndexLanguage test_language:testHashIndexLanguageField test_language:testTagalogLanguage test_language:testMalayLanguage test_language:testLanguageInfo test_stemmer:testHashMinStemLen test:testStemming test:testNoStem
+Running Python tests with module at: /work/modules/redisearch/src/bin/linux-aarch64-release/search-community/redisearch.so
+Skipping tests with RedisJSON module
+Running tests in parallel using 4 Python processes
+Running RediSearch tests:
+
+/work/modules/redisearch/src/.venv/lib/python3.12/site-packages/RLTest/Enterprise/EnterpriseClusterEnv.py:89: SyntaxWarning: invalid escape sequence '\{'
+  ccs_bdb_config = {'shard_key_regex': '012.*\{(?<tag>.*)\}.*00a(?<tag>.*)',
+[36mtest_korean:testKoreanLanguage[0m:
+	[32m[PASS][0m
+[36mtest_language:testTagalogLanguage[0m:
+	[32m[PASS][0m
+[36mtest_language:testHashIndexLanguage[0m:
+	[32m[PASS][0m
+[36mtest_language:testHashIndexLanguageField[0m:
+	[32m[PASS][0m
+[36mtest_language:testMalayLanguage[0m:
+	[32m[PASS][0m
+[36mtest_stemmer:testHashMinStemLen[0m:
+	[32m[PASS][0m
+[36mtest_language:testLanguageInfo[0m:
+	[32m[PASS][0m
+[36mtest:testNoStem[0m:
+	[32m[PASS][0m
+[36mtest:testStemming[0m:
+	[32m[PASS][0m
+[1m
+Test Took: 1 sec[0m
+[1mTotal Tests Run: 9, Total Tests Failed: 0, Total Tests Passed: 9[0m
+All Python tests passed!

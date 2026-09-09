@@ -1,0 +1,13 @@
+# Build context: a bundle containing bin/ and lib/ from the verified Linux build.
+FROM ubuntu:24.04@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    libstdc++6 libgomp1 libssl3t64 && rm -rf /var/lib/apt/lists/* \
+    && mkdir /data && chown 65534:65534 /data
+COPY bin/ /opt/redis/bin/
+COPY lib/ /opt/redis/lib/
+COPY redis.conf /opt/redis/redis.conf
+USER 65534:65534
+WORKDIR /data
+ENV PATH="/opt/redis/bin:${PATH}"
+ENTRYPOINT ["/opt/redis/bin/redis-server"]
+CMD ["/opt/redis/redis.conf"]
