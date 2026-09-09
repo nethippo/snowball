@@ -36,6 +36,20 @@ to stem in cases that are hard to resolve.  If you want to always reduce words
 to a root form and/or get a root form which is itself a word then Snowball's
 stemming algorithms likely aren't the right answer.
 
+Korean support
+==============
+
+The experimental ``korean`` stemmer (C aliases ``ko`` and ``kor``) handles a
+small, explicit set of noun case-particle paths and verb/adjective forms.
+Unlisted forms are preserved; it is not a general Korean morphological analyzer.
+
+An optional Python sentence adapter uses Kiwi for contextual analysis, with
+conservative preservation of unsupported or ambiguous analyses.  Its dependencies
+are separate from libstemmer.  See `examples/korean/README.md
+<examples/korean/README.md>`_ for coverage, installation, output contracts and
+``make check_korean`` / ``make check_korean_adapter`` instructions.  Redis
+integration is deferred to `docs/plan.md <docs/plan.md>`_.
+
 Building Snowball
 =================
 
