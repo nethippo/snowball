@@ -1,0 +1,34 @@
+name: Korean stemming
+
+on:
+  push:
+    paths:
+      - 'algorithms/korean.sbl'
+      - 'libstemmer/modules.txt'
+      - 'tests/korean/**'
+      - 'GNUmakefile'
+      - '.github/workflows/korean.yml'
+  pull_request:
+    paths:
+      - 'algorithms/korean.sbl'
+      - 'libstemmer/modules.txt'
+      - 'tests/korean/**'
+      - 'GNUmakefile'
+      - '.github/workflows/korean.yml'
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: make -j4 check_korean python=python
