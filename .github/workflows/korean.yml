@@ -8,6 +8,9 @@ on:
       - 'examples/korean/**'
       - 'tests/korean/**'
       - 'GNUmakefile'
+      - 'compiler/**'
+      - 'runtime/**'
+      - 'cxx/**'
       - '.github/workflows/korean.yml'
   pull_request:
     paths:
@@ -16,6 +19,9 @@ on:
       - 'examples/korean/**'
       - 'tests/korean/**'
       - 'GNUmakefile'
+      - 'compiler/**'
+      - 'runtime/**'
+      - 'cxx/**'
       - '.github/workflows/korean.yml'
   workflow_dispatch:
 
@@ -39,3 +45,26 @@ jobs:
           node-version: '22'
       - run: python -m pip install -r examples/korean/requirements.txt
       - run: make -j4 check_korean_adapter python=python
+
+  cxx:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            wide: ''
+          - os: ubuntu-latest
+            wide: '1'
+          # The wide stemwords runner requires the Linux C.UTF8 locale.
+          - os: macos-latest
+            wide: ''
+    runs-on: ${{ matrix.os }}
+    env:
+      CC: gcc
+      CXX: g++
+      SNOWBALL_WIDE: ${{ matrix.wide }}
+      WERROR: '-pedantic -Werror'
+    steps:
+      - uses: actions/checkout@v5
+      # Generate all headers before compiling the factory on a clean build.
+      - run: make cxx
+      - run: make check_cxx_korean STEMMING_DATA=tests/korean/data
