@@ -52,3 +52,5 @@
 /zig/stemwords
 # Local design and work reports
 /docs/
+# Local integration builds and reports
+/integration/
