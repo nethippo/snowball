@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: '22'
       - run: python -m pip install -r examples/korean/requirements.txt
-      - run: make -j4 check_korean_adapter python=python
+      - run: make -j4 THIN_FACTOR=1 check_korean_adapter python=python
 
   cxx:
     strategy:

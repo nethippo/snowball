@@ -1,0 +1,24 @@
+Noun vocabulary attribution
+==========================
+
+Source: National Institute of the Korean Language (formerly National Institute
+of Korean Language Research), Korean Learners' Vocabulary List, May 2003.
+Publication and reuse notice:
+https://www.korean.go.kr/front_eng/down/down_02V.do?etc_seq=70&pageIndex=1
+
+The publication states that this work may be used under Korea Open Government
+License (KOGL), Type 1, with specific source attribution. Preserve this notice
+when redistributing the selected vocabulary, derived tables or test data.
+The source organization does not endorse this project or its stemming results.
+
+Modifications: selected A-level noun entries with at least two Hangul syllables,
+excluded cross-POS homographs found in that list and already supported bases,
+separated historical homonym numbers, sorted and deduplicated spellings for
+stemming, and generated subject/object-particle examples and negative tests.
+The 379 source entries yield 377 additional spellings. Their 2002 frequency
+ranks are historical; current dictionary standardness has not been verified.
+Original file SHA-256 and retrieval details are recorded in source.json.
+
+This data attribution is additional to the repository's software COPYING.
+Do not replace it with an assertion that the selected data was hand-authored
+or independently licensed solely under the Snowball software license.

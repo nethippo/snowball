@@ -861,6 +861,7 @@ check_utf8: $(libstemmer_algorithms:%=check_utf8_%)
 # Keep the optional Kiwi adapter out of the normal multi-language build.
 .PHONY: check_korean check_korean_adapter
 check_korean: stemwords$(EXEEXT) check_python_stemwords js
+	$(python) examples/korean/generate_nouns.py --check
 	$(MAKE) check_utf8_korean check_python_korean check_js_korean STEMMING_DATA=$(abspath tests/korean/data)
 	PYTHONDONTWRITEBYTECODE=1 $(python) -m unittest discover -s tests/korean -p test_analyzer.py
 

@@ -27,3 +27,20 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Additional attribution for the Korean common-noun vocabulary
+----------------------------------------------------------
+
+The Korean common-noun tables include a selection from the National Institute
+of the Korean Language's Korean Learners' Vocabulary List (May 2003), used
+under Korea Open Government License (KOGL), Type 1, with source attribution.
+Source and reuse notice:
+https://www.korean.go.kr/front_eng/down/down_02V.do?etc_seq=70&pageIndex=1
+
+The selection contains 377 additional noun spellings. Historical homonym
+numbers were separated, and case-particle rules and regression examples were
+generated from the selected nouns. This attribution applies to the selected
+data and derived tables in source and binary redistributions; the software
+license above is retained. See examples/korean/lexicon/COPYING and source.json
+for the selection criteria and original-file provenance. The source
+organization does not endorse this project or its stemming results.

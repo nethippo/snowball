@@ -1,0 +1,17 @@
+{
+  "publisher": "국립국어연구원 (현 국립국어원)",
+  "title": "한국어 학습용 어휘 목록",
+  "published": "2003-05",
+  "rank_basis": "현대 국어 사용 빈도 조사 (2002)",
+  "page_url": "https://www.korean.go.kr/front_eng/down/down_02V.do?etc_seq=70&pageIndex=1",
+  "download_url": "https://www.korean.go.kr/common/download.do?c_file_name=b73a8438-4713-4436-8481-ec26fd0dce2a_0.txt&file_path=etcData&o_file_name=%ED%95%9C%EA%B5%AD%EC%96%B4+%ED%95%99%EC%8A%B5%EC%9A%A9+%EC%96%B4%ED%9C%98+%EB%AA%A9%EB%A1%9D.txt",
+  "downloaded": "2026-10-26",
+  "sha256": "3b49681f05d6a7490c13da2a2847e433effdf65da409fd295792d6ee33685064",
+  "original_encoding": "cp949",
+  "license": "KOGL Type 1; source attribution required as stated on publication page",
+  "status": "source for conservative noun case-particle paths",
+  "selection": "A-level 명, at least two Hangul syllables, no cross-POS homograph in the source list, excluding 24 existing bases",
+  "entries": 379,
+  "unique_lemmas": 377,
+  "standard_status": "not_verified_against_current_dictionary"
+}

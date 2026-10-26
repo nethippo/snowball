@@ -1,6 +1,13 @@
-This small, hand-authored regression vocabulary was created for this project.
-It contains no third-party corpus or model data.
-It is distributed under the same license as Snowball, reproduced below.
+The original 216 hand-authored regression cases were created for this project
+under the Snowball license reproduced below.
+
+Additional noun cases derive from the National Institute of the Korean
+Language's Korean Learners' Vocabulary List (May 2003), used with attribution
+under KOGL Type 1. They include generated particle forms and negative cases.
+See examples/korean/lexicon/COPYING and source.json for selection, modifications
+and the original file hash. Preserve this attribution with derived test data.
+Source and reuse notice:
+https://www.korean.go.kr/front_eng/down/down_02V.do?etc_seq=70&pageIndex=1
 
 Copyright (c) 2001, Dr Martin Porter
 Copyright (c) 2004,2005, Richard Boulton
